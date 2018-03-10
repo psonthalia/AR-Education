@@ -8,6 +8,7 @@
 
 import UIKit
 import ARKit
+import Foundation
 
 class ViewController: UIViewController {
     
@@ -18,6 +19,17 @@ class ViewController: UIViewController {
         addTapGestureToSceneView()
         configureLighting()
         //        addCar()
+        
+        if let filepath = Bundle.main.path(forResource: "testGrid", ofType: "txt") {
+            do {
+                let contents = try String(contentsOfFile: filepath)
+                print(contents)
+            } catch {
+                // contents could not be loaded
+            }
+        } else {
+            // example.txt not found!
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
