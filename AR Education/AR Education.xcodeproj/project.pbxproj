@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4177A90D4ADD75F66E96C9C8 /* Pods_AR_EducationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55E4D6E89022B6E99A09CA1 /* Pods_AR_EducationTests.framework */; };
 		89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89839E7C2054601C00E0B705 /* GoogleService-Info.plist */; };
+		89839E832054752700E0B705 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E822054752700E0B705 /* HomeViewController.swift */; };
+		89839E882054775B00E0B705 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 89839E872054775B00E0B705 /* settings.png */; };
+		89839E8A20547A4800E0B705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8920547A4800E0B705 /* UIColor.swift */; };
 		89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */; };
 		A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A2113A5E20545CAD0084D4C4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A2113A5D20545CAD0084D4C4 /* art.scnassets */; };
@@ -47,6 +50,9 @@
 		2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_EducationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3393164AECA7458DFE9CAD /* Pods-AR EducationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests.release.xcconfig"; sourceTree = "<group>"; };
 		89839E7C2054601C00E0B705 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		89839E822054752700E0B705 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		89839E872054775B00E0B705 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		89839E8920547A4800E0B705 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		A2113A5820545CAD0084D4C4 /* AR Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2113A5D20545CAD0084D4C4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -124,6 +130,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		89839E842054769900E0B705 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				89839E872054775B00E0B705 /* settings.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		A2113A4F20545CAD0084D4C4 = {
 			isa = PBXGroup;
 			children = (
@@ -149,15 +163,18 @@
 		A2113A5A20545CAD0084D4C4 /* AR Education */ = {
 			isa = PBXGroup;
 			children = (
+				89839E842054769900E0B705 /* Images */,
 				A2113A9620546FA30084D4C4 /* 3D Objects */,
 				A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */,
 				A2113A5D20545CAD0084D4C4 /* art.scnassets */,
 				A2113A5F20545CAD0084D4C4 /* ViewController.swift */,
 				A2113A6120545CAD0084D4C4 /* Main.storyboard */,
+				89839E822054752700E0B705 /* HomeViewController.swift */,
 				A2113A6420545CAD0084D4C4 /* Assets.xcassets */,
 				A2113A6620545CAD0084D4C4 /* LaunchScreen.storyboard */,
 				A2113A6920545CAD0084D4C4 /* Info.plist */,
 				89839E7C2054601C00E0B705 /* GoogleService-Info.plist */,
+				89839E8920547A4800E0B705 /* UIColor.swift */,
 			);
 			path = "AR Education";
 			sourceTree = "<group>";
@@ -314,6 +331,7 @@
 				A2113A6320545CAD0084D4C4 /* Main.storyboard in Resources */,
 				A2113A9E20546FD80084D4C4 /* paperPlane.scn in Resources */,
 				A2113A9C20546FD80084D4C4 /* car.scn in Resources */,
+				89839E882054775B00E0B705 /* settings.png in Resources */,
 				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
 				A2113A9D20546FD80084D4C4 /* ship.scn in Resources */,
 				A2113A9B20546FD80084D4C4 /* ship.png in Resources */,
@@ -496,7 +514,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2113A6020545CAD0084D4C4 /* ViewController.swift in Sources */,
+				89839E8A20547A4800E0B705 /* UIColor.swift in Sources */,
 				A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */,
+				89839E832054752700E0B705 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
