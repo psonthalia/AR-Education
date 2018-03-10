@@ -87,35 +87,34 @@ class ViewController: UIViewController {
     }
     
     @objc func setUpGrid(withGestureRecognizer recognizer: UIGestureRecognizer) {
+        print("here")
         let tapLocation = recognizer.location(in: sceneView)
         let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
         
         guard let hitTestResult = hitTestResults.first else { return }
         let translation = hitTestResult.worldTransform.translation
         var x = translation.x
-        var y = translation.y
-        let z = translation.z
+        let y = translation.y
+        var z = translation.z
         
         guard let shipScene = SCNScene(named: "ship.scn"),
             let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
             else { return }
         
-        guard let planeScene = SCNScene(named: "plane.scn"),
-            let planeNode = planeScene.rootNode.childNode(withName: "plane", recursively: false)
+        guard let planeScene = SCNScene(named: "robot_combine.scn"),
+            let planeNode = planeScene.rootNode.childNode(withName: "robot_combine", recursively: false)
             else { return }
         
         for number:Character in gridContents {
             if(number != "\n") {
                 print(x)
                 
-//                var x = carScene2.copy() as! SCNScene
-//                let carNode = x.rootNode.childNode(withName: "ship", recursively: false)
-                
                 if(number == "1") {
                     let shipNode2 = shipNode.copy() as!SCNNode
                     shipNode2.position = SCNVector3(x,y,z)
                     sceneView.scene.rootNode.addChildNode(shipNode2)
-                } else if(number == "2") {
+                }
+                else if(number == "2") {
                     let planeNode2 = planeNode.copy() as!SCNNode
                     planeNode2.position = SCNVector3(x,y,z)
                     sceneView.scene.rootNode.addChildNode(planeNode2)
@@ -123,7 +122,7 @@ class ViewController: UIViewController {
                 x += 0.3
             } else {
                 x = translation.x
-                y += 1
+                z += 1
             }
         }
     }

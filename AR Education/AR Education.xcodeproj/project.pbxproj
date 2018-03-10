@@ -29,6 +29,9 @@
 		A2C9AFAF205488AF000EAF75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */; };
 		A2C9AFB0205488AF000EAF75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ViewController.swift */; };
 		A2C9AFB1205488D8000EAF75 /* plane.scn in Resources */ = {isa = PBXBuildFile; fileRef = A2113AA520547F360084D4C4 /* plane.scn */; };
+		A2C9AFB220548BBE000EAF75 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = A2113AA620547F390084D4C4 /* plane.png */; };
+		A2C9AFB520548CC8000EAF75 /* robot_combine.scn in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFB420548CC8000EAF75 /* robot_combine.scn */; };
+		A2C9AFB620548D5C000EAF75 /* testGrid.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2113AA3205474050084D4C4 /* testGrid.txt */; };
 		EBB18B9251567DE8D57D8FD6 /* Pods_AR_Education.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,13 +81,11 @@
 		A2113AA3205474050084D4C4 /* testGrid.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testGrid.txt; sourceTree = "<group>"; };
 		A2113AA520547F360084D4C4 /* plane.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = plane.scn; sourceTree = "<group>"; };
 		A2113AA620547F390084D4C4 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
-		A2113AA9205481FB0084D4C4 /* Audi R8.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Audi R8.scn"; sourceTree = "<group>"; };
-		A2113AAC205484910084D4C4 /* robot.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = robot.scn; sourceTree = "<group>"; };
-		A2113AAF2054856D0084D4C4 /* robot_combine.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = robot_combine.scn; path = ../../../models/robot_combine.scn; sourceTree = "<group>"; };
 		A2C9AFA720548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFA920548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "AR Education/Controllers/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
 		A2C9AFAE205488AE000EAF75 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "AR Education/Controllers/ViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A2C9AFB420548CC8000EAF75 /* robot_combine.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = robot_combine.scn; sourceTree = "<group>"; };
 		A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Education.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Education/Pods-AR Education.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E029B5B9CEB0357CB827B7 /* Pods-AR EducationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Education.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,14 +224,12 @@
 		A2113A9620546FA30084D4C4 /* 3D Objects */ = {
 			isa = PBXGroup;
 			children = (
-				A2113AAC205484910084D4C4 /* robot.scn */,
-				A2113AAF2054856D0084D4C4 /* robot_combine.scn */,
+				A2C9AFB420548CC8000EAF75 /* robot_combine.scn */,
 				A2113AA620547F390084D4C4 /* plane.png */,
 				A2113AA520547F360084D4C4 /* plane.scn */,
 				A2113A9820546FD80084D4C4 /* car.scn */,
 				A2113A9A20546FD80084D4C4 /* paperPlane.scn */,
 				A2113A9720546FD80084D4C4 /* ship.png */,
-				A2113AA9205481FB0084D4C4 /* Audi R8.scn */,
 				A2113A9920546FD80084D4C4 /* ship.scn */,
 			);
 			name = "3D Objects";
@@ -390,8 +389,11 @@
 				A2113A9C20546FD80084D4C4 /* car.scn in Resources */,
 				89839E95205496F200E0B705 /* AR.storyboard in Resources */,
 				89839E882054775B00E0B705 /* settings.png in Resources */,
+				A2C9AFB220548BBE000EAF75 /* plane.png in Resources */,
 				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
+				A2C9AFB620548D5C000EAF75 /* testGrid.txt in Resources */,
 				A2C9AFB1205488D8000EAF75 /* plane.scn in Resources */,
+				A2C9AFB520548CC8000EAF75 /* robot_combine.scn in Resources */,
 				A2113A9D20546FD80084D4C4 /* ship.scn in Resources */,
 				A2113A9B20546FD80084D4C4 /* ship.png in Resources */,
 			);
