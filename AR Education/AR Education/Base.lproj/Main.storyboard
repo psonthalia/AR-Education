@@ -13,7 +13,7 @@
         <!--Home-->
         <scene sceneID="BCJ-2p-HQ1">
             <objects>
-                <viewController title="Home" id="acD-4l-gaY" sceneMemberID="viewController">
+                <viewController title="Home" id="acD-4l-gaY" customClass="HomeViewController" customModule="AR_Education" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R3c-ky-I3e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hTO-yn-hEw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="xid-tz-Ux7">
+                    <navigationItem key="navigationItem" id="xid-tz-Ux7">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings.png" id="KIF-gl-R5g"/>
                     </navigationItem>
                     <connections>
