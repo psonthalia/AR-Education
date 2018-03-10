@@ -71,9 +71,10 @@
 		A2113A9A20546FD80084D4C4 /* paperPlane.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = paperPlane.scn; sourceTree = "<group>"; };
 		A2113AA3205474050084D4C4 /* testGrid.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testGrid.txt; sourceTree = "<group>"; };
 		A2113AA520547F360084D4C4 /* plane.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = plane.scn; sourceTree = "<group>"; };
-		A2113AA620547F390084D4C4 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+		A2113AA620547F390084D4C4 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
 		A2113AA9205481FB0084D4C4 /* Audi R8.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Audi R8.scn"; sourceTree = "<group>"; };
 		A2113AAC205484910084D4C4 /* robot.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = robot.scn; sourceTree = "<group>"; };
+		A2113AAF2054856D0084D4C4 /* robot_combine.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = robot_combine.scn; path = ../../../models/robot_combine.scn; sourceTree = "<group>"; };
 		A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Education.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Education/Pods-AR Education.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E029B5B9CEB0357CB827B7 /* Pods-AR EducationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Education.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,7 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				A2113AAC205484910084D4C4 /* robot.scn */,
-				A2113AA620547F390084D4C4 /* texture.png */,
+				A2113AAF2054856D0084D4C4 /* robot_combine.scn */,
+				A2113AA620547F390084D4C4 /* plane.png */,
 				A2113AA520547F360084D4C4 /* plane.scn */,
 				A2113A9820546FD80084D4C4 /* car.scn */,
 				A2113A9A20546FD80084D4C4 /* paperPlane.scn */,

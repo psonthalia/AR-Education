@@ -100,8 +100,8 @@ class ViewController: UIViewController {
             let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
             else { return }
         
-        guard let planeScene = SCNScene(named: "Audi R8.scn"),
-            let planeNode = planeScene.rootNode.childNode(withName: "Plane", recursively: false)
+        guard let planeScene = SCNScene(named: "plane.scn"),
+            let planeNode = planeScene.rootNode.childNode(withName: "plane", recursively: false)
             else { return }
         
         for number:Character in gridContents {
