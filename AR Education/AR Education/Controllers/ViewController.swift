@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         if let filepath = Bundle.main.path(forResource: "testGrid", ofType: "txt") {
             do {
                 gridContents = try String(contentsOfFile: filepath)
-                print(gridContents.contains("\n"))
             } catch {
                 // contents could not be loaded
             }
@@ -87,7 +86,6 @@ class ViewController: UIViewController {
     }
     
     @objc func setUpGrid(withGestureRecognizer recognizer: UIGestureRecognizer) {
-        print("here")
         let tapLocation = recognizer.location(in: sceneView)
         let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
         
@@ -101,20 +99,28 @@ class ViewController: UIViewController {
             let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
             else { return }
         
-        guard let planeScene = SCNScene(named: "robot_combine.scn"),
-            let planeNode = planeScene.rootNode.childNode(withName: "robot_combine", recursively: false)
+        guard let robotScene = SCNScene(named: "robot_combine.scn"),
+            let robotNode = robotScene.rootNode.childNode(withName: "robot_combine", recursively: false)
+            else { return }
+        
+        guard let planeScene = SCNScene(named: "plane.scn"),
+            let planeNode = planeScene.rootNode.childNode(withName: "plane", recursively: false)
             else { return }
         
         for number:Character in gridContents {
-            if(number != "\n") {
-                print(x)
-                
+            if(number != "\n") {                
                 if(number == "1") {
                     let shipNode2 = shipNode.copy() as!SCNNode
                     shipNode2.position = SCNVector3(x,y,z)
                     sceneView.scene.rootNode.addChildNode(shipNode2)
                 }
                 else if(number == "2") {
+                    let robotNode2 = robotNode.copy() as!SCNNode
+                    robotNode2.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(robotNode2)
+                }
+                else if(number == "3") {
+                    print("plane")
                     let planeNode2 = planeNode.copy() as!SCNNode
                     planeNode2.position = SCNVector3(x,y,z)
                     sceneView.scene.rootNode.addChildNode(planeNode2)
