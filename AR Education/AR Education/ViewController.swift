@@ -13,6 +13,7 @@ import Foundation
 class ViewController: UIViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
+    var gridContents:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,8 @@ class ViewController: UIViewController {
         
         if let filepath = Bundle.main.path(forResource: "testGrid", ofType: "txt") {
             do {
-                let contents = try String(contentsOfFile: filepath)
-                print(contents)
+                gridContents = try String(contentsOfFile: filepath)
+                print(gridContents.contains("\n"))
             } catch {
                 // contents could not be loaded
             }
@@ -81,10 +82,54 @@ class ViewController: UIViewController {
     
     func addTapGestureToSceneView() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.addCar(withGestureRecognizer:)))
+        
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
     
+    @objc func setUpGrid(withGestureRecognizer recognizer: UIGestureRecognizer) {
+        let tapLocation = recognizer.location(in: sceneView)
+        let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
+        
+        guard let hitTestResult = hitTestResults.first else { return }
+        let translation = hitTestResult.worldTransform.translation
+        var x = translation.x
+        var y = translation.y
+        let z = translation.z
+        
+        guard let shipScene = SCNScene(named: "ship.scn"),
+            let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
+            else { return }
+        
+        guard let planeScene = SCNScene(named: "Audi R8.scn"),
+            let planeNode = planeScene.rootNode.childNode(withName: "Plane", recursively: false)
+            else { return }
+        
+        for number:Character in gridContents {
+            if(number != "\n") {
+                print(x)
+                
+//                var x = carScene2.copy() as! SCNScene
+//                let carNode = x.rootNode.childNode(withName: "ship", recursively: false)
+                
+                if(number == "1") {
+                    let shipNode2 = shipNode.copy() as!SCNNode
+                    shipNode2.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(shipNode2)
+                } else if(number == "2") {
+                    let planeNode2 = planeNode.copy() as!SCNNode
+                    planeNode2.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(planeNode2)
+                }
+                x += 0.3
+            } else {
+                x = translation.x
+                y += 1
+            }
+        }
+    }
+    
     @objc func addCar(withGestureRecognizer recognizer: UIGestureRecognizer) {
+        setUpGrid(withGestureRecognizer: recognizer)
         let tapLocation = recognizer.location(in: sceneView)
         let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
         
