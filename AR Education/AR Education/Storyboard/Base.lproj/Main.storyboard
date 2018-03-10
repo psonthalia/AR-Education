@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -71,28 +72,73 @@
                     <connections>
                         <outlet property="duelButton" destination="uZm-Iy-aQc" id="2qv-XG-BVh"/>
                         <outlet property="puzzleButton" destination="SUF-t3-E7X" id="P7m-9E-QY1"/>
-                        <segue destination="BV1-FR-VrT" kind="show" identifier="toPuzzle" id="KWU-ei-mLx"/>
+                        <segue destination="Yll-it-nei" kind="show" identifier="toPuzzle" id="QOp-5r-W14"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rw-PT-ecA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-327.19999999999999" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tXr-a1-R10">
+        <!--Levels View Controller-->
+        <scene sceneID="TPX-n6-kG5">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="AR_Education" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                <viewController id="Yll-it-nei" customClass="LevelsViewController" customModule="AR_Education" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3vL-Xd-Mou">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arscnView>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kis-Db-tcu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="154" id="Xb8-5U-yek" customClass="LevelsTableViewCell" customModule="AR_Education" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="154"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xb8-5U-yek" id="qWx-cx-uho">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha Set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPU-O2-724">
+                                                    <rect key="frame" x="65" y="11" width="245" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="EKh-Mi-Bxk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CPU-O2-724" secondAttribute="trailing" constant="50" id="5yc-hE-phT"/>
+                                                <constraint firstItem="CPU-O2-724" firstAttribute="top" secondItem="qWx-cx-uho" secondAttribute="topMargin" id="Wps-nB-QLy"/>
+                                                <constraint firstItem="CPU-O2-724" firstAttribute="leading" secondItem="qWx-cx-uho" secondAttribute="leadingMargin" constant="50" id="XGA-E8-8Fn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yll-it-nei" id="it2-cy-had"/>
+                                    <outlet property="delegate" destination="Yll-it-nei" id="6cc-Fj-tGe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3UA-xf-xuj" firstAttribute="trailing" secondItem="kis-Db-tcu" secondAttribute="trailing" id="7uz-7c-flD"/>
+                            <constraint firstItem="kis-Db-tcu" firstAttribute="leading" secondItem="3UA-xf-xuj" secondAttribute="leading" id="I6f-nm-tdK"/>
+                            <constraint firstItem="kis-Db-tcu" firstAttribute="top" secondItem="3UA-xf-xuj" secondAttribute="top" id="vQL-5a-rEr"/>
+                            <constraint firstItem="3UA-xf-xuj" firstAttribute="bottom" secondItem="kis-Db-tcu" secondAttribute="bottom" id="yg4-iE-s6A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3UA-xf-xuj"/>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="tableView" destination="kis-Db-tcu" id="okS-4J-EPk"/>
+                        <segue destination="tSe-36-fXo" kind="show" identifier="toAR" id="7tN-Ba-SMI"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lmo-hi-YeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="132.68365817091455"/>
+            <point key="canvasLocation" x="496.80000000000001" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C3H-6c-nVx">
@@ -111,6 +157,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbA-SG-p67" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1185" y="133"/>
+        </scene>
+        <!--AR-->
+        <scene sceneID="jL6-0H-ls5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AR" id="tSe-36-fXo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgq-hL-kJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1282" y="133"/>
         </scene>
     </scenes>
     <resources>

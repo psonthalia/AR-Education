@@ -13,6 +13,8 @@ struct Constants {
     
     struct Segue {
         static let toPuzzle = "toPuzzle"
+        static let toAR = "toAR"
     }
+    
     
 }
