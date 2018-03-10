@@ -12,6 +12,9 @@
 		89839E882054775B00E0B705 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 89839E872054775B00E0B705 /* settings.png */; };
 		89839E8A20547A4800E0B705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8920547A4800E0B705 /* UIColor.swift */; };
 		89839E8C205483C900E0B705 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8B205483C900E0B705 /* Constants.swift */; };
+		89839E9320548CEA00E0B705 /* LevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E9220548CEA00E0B705 /* LevelsViewController.swift */; };
+		89839E95205496F200E0B705 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89839E94205496F200E0B705 /* AR.storyboard */; };
+		89839E9720549E9F00E0B705 /* LevelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E9620549E9F00E0B705 /* LevelsTableViewCell.swift */; };
 		89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */; };
 		A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2113A6420545CAD0084D4C4 /* Assets.xcassets */; };
@@ -58,6 +61,9 @@
 		89839E8920547A4800E0B705 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		89839E8B205483C900E0B705 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		89839E902054852C00E0B705 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89839E9220548CEA00E0B705 /* LevelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelsViewController.swift; path = "AR Education/Controllers/LevelsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		89839E94205496F200E0B705 /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
+		89839E9620549E9F00E0B705 /* LevelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsTableViewCell.swift; sourceTree = "<group>"; };
 		A2113A5820545CAD0084D4C4 /* AR Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2113A6420545CAD0084D4C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +163,14 @@
 			path = Supporting;
 			sourceTree = "<group>";
 		};
+		89839E982054A21300E0B705 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89839E9620549E9F00E0B705 /* LevelsTableViewCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A2113A4F20545CAD0084D4C4 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +206,7 @@
 				A2113A6420545CAD0084D4C4 /* Assets.xcassets */,
 				89839E8D2054842C00E0B705 /* Supporting */,
 				89839E8920547A4800E0B705 /* UIColor.swift */,
+				89839E982054A21300E0B705 /* Models */,
 			);
 			path = "AR Education";
 			sourceTree = "<group>";
@@ -242,6 +257,7 @@
 			children = (
 				A2C9AFA820548895000EAF75 /* LaunchScreen.storyboard */,
 				A2C9AFA620548895000EAF75 /* Main.storyboard */,
+				89839E94205496F200E0B705 /* AR.storyboard */,
 			);
 			name = Storyboard;
 			path = "New Group1";
@@ -252,6 +268,7 @@
 			children = (
 				A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */,
 				A2C9AFAE205488AE000EAF75 /* ViewController.swift */,
+				89839E9220548CEA00E0B705 /* LevelsViewController.swift */,
 			);
 			name = Controllers;
 			path = "New Group2";
@@ -378,6 +395,7 @@
 				A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */,
 				A2113A9E20546FD80084D4C4 /* paperPlane.scn in Resources */,
 				A2113A9C20546FD80084D4C4 /* car.scn in Resources */,
+				89839E95205496F200E0B705 /* AR.storyboard in Resources */,
 				89839E882054775B00E0B705 /* settings.png in Resources */,
 				A2C9AFB220548BBE000EAF75 /* plane.png in Resources */,
 				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
@@ -564,9 +582,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89839E9720549E9F00E0B705 /* LevelsTableViewCell.swift in Sources */,
 				A2C9AFB0205488AF000EAF75 /* ViewController.swift in Sources */,
 				89839E8C205483C900E0B705 /* Constants.swift in Sources */,
 				89839E8A20547A4800E0B705 /* UIColor.swift in Sources */,
+				89839E9320548CEA00E0B705 /* LevelsViewController.swift in Sources */,
 				A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */,
 				A2C9AFAF205488AF000EAF75 /* HomeViewController.swift in Sources */,
 			);
