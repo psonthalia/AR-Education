@@ -163,6 +163,14 @@
 			path = Supporting;
 			sourceTree = "<group>";
 		};
+		89839E982054A21300E0B705 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89839E9620549E9F00E0B705 /* LevelsTableViewCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A2113A4F20545CAD0084D4C4 = {
 			isa = PBXGroup;
 			children = (
@@ -198,7 +206,7 @@
 				A2113A6420545CAD0084D4C4 /* Assets.xcassets */,
 				89839E8D2054842C00E0B705 /* Supporting */,
 				89839E8920547A4800E0B705 /* UIColor.swift */,
-				89839E9620549E9F00E0B705 /* LevelsTableViewCell.swift */,
+				89839E982054A21300E0B705 /* Models */,
 			);
 			path = "AR Education";
 			sourceTree = "<group>";
