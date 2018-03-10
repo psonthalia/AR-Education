@@ -66,6 +66,8 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="settings.png" id="KIF-gl-R5g"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="duelButton" destination="uZm-Iy-aQc" id="2qv-XG-BVh"/>
+                        <outlet property="puzzleButton" destination="SUF-t3-E7X" id="P7m-9E-QY1"/>
                         <segue destination="BV1-FR-VrT" kind="show" id="KWU-ei-mLx"/>
                     </connections>
                 </viewController>

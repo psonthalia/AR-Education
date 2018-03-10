@@ -10,6 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var puzzleButton: UIButton!
+    @IBOutlet weak var duelButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,7 +21,11 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
-        // Do any additional setup after loading the view.
+        
+        puzzleButton.layer.cornerRadius = 10
+        
+        duelButton.layer.cornerRadius = 10
+        
     }
 
     override func didReceiveMemoryWarning() {
