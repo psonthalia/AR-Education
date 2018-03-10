@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4177A90D4ADD75F66E96C9C8 /* Pods_AR_EducationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55E4D6E89022B6E99A09CA1 /* Pods_AR_EducationTests.framework */; };
+		89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89839E7C2054601C00E0B705 /* GoogleService-Info.plist */; };
+		89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */; };
 		A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A2113A5E20545CAD0084D4C4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A2113A5D20545CAD0084D4C4 /* art.scnassets */; };
 		A2113A6020545CAD0084D4C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5F20545CAD0084D4C4 /* ViewController.swift */; };
@@ -16,6 +19,7 @@
 		A2113A7320545CAD0084D4C4 /* AR_EducationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7220545CAD0084D4C4 /* AR_EducationTests.swift */; };
 		A2113A7E20545CAD0084D4C4 /* AR_EducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */; };
 		A2113A8C20545CCF0084D4C4 /* 3D Objects in Resources */ = {isa = PBXBuildFile; fileRef = A2113A8B20545CCF0084D4C4 /* 3D Objects */; };
+		EBB18B9251567DE8D57D8FD6 /* Pods_AR_Education.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04E798E7165CEB1B4C744192 /* Pods-AR EducationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationUITests/Pods-AR EducationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_EducationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3393164AECA7458DFE9CAD /* Pods-AR EducationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests.release.xcconfig"; sourceTree = "<group>"; };
+		89839E7C2054601C00E0B705 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2113A5820545CAD0084D4C4 /* AR Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2113A5D20545CAD0084D4C4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -51,6 +59,12 @@
 		A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_EducationUITests.swift; sourceTree = "<group>"; };
 		A2113A7F20545CAD0084D4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2113A8B20545CCF0084D4C4 /* 3D Objects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "3D Objects"; sourceTree = "<group>"; };
+		A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Education.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Education/Pods-AR Education.debug.xcconfig"; sourceTree = "<group>"; };
+		C2E029B5B9CEB0357CB827B7 /* Pods-AR EducationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Education.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55E4D6E89022B6E99A09CA1 /* Pods_AR_EducationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_EducationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AFDF23DFBDC955D6D08DCE /* Pods-AR EducationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationUITests/Pods-AR EducationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1AC562C2F02BEF55476D16D /* Pods-AR Education.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Education.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR Education/Pods-AR Education.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB18B9251567DE8D57D8FD6 /* Pods_AR_Education.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4177A90D4ADD75F66E96C9C8 /* Pods_AR_EducationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10AB583A6809F23DBEDA6495 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */,
+				F1AC562C2F02BEF55476D16D /* Pods-AR Education.release.xcconfig */,
+				C2E029B5B9CEB0357CB827B7 /* Pods-AR EducationTests.debug.xcconfig */,
+				3A3393164AECA7458DFE9CAD /* Pods-AR EducationTests.release.xcconfig */,
+				F0AFDF23DFBDC955D6D08DCE /* Pods-AR EducationUITests.debug.xcconfig */,
+				04E798E7165CEB1B4C744192 /* Pods-AR EducationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		170B4949F0F74B5A2399CEA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */,
+				E55E4D6E89022B6E99A09CA1 /* Pods_AR_EducationTests.framework */,
+				2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2113A4F20545CAD0084D4C4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +125,8 @@
 				A2113A7120545CAD0084D4C4 /* AR EducationTests */,
 				A2113A7C20545CAD0084D4C4 /* AR EducationUITests */,
 				A2113A5920545CAD0084D4C4 /* Products */,
+				10AB583A6809F23DBEDA6495 /* Pods */,
+				170B4949F0F74B5A2399CEA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +151,7 @@
 				A2113A6420545CAD0084D4C4 /* Assets.xcassets */,
 				A2113A6620545CAD0084D4C4 /* LaunchScreen.storyboard */,
 				A2113A6920545CAD0084D4C4 /* Info.plist */,
+				89839E7C2054601C00E0B705 /* GoogleService-Info.plist */,
 			);
 			path = "AR Education";
 			sourceTree = "<group>";
@@ -138,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2113A8220545CAD0084D4C4 /* Build configuration list for PBXNativeTarget "AR Education" */;
 			buildPhases = (
+				B873CC0EDD041E956DF399CF /* [CP] Check Pods Manifest.lock */,
 				A2113A5420545CAD0084D4C4 /* Sources */,
 				A2113A5520545CAD0084D4C4 /* Frameworks */,
 				A2113A5620545CAD0084D4C4 /* Resources */,
+				234A4792B2E8C5562FB45031 /* [CP] Embed Pods Frameworks */,
+				CE61AD006BF85042416379A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2113A8520545CAD0084D4C4 /* Build configuration list for PBXNativeTarget "AR EducationTests" */;
 			buildPhases = (
+				7B75719DD296FE9F5311F1E9 /* [CP] Check Pods Manifest.lock */,
 				A2113A6A20545CAD0084D4C4 /* Sources */,
 				A2113A6B20545CAD0084D4C4 /* Frameworks */,
 				A2113A6C20545CAD0084D4C4 /* Resources */,
+				E56E325E2FE19C66822D9C44 /* [CP] Embed Pods Frameworks */,
+				6C446E2E577377BF3B658865 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2113A8820545CAD0084D4C4 /* Build configuration list for PBXNativeTarget "AR EducationUITests" */;
 			buildPhases = (
+				C987552085440281E56890D1 /* [CP] Check Pods Manifest.lock */,
 				A2113A7520545CAD0084D4C4 /* Sources */,
 				A2113A7620545CAD0084D4C4 /* Frameworks */,
 				A2113A7720545CAD0084D4C4 /* Resources */,
+				395C1BB560CEFCB1E1E439C0 /* [CP] Embed Pods Frameworks */,
+				9C63C2B84C907A7A05C96831 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +295,7 @@
 				A2113A6820545CAD0084D4C4 /* LaunchScreen.storyboard in Resources */,
 				A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */,
 				A2113A6320545CAD0084D4C4 /* Main.storyboard in Resources */,
+				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +314,160 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		234A4792B2E8C5562FB45031 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AR Education/Pods-AR Education-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Education/Pods-AR Education-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		395C1BB560CEFCB1E1E439C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR EducationUITests/Pods-AR EducationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C446E2E577377BF3B658865 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B75719DD296FE9F5311F1E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR EducationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C63C2B84C907A7A05C96831 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR EducationUITests/Pods-AR EducationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B873CC0EDD041E956DF399CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR Education-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C987552085440281E56890D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR EducationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE61AD006BF85042416379A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Education/Pods-AR Education-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56E325E2FE19C66822D9C44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A2113A5420545CAD0084D4C4 /* Sources */ = {
@@ -432,10 +639,11 @@
 		};
 		A2113A8320545CAD0084D4C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65777GTD95;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AR Education/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
@@ -447,10 +655,11 @@
 		};
 		A2113A8420545CAD0084D4C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1AC562C2F02BEF55476D16D /* Pods-AR Education.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65777GTD95;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AR Education/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
@@ -462,6 +671,7 @@
 		};
 		A2113A8620545CAD0084D4C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2E029B5B9CEB0357CB827B7 /* Pods-AR EducationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,6 +689,7 @@
 		};
 		A2113A8720545CAD0084D4C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3393164AECA7458DFE9CAD /* Pods-AR EducationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +707,7 @@
 		};
 		A2113A8920545CAD0084D4C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0AFDF23DFBDC955D6D08DCE /* Pods-AR EducationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +724,7 @@
 		};
 		A2113A8A20545CAD0084D4C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E798E7165CEB1B4C744192 /* Pods-AR EducationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

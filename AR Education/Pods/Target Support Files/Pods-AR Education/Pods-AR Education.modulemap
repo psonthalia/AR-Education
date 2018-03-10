@@ -1,0 +1,6 @@
+framework module Pods_AR_Education {
+  umbrella header "Pods-AR Education-umbrella.h"
+
+  export *
+  module * { export * }
+}
