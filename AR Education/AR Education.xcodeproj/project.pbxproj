@@ -12,6 +12,8 @@
 		89839E832054752700E0B705 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E822054752700E0B705 /* HomeViewController.swift */; };
 		89839E882054775B00E0B705 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 89839E872054775B00E0B705 /* settings.png */; };
 		89839E8A20547A4800E0B705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8920547A4800E0B705 /* UIColor.swift */; };
+		89839E8C205483C900E0B705 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8B205483C900E0B705 /* Constants.swift */; };
+		89839E912054852C00E0B705 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89839E902054852C00E0B705 /* Info.plist */; };
 		89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */; };
 		A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A2113A5E20545CAD0084D4C4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A2113A5D20545CAD0084D4C4 /* art.scnassets */; };
@@ -25,7 +27,6 @@
 		A2113A9C20546FD80084D4C4 /* car.scn in Resources */ = {isa = PBXBuildFile; fileRef = A2113A9820546FD80084D4C4 /* car.scn */; };
 		A2113A9D20546FD80084D4C4 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = A2113A9920546FD80084D4C4 /* ship.scn */; };
 		A2113A9E20546FD80084D4C4 /* paperPlane.scn in Resources */ = {isa = PBXBuildFile; fileRef = A2113A9A20546FD80084D4C4 /* paperPlane.scn */; };
-		A2113AA4205474050084D4C4 /* testGrid.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2113AA3205474050084D4C4 /* testGrid.txt */; };
 		EBB18B9251567DE8D57D8FD6 /* Pods_AR_Education.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		89839E822054752700E0B705 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		89839E872054775B00E0B705 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		89839E8920547A4800E0B705 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		89839E8B205483C900E0B705 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		89839E902054852C00E0B705 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2113A5820545CAD0084D4C4 /* AR Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2113A5D20545CAD0084D4C4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		A2113A6220545CAD0084D4C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2113A6420545CAD0084D4C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2113A6720545CAD0084D4C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A2113A6920545CAD0084D4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2113A6E20545CAD0084D4C4 /* AR EducationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR EducationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A7220545CAD0084D4C4 /* AR_EducationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_EducationTests.swift; sourceTree = "<group>"; };
 		A2113A7420545CAD0084D4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,6 +142,34 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		89839E8D2054842C00E0B705 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				89839E902054852C00E0B705 /* Info.plist */,
+				89839E7C2054601C00E0B705 /* GoogleService-Info.plist */,
+				89839E8B205483C900E0B705 /* Constants.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		89839E8E2054844500E0B705 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2113A5F20545CAD0084D4C4 /* ViewController.swift */,
+				89839E822054752700E0B705 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		89839E8F2054845500E0B705 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A2113A6120545CAD0084D4C4 /* Main.storyboard */,
+				A2113A6620545CAD0084D4C4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		A2113A4F20545CAD0084D4C4 = {
 			isa = PBXGroup;
 			children = (
@@ -170,13 +200,10 @@
 				A2113A9620546FA30084D4C4 /* 3D Objects */,
 				A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */,
 				A2113A5D20545CAD0084D4C4 /* art.scnassets */,
-				A2113A5F20545CAD0084D4C4 /* ViewController.swift */,
-				A2113A6120545CAD0084D4C4 /* Main.storyboard */,
-				89839E822054752700E0B705 /* HomeViewController.swift */,
+				89839E8E2054844500E0B705 /* Controllers */,
+				89839E8F2054845500E0B705 /* Storyboard */,
 				A2113A6420545CAD0084D4C4 /* Assets.xcassets */,
-				A2113A6620545CAD0084D4C4 /* LaunchScreen.storyboard */,
-				A2113A6920545CAD0084D4C4 /* Info.plist */,
-				89839E7C2054601C00E0B705 /* GoogleService-Info.plist */,
+				89839E8D2054842C00E0B705 /* Supporting */,
 				89839E8920547A4800E0B705 /* UIColor.swift */,
 			);
 			path = "AR Education";
@@ -336,6 +363,7 @@
 				A2113A9C20546FD80084D4C4 /* car.scn in Resources */,
 				89839E882054775B00E0B705 /* settings.png in Resources */,
 				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
+				89839E912054852C00E0B705 /* Info.plist in Resources */,
 				A2113A9D20546FD80084D4C4 /* ship.scn in Resources */,
 				A2113A9B20546FD80084D4C4 /* ship.png in Resources */,
 			);
@@ -516,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89839E8C205483C900E0B705 /* Constants.swift in Sources */,
 				A2113A6020545CAD0084D4C4 /* ViewController.swift in Sources */,
 				89839E8A20547A4800E0B705 /* UIColor.swift in Sources */,
 				A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */,
@@ -688,7 +717,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65777GTD95;
-				INFOPLIST_FILE = "AR Education/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/AR Education/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -704,7 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65777GTD95;
-				INFOPLIST_FILE = "AR Education/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/AR Education/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
 				PRODUCT_NAME = "$(TARGET_NAME)";

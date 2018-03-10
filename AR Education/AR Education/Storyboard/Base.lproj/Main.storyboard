@@ -34,6 +34,9 @@
                                 <state key="normal" title="Puzzle">
                                     <color key="titleColor" red="0.35686274509803922" green="0.75294117647058822" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="puzzleButtonTapped:" destination="acD-4l-gaY" eventType="touchUpInside" id="6hW-Rp-vzL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZm-Iy-aQc">
                                 <rect key="frame" x="50" y="401.5" width="275" height="150"/>
@@ -68,7 +71,7 @@
                     <connections>
                         <outlet property="duelButton" destination="uZm-Iy-aQc" id="2qv-XG-BVh"/>
                         <outlet property="puzzleButton" destination="SUF-t3-E7X" id="P7m-9E-QY1"/>
-                        <segue destination="BV1-FR-VrT" kind="show" id="KWU-ei-mLx"/>
+                        <segue destination="BV1-FR-VrT" kind="show" identifier="toPuzzle" id="KWU-ei-mLx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rw-PT-ecA" userLabel="First Responder" sceneMemberID="firstResponder"/>
