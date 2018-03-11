@@ -25,7 +25,7 @@ class MultiplayerViewController: UIViewController {
     
     @objc func buildGrid() {
         var gridContents = ""
-        if let filepath = Bundle.main.path(forResource: "testGrid", ofType: "txt") {
+        if let filepath = Bundle.main.path(forResource: "multiplayer", ofType: "txt") {
             do {
                 gridContents = try String(contentsOfFile: filepath)
             } catch {
@@ -58,7 +58,10 @@ class MultiplayerViewController: UIViewController {
     }
     
     @IBAction func joinGame(_ sender: Any) {
-        
+        ARCameraMultiplayerViewController.code = joinGameField.text!
+        ARCameraMultiplayerViewController.playerName = "player2"
+        ARCameraMultiplayerViewController.positionArray = positionArray
+        self.performSegue(withIdentifier: Constants.Segue.toARMultiplayerCamera, sender: nil)
     }
     @IBAction func createGame(_ sender: Any) {
         let code = String(arc4random_uniform(10001))

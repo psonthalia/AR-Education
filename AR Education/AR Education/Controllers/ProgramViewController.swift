@@ -19,7 +19,11 @@ class ProgramViewController: UIViewController {
     var viewLevelButton = UIBarButtonItem()
     var fixedSpace = UIBarButtonItem()
     
+    var level: Int = 0
+    
     override func viewWillAppear(_ animated: Bool) {
+        print("Level: \(level)")
+        
         runButton = UIBarButtonItem(title: "Run", style: UIBarButtonItemStyle.plain, target: self, action: #selector(RunClicked))
         viewLevelButton = UIBarButtonItem(title: "View Level", style: UIBarButtonItemStyle.plain, target: self, action: #selector(viewLevel))
         fixedSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
@@ -60,7 +64,9 @@ class ProgramViewController: UIViewController {
     }
     @objc func buildGrid() {
         var gridContents = ""
-        if let filepath = Bundle.main.path(forResource: "testGrid", ofType: "txt") {
+        let fileName: String = convert(self.level)
+        print(fileName)
+        if let filepath = Bundle.main.path(forResource: fileName, ofType: "txt") {
             do {
                 gridContents = try String(contentsOfFile: filepath)
             } catch {
@@ -70,12 +76,14 @@ class ProgramViewController: UIViewController {
             // example.txt not found!
         }
         
+        print(gridContents)
+        
         //convert string to 2D array
         var indexY = 0
         positionArray.append([])
         var indexX = 0
         for number:Character in gridContents {
-            if(number != "\n") {
+            if(number != " ") {
                 positionArray[indexY].append(number)
                 print(number)
                 if(positionArray[indexY][indexX] == "s") {
@@ -90,6 +98,8 @@ class ProgramViewController: UIViewController {
             }
         }
         positionArray.removeLast()
+        
+        print(positionArray)
     }
     @objc func RunClicked() {
         runButton.isEnabled = true
@@ -160,5 +170,13 @@ class ProgramViewController: UIViewController {
         ARCameraViewController.positionArray = positionArray
         
         self.performSegue(withIdentifier: Constants.Segue.toARCamera, sender: nil)
+    }
+    
+    func convert(_ level: Int) -> String {
+        let set: Int = (level / 6) + 1
+        let number: Int = level % 6
+        let text: String = "\(set)_\(number)"
+        
+        return text
     }
 }

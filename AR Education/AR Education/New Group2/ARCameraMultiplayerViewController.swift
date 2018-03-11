@@ -20,6 +20,8 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
     var displayPlane = true
     var collectibleNode2 = SCNNode()
     var robotNode2 = SCNNode()
+    var pointerNode2 = SCNNode()
+    var robotOpponentNode2 = SCNNode()
 
     var x:Float = 0.0
     var y:Float = 0.0
@@ -30,19 +32,28 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
     static var code = ""
     static var playerName = ""
     var ref: DatabaseReference!
-    var postDict: [String : Any] = [:]
+    var postDict: [String] = []
     
     var playerX = 0
     var playerZ = 0
+    
+    var opponentX = 0
+    var opponentY = 0
+    
+    var movesCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if(ARCameraMultiplayerViewController.playerName == "player1") {
             playerX = 1
             playerZ = 1
+            opponentX = 14
+            opponentY = 14
         } else {
-            playerX = 15
-            playerZ = 15
+            playerX = 14
+            playerZ = 14
+            opponentX = 1
+            opponentY = 1
         }
         addTapGestureToSceneView()
         configureLighting()
@@ -51,15 +62,6 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
         
         ref = Database.database().reference()
         
-        if let filepath = Bundle.main.path(forResource: "testGrid", ofType: "txt") {
-            do {
-                gridContents = try String(contentsOfFile: filepath)
-            } catch {
-                // contents could not be loaded
-            }
-        } else {
-            // example.txt not found!
-        }
         var tempString = ""
         if(ARCameraMultiplayerViewController.playerName == "player1") {
             tempString = "player2"
@@ -67,7 +69,16 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
             tempString = "player1"
         }
         var refHandler = ref.child(ARCameraMultiplayerViewController.code).child(tempString).observe(DataEventType.value, with: { (snapshot) in
-            self.postDict = snapshot.value as! [String : Any]
+            self.postDict = snapshot.value as! [String]
+            if(self.postDict[self.postDict.count-1].contains("moveForward")) {
+                self.robotOpponentNode2.runAction(SCNAction.move(by: SCNVector3(0.2, 0, 0), duration: 0.5))
+            } else if(self.postDict[self.postDict.count-1].contains("moveBackward")) {
+                self.robotOpponentNode2.runAction(SCNAction.move(by: SCNVector3(-0.2, 0, 0), duration: 0.5))
+            } else if(self.postDict[self.postDict.count-1].contains("moveLeft")) {
+                self.robotOpponentNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, -0.2), duration: 0.5))
+            } else if(self.postDict[self.postDict.count-1].contains("moveRight")) {
+                self.robotOpponentNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, 0.2), duration: 0.5))
+            }
             print(self.postDict)
         })
     }
@@ -103,13 +114,14 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        var array = postDict[ARCameraMultiplayerViewController.playerName] as! [Any]
+        var array = postDict
         let codeFieldText = codeField.text!
         array.append(codeFieldText)
-        if(codeFieldText.contains("moveForward")) {
+        if(codeFieldText.contains("moveBackward")) {
             //IF there's nothing in front of it, then:
             if (0 <= playerZ-1 && (ARCameraMultiplayerViewController.positionArray[playerZ-1][playerX] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ-1][playerX] == "*")) {
                 robotNode2.runAction(SCNAction.move(by: SCNVector3(0.2, 0, 0), duration: 0.5))
+                pointerNode2.runAction(SCNAction.move(by: SCNVector3(0.2, 0, 0), duration: 0.5))
                 playerZ -= 1
                 if(ARCameraMultiplayerViewController.positionArray[playerZ][playerX] == "*") {
                     //                    ARCameraViewController.timeToCollectible = timeToCollectible
@@ -120,10 +132,13 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
             }
         }
             
-        else if(codeFieldText.contains("moveBackward")) {
+        else if(codeFieldText.contains("moveForward")) {
             //IF nothing behind it, then:
+            print(ARCameraMultiplayerViewController.positionArray[playerZ+1][playerX])
             if((ARCameraMultiplayerViewController.positionArray.count-1) >= (playerZ+1) && (ARCameraMultiplayerViewController.positionArray[playerZ+1][playerX] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ+1][playerX] == "*")) {
+                print("asdf2")
                 robotNode2.runAction(SCNAction.move(by: SCNVector3(-0.2, 0, 0), duration: 0.5))
+                pointerNode2.runAction(SCNAction.move(by: SCNVector3(-0.2, 0, 0), duration: 0.5))
                 playerZ += 1
                 if(ARCameraMultiplayerViewController.positionArray[playerZ][playerX] == "*") {
                     //                    ARCameraViewController.timeToCollectible = timeToCollectible
@@ -134,8 +149,12 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
         }
             
         else if(codeFieldText.contains("moveRight")) {
+            print(ARCameraMultiplayerViewController.positionArray)
+            print(ARCameraMultiplayerViewController.positionArray.count)
+            
             if(0 <= playerX-1 && (ARCameraMultiplayerViewController.positionArray[playerZ][playerX-1] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ][playerX-1] == "*")) {
                 robotNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, 0.2), duration: 0.5))
+                pointerNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, 0.2), duration: 0.5))
                 playerX -= 1
                 if(ARCameraMultiplayerViewController.positionArray[playerZ][playerX] == "*") {
                     //                    ARCameraViewController.timeToCollectible = timeToCollectible
@@ -148,6 +167,7 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
         else if(codeFieldText.contains("moveLeft")) {
             if(ARCameraMultiplayerViewController.positionArray[playerZ].count-1 >= playerX+1 && (ARCameraMultiplayerViewController.positionArray[playerZ][playerX+1] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ][playerX+1] == "*")) {
                 robotNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, -0.2), duration: 0.5))
+                pointerNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, -0.2), duration: 0.5))
                 playerX += 1
                 if(ARCameraMultiplayerViewController.positionArray[playerZ][playerX] == "*") {
                     //                    ARCameraViewController.timeToCollectible = timeToCollectible
@@ -174,6 +194,10 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
         
         guard let robotScene = SCNScene(named: "robot_c.scn"),
             let robotNode = robotScene.rootNode.childNode(withName: "robot_combine", recursively: false)
+            else { return }
+        
+        guard let pointerScene = SCNScene(named: "pointr.scn"),
+            let pointerNode = pointerScene.rootNode.childNode(withName: "pointer", recursively: false)
             else { return }
         
         guard let waScene = SCNScene(named: "walla.scn"),
@@ -222,6 +246,10 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
         
         guard let spikeScene = SCNScene(named: "spik.scn"),
             let spikeNode = spikeScene.rootNode.childNode(withName: "spike", recursively: false)
+            else { return }
+        
+        guard let robotOpponentScene = SCNScene(named: "robot_c_e.scn"),
+            let robotOpponentNode = robotOpponentScene.rootNode.childNode(withName: "robot_c_e", recursively: false)
             else { return }
         
         for i in 0...ARCameraMultiplayerViewController.positionArray.count-1 {
@@ -286,10 +314,16 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
                 else if(number == "s") {
                     robotNode2 = robotNode.copy() as!SCNNode
                     robotNode2.position = SCNVector3(x,y-0.387,z)
-                    if(ARCameraMultiplayerViewController.programSequence != nil) {
-//                        node.runAction(ARCameraMultiplayerViewController.programSequence)
-                    }
                     sceneView.scene.rootNode.addChildNode(robotNode2)
+                    
+                    pointerNode2 = pointerNode.copy() as!SCNNode
+                    pointerNode2.position = SCNVector3(x+0.1,y,z)
+                    sceneView.scene.rootNode.addChildNode(pointerNode2)
+                }
+                else if(number == "x") {
+                    robotOpponentNode2 = robotOpponentNode.copy() as!SCNNode
+                    robotOpponentNode2.position = SCNVector3(x,y-0.387,z)
+                    sceneView.scene.rootNode.addChildNode(robotOpponentNode2)
                 }
                 else if(number == "*") {
                     collectibleNode2 = collectibleNode.copy() as!SCNNode
@@ -306,6 +340,7 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
             x = originalX
             z += 0.2
         }
+        sceneView.scene.rootNode.addChildNode(robotOpponentNode2)
     }
 }
 
