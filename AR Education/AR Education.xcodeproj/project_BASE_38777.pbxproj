@@ -1,0 +1,1037 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4177A90D4ADD75F66E96C9C8 /* Pods_AR_EducationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55E4D6E89022B6E99A09CA1 /* Pods_AR_EducationTests.framework */; };
+		8922E2BD2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8922E2BC2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift */; };
+		8922E2BF2054C834005FE311 /* ARCameraViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */; };
+		8922E2C02054D15E005FE311 /* Constants.swift in Resources */ = {isa = PBXBuildFile; fileRef = 89839E8B205483C900E0B705 /* Constants.swift */; };
+		892C8F362054D3E900E2EFF6 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F342054D3E900E2EFF6 /* AR.storyboard */; };
+		892C8F382054D41900E2EFF6 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C8F372054D41900E2EFF6 /* ProgramViewController.swift */; };
+		892C8F482054D44F00E2EFF6 /* spik.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F392054D44E00E2EFF6 /* spik.scn */; };
+		892C8F492054D44F00E2EFF6 /* wallc.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3A2054D44E00E2EFF6 /* wallc.scn */; };
+		892C8F4A2054D44F00E2EFF6 /* walle.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3B2054D44E00E2EFF6 /* walle.scn */; };
+		892C8F4B2054D44F00E2EFF6 /* wallf.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3C2054D44E00E2EFF6 /* wallf.scn */; };
+		892C8F4C2054D44F00E2EFF6 /* walla.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3D2054D44E00E2EFF6 /* walla.scn */; };
+		892C8F4D2054D44F00E2EFF6 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3E2054D44E00E2EFF6 /* ship.scn */; };
+		892C8F4E2054D44F00E2EFF6 /* collectibl.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3F2054D44E00E2EFF6 /* collectibl.scn */; };
+		892C8F4F2054D44F00E2EFF6 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F402054D44E00E2EFF6 /* ship.png */; };
+		892C8F502054D44F00E2EFF6 /* wallg.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F412054D44E00E2EFF6 /* wallg.scn */; };
+		892C8F512054D44F00E2EFF6 /* wallh.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F422054D44E00E2EFF6 /* wallh.scn */; };
+		892C8F522054D44F00E2EFF6 /* walli.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F432054D44E00E2EFF6 /* walli.scn */; };
+		892C8F532054D44F00E2EFF6 /* wallj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F442054D44E00E2EFF6 /* wallj.scn */; };
+		892C8F542054D44F00E2EFF6 /* walld.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F452054D44F00E2EFF6 /* walld.scn */; };
+		892C8F552054D44F00E2EFF6 /* wallb.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F462054D44F00E2EFF6 /* wallb.scn */; };
+		892C8F562054D44F00E2EFF6 /* robot_c.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F472054D44F00E2EFF6 /* robot_c.scn */; };
+		892C8F702054E4D800E2EFF6 /* menuBackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6B2054E4D700E2EFF6 /* menuBackground3.png */; };
+		892C8F712054E4D800E2EFF6 /* puzzleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6C2054E4D700E2EFF6 /* puzzleButton.png */; };
+		892C8F722054E4D800E2EFF6 /* menuBackground1.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6D2054E4D800E2EFF6 /* menuBackground1.png */; };
+		892C8F732054E4D800E2EFF6 /* duelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6E2054E4D800E2EFF6 /* duelButton.png */; };
+		892C8F742054E4D800E2EFF6 /* loadingWheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6F2054E4D800E2EFF6 /* loadingWheel.png */; };
+		8964D6372055250F00B254A0 /* Multiplayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8964D6362055250F00B254A0 /* Multiplayer.storyboard */; };
+		89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89839E7C2054601C00E0B705 /* GoogleService-Info.plist */; };
+		89839E882054775B00E0B705 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 89839E872054775B00E0B705 /* settings.png */; };
+		89839E8A20547A4800E0B705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8920547A4800E0B705 /* UIColor.swift */; };
+		89839E8C205483C900E0B705 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8B205483C900E0B705 /* Constants.swift */; };
+		89839E9320548CEA00E0B705 /* LevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E9220548CEA00E0B705 /* LevelsViewController.swift */; };
+		899422C8205556DF001BFE1D /* 1_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422BC205556DE001BFE1D /* 1_4.txt */; };
+		899422C9205556DF001BFE1D /* 1_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422BD205556DE001BFE1D /* 1_3.txt */; };
+		899422CA205556DF001BFE1D /* 2_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422BE205556DE001BFE1D /* 2_2.txt */; };
+		899422CB205556DF001BFE1D /* 2_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422BF205556DE001BFE1D /* 2_4.txt */; };
+		899422CC205556DF001BFE1D /* 2_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C0205556DE001BFE1D /* 2_1.txt */; };
+		899422CD205556DF001BFE1D /* 1_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C1205556DE001BFE1D /* 1_5.txt */; };
+		899422CE205556DF001BFE1D /* 2_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C2205556DE001BFE1D /* 2_3.txt */; };
+		899422CF205556DF001BFE1D /* 2_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C3205556DE001BFE1D /* 2_6.txt */; };
+		899422D0205556DF001BFE1D /* 2_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C4205556DF001BFE1D /* 2_5.txt */; };
+		899422D1205556DF001BFE1D /* 1_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C5205556DF001BFE1D /* 1_6.txt */; };
+		899422D2205556DF001BFE1D /* 1_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C6205556DF001BFE1D /* 1_2.txt */; };
+		899422D3205556DF001BFE1D /* 1_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C7205556DF001BFE1D /* 1_1.txt */; };
+		89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */; };
+		A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
+		A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2113A6420545CAD0084D4C4 /* Assets.xcassets */; };
+		A2113A7320545CAD0084D4C4 /* AR_EducationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7220545CAD0084D4C4 /* AR_EducationTests.swift */; };
+		A2113A7E20545CAD0084D4C4 /* AR_EducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */; };
+		A21A55B8205507B70010CF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
+		A21A55B9205507B70010CF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
+		A255BB0520550B760019033D /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */; };
+		A255BB0620550B770019033D /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */; };
+		A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFA620548895000EAF75 /* Main.storyboard */; };
+		A2C9AFAB20548895000EAF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFA820548895000EAF75 /* LaunchScreen.storyboard */; };
+		A2C9AFAF205488AF000EAF75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */; };
+		A2C9AFB0205488AF000EAF75 /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */; };
+		EBB18B9251567DE8D57D8FD6 /* Pods_AR_Education.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2113A6F20545CAD0084D4C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2113A5020545CAD0084D4C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2113A5720545CAD0084D4C4;
+			remoteInfo = "AR Education";
+		};
+		A2113A7A20545CAD0084D4C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2113A5020545CAD0084D4C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2113A5720545CAD0084D4C4;
+			remoteInfo = "AR Education";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E798E7165CEB1B4C744192 /* Pods-AR EducationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationUITests/Pods-AR EducationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_EducationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3393164AECA7458DFE9CAD /* Pods-AR EducationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests.release.xcconfig"; sourceTree = "<group>"; };
+		8922E2BC2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		892C8F352054D3E900E2EFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/AR.storyboard"; sourceTree = SOURCE_ROOT; };
+		892C8F372054D41900E2EFF6 /* ProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramViewController.swift; path = "AR Education/Controllers/ProgramViewController.swift"; sourceTree = SOURCE_ROOT; };
+		892C8F392054D44E00E2EFF6 /* spik.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = spik.scn; path = "AR Education/3D Objects/spik.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3A2054D44E00E2EFF6 /* wallc.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallc.scn; path = "AR Education/3D Objects/wallc.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3B2054D44E00E2EFF6 /* walle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = walle.scn; path = "AR Education/3D Objects/walle.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3C2054D44E00E2EFF6 /* wallf.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallf.scn; path = "AR Education/3D Objects/wallf.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3D2054D44E00E2EFF6 /* walla.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = walla.scn; path = "AR Education/3D Objects/walla.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3E2054D44E00E2EFF6 /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ship.scn; path = "AR Education/3D Objects/ship.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3F2054D44E00E2EFF6 /* collectibl.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = collectibl.scn; path = "AR Education/3D Objects/collectibl.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F402054D44E00E2EFF6 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship.png; path = "AR Education/3D Objects/ship.png"; sourceTree = SOURCE_ROOT; };
+		892C8F412054D44E00E2EFF6 /* wallg.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallg.scn; path = "AR Education/3D Objects/wallg.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F422054D44E00E2EFF6 /* wallh.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallh.scn; path = "AR Education/3D Objects/wallh.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F432054D44E00E2EFF6 /* walli.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = walli.scn; path = "AR Education/3D Objects/walli.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F442054D44E00E2EFF6 /* wallj.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallj.scn; path = "AR Education/3D Objects/wallj.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F452054D44F00E2EFF6 /* walld.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = walld.scn; path = "AR Education/3D Objects/walld.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F462054D44F00E2EFF6 /* wallb.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallb.scn; path = "AR Education/3D Objects/wallb.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F472054D44F00E2EFF6 /* robot_c.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = robot_c.scn; path = "AR Education/3D Objects/robot_c.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F6B2054E4D700E2EFF6 /* menuBackground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuBackground3.png; sourceTree = "<group>"; };
+		892C8F6C2054E4D700E2EFF6 /* puzzleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puzzleButton.png; sourceTree = "<group>"; };
+		892C8F6D2054E4D800E2EFF6 /* menuBackground1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuBackground1.png; sourceTree = "<group>"; };
+		892C8F6E2054E4D800E2EFF6 /* duelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = duelButton.png; sourceTree = "<group>"; };
+		892C8F6F2054E4D800E2EFF6 /* loadingWheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingWheel.png; sourceTree = "<group>"; };
+		8964D6362055250F00B254A0 /* Multiplayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Multiplayer.storyboard; sourceTree = "<group>"; };
+		89839E7C2054601C00E0B705 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		89839E872054775B00E0B705 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		89839E8920547A4800E0B705 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		89839E8B205483C900E0B705 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		89839E902054852C00E0B705 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89839E9220548CEA00E0B705 /* LevelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelsViewController.swift; path = "AR Education/Controllers/LevelsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		899422BC205556DE001BFE1D /* 1_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 1_4.txt; path = levels/1_4.txt; sourceTree = SOURCE_ROOT; };
+		899422BD205556DE001BFE1D /* 1_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 1_3.txt; path = levels/1_3.txt; sourceTree = SOURCE_ROOT; };
+		899422BE205556DE001BFE1D /* 2_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 2_2.txt; path = levels/2_2.txt; sourceTree = SOURCE_ROOT; };
+		899422BF205556DE001BFE1D /* 2_4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 2_4.txt; path = levels/2_4.txt; sourceTree = SOURCE_ROOT; };
+		899422C0205556DE001BFE1D /* 2_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 2_1.txt; path = levels/2_1.txt; sourceTree = SOURCE_ROOT; };
+		899422C1205556DE001BFE1D /* 1_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 1_5.txt; path = levels/1_5.txt; sourceTree = SOURCE_ROOT; };
+		899422C2205556DE001BFE1D /* 2_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 2_3.txt; path = levels/2_3.txt; sourceTree = SOURCE_ROOT; };
+		899422C3205556DE001BFE1D /* 2_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 2_6.txt; path = levels/2_6.txt; sourceTree = SOURCE_ROOT; };
+		899422C4205556DF001BFE1D /* 2_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 2_5.txt; path = levels/2_5.txt; sourceTree = SOURCE_ROOT; };
+		899422C5205556DF001BFE1D /* 1_6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 1_6.txt; path = levels/1_6.txt; sourceTree = SOURCE_ROOT; };
+		899422C6205556DF001BFE1D /* 1_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 1_2.txt; path = levels/1_2.txt; sourceTree = SOURCE_ROOT; };
+		899422C7205556DF001BFE1D /* 1_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 1_1.txt; path = levels/1_1.txt; sourceTree = SOURCE_ROOT; };
+		A2113A5820545CAD0084D4C4 /* AR Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2113A6420545CAD0084D4C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2113A6720545CAD0084D4C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2113A6E20545CAD0084D4C4 /* AR EducationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR EducationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2113A7220545CAD0084D4C4 /* AR_EducationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_EducationTests.swift; sourceTree = "<group>"; };
+		A2113A7420545CAD0084D4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2113A7920545CAD0084D4C4 /* AR EducationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR EducationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_EducationUITests.swift; sourceTree = "<group>"; };
+		A2113A7F20545CAD0084D4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C9AFA720548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		A2C9AFA920548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "AR Education/Controllers/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARCameraViewController.swift; path = "AR Education/Controllers/ARCameraViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Education.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Education/Pods-AR Education.debug.xcconfig"; sourceTree = "<group>"; };
+		C2E029B5B9CEB0357CB827B7 /* Pods-AR EducationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Education.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55E4D6E89022B6E99A09CA1 /* Pods_AR_EducationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_EducationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AFDF23DFBDC955D6D08DCE /* Pods-AR EducationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationUITests/Pods-AR EducationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1AC562C2F02BEF55476D16D /* Pods-AR Education.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Education.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR Education/Pods-AR Education.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2113A5520545CAD0084D4C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB18B9251567DE8D57D8FD6 /* Pods_AR_Education.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2113A6B20545CAD0084D4C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4177A90D4ADD75F66E96C9C8 /* Pods_AR_EducationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2113A7620545CAD0084D4C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10AB583A6809F23DBEDA6495 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */,
+				F1AC562C2F02BEF55476D16D /* Pods-AR Education.release.xcconfig */,
+				C2E029B5B9CEB0357CB827B7 /* Pods-AR EducationTests.debug.xcconfig */,
+				3A3393164AECA7458DFE9CAD /* Pods-AR EducationTests.release.xcconfig */,
+				F0AFDF23DFBDC955D6D08DCE /* Pods-AR EducationUITests.debug.xcconfig */,
+				04E798E7165CEB1B4C744192 /* Pods-AR EducationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		170B4949F0F74B5A2399CEA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */,
+				E55E4D6E89022B6E99A09CA1 /* Pods_AR_EducationTests.framework */,
+				2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89839E842054769900E0B705 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				892C8F6E2054E4D800E2EFF6 /* duelButton.png */,
+				892C8F6F2054E4D800E2EFF6 /* loadingWheel.png */,
+				892C8F6D2054E4D800E2EFF6 /* menuBackground1.png */,
+				892C8F6B2054E4D700E2EFF6 /* menuBackground3.png */,
+				892C8F6C2054E4D700E2EFF6 /* puzzleButton.png */,
+				89839E872054775B00E0B705 /* settings.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		89839E8D2054842C00E0B705 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				89839E902054852C00E0B705 /* Info.plist */,
+				89839E7C2054601C00E0B705 /* GoogleService-Info.plist */,
+				89839E8B205483C900E0B705 /* Constants.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		89839E982054A21300E0B705 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8922E2BC2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		899422BB205556C7001BFE1D /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				899422C7205556DF001BFE1D /* 1_1.txt */,
+				899422C6205556DF001BFE1D /* 1_2.txt */,
+				899422BD205556DE001BFE1D /* 1_3.txt */,
+				899422BC205556DE001BFE1D /* 1_4.txt */,
+				899422C1205556DE001BFE1D /* 1_5.txt */,
+				899422C5205556DF001BFE1D /* 1_6.txt */,
+				899422C0205556DE001BFE1D /* 2_1.txt */,
+				899422BE205556DE001BFE1D /* 2_2.txt */,
+				899422C2205556DE001BFE1D /* 2_3.txt */,
+				899422BF205556DE001BFE1D /* 2_4.txt */,
+				899422C4205556DF001BFE1D /* 2_5.txt */,
+				899422C3205556DE001BFE1D /* 2_6.txt */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		A2113A4F20545CAD0084D4C4 = {
+			isa = PBXGroup;
+			children = (
+				A2113A5A20545CAD0084D4C4 /* AR Education */,
+				A2113A7120545CAD0084D4C4 /* AR EducationTests */,
+				A2113A7C20545CAD0084D4C4 /* AR EducationUITests */,
+				A2113A5920545CAD0084D4C4 /* Products */,
+				10AB583A6809F23DBEDA6495 /* Pods */,
+				170B4949F0F74B5A2399CEA4 /* Frameworks */,
+				A2113AB12054868F0084D4C4 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		A2113A5920545CAD0084D4C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2113A5820545CAD0084D4C4 /* AR Education.app */,
+				A2113A6E20545CAD0084D4C4 /* AR EducationTests.xctest */,
+				A2113A7920545CAD0084D4C4 /* AR EducationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2113A5A20545CAD0084D4C4 /* AR Education */ = {
+			isa = PBXGroup;
+			children = (
+				A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */,
+				899422BB205556C7001BFE1D /* Levels */,
+				A2C9AFAC20548899000EAF75 /* Controllers */,
+				A2C9AFA52054887D000EAF75 /* Storyboard */,
+				89839E842054769900E0B705 /* Images */,
+				A2113A9620546FA30084D4C4 /* 3D Objects */,
+				A2113A6420545CAD0084D4C4 /* Assets.xcassets */,
+				89839E8D2054842C00E0B705 /* Supporting */,
+				89839E8920547A4800E0B705 /* UIColor.swift */,
+				89839E982054A21300E0B705 /* Models */,
+			);
+			path = "AR Education";
+			sourceTree = "<group>";
+		};
+		A2113A7120545CAD0084D4C4 /* AR EducationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2113A7220545CAD0084D4C4 /* AR_EducationTests.swift */,
+				A2113A7420545CAD0084D4C4 /* Info.plist */,
+			);
+			path = "AR EducationTests";
+			sourceTree = "<group>";
+		};
+		A2113A7C20545CAD0084D4C4 /* AR EducationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */,
+				A2113A7F20545CAD0084D4C4 /* Info.plist */,
+			);
+			path = "AR EducationUITests";
+			sourceTree = "<group>";
+		};
+		A2113A9620546FA30084D4C4 /* 3D Objects */ = {
+			isa = PBXGroup;
+			children = (
+				892C8F3F2054D44E00E2EFF6 /* collectibl.scn */,
+				892C8F472054D44F00E2EFF6 /* robot_c.scn */,
+				892C8F402054D44E00E2EFF6 /* ship.png */,
+				892C8F3E2054D44E00E2EFF6 /* ship.scn */,
+				892C8F392054D44E00E2EFF6 /* spik.scn */,
+				892C8F3D2054D44E00E2EFF6 /* walla.scn */,
+				892C8F462054D44F00E2EFF6 /* wallb.scn */,
+				892C8F3A2054D44E00E2EFF6 /* wallc.scn */,
+				892C8F452054D44F00E2EFF6 /* walld.scn */,
+				892C8F3B2054D44E00E2EFF6 /* walle.scn */,
+				892C8F3C2054D44E00E2EFF6 /* wallf.scn */,
+				892C8F412054D44E00E2EFF6 /* wallg.scn */,
+				892C8F422054D44E00E2EFF6 /* wallh.scn */,
+				892C8F432054D44E00E2EFF6 /* walli.scn */,
+				892C8F442054D44E00E2EFF6 /* wallj.scn */,
+			);
+			name = "3D Objects";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A2113AB12054868F0084D4C4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				A2113A6620545CAD0084D4C4 /* LaunchScreen.storyboard */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		A2C9AFA52054887D000EAF75 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8964D6362055250F00B254A0 /* Multiplayer.storyboard */,
+				A2C9AFA820548895000EAF75 /* LaunchScreen.storyboard */,
+				A2C9AFA620548895000EAF75 /* Main.storyboard */,
+				892C8F342054D3E900E2EFF6 /* AR.storyboard */,
+			);
+			name = Storyboard;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		A2C9AFAC20548899000EAF75 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				892C8F372054D41900E2EFF6 /* ProgramViewController.swift */,
+				A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */,
+				A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */,
+				89839E9220548CEA00E0B705 /* LevelsViewController.swift */,
+			);
+			name = Controllers;
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2113A5720545CAD0084D4C4 /* AR Education */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2113A8220545CAD0084D4C4 /* Build configuration list for PBXNativeTarget "AR Education" */;
+			buildPhases = (
+				B873CC0EDD041E956DF399CF /* [CP] Check Pods Manifest.lock */,
+				A2113A5420545CAD0084D4C4 /* Sources */,
+				A2113A5520545CAD0084D4C4 /* Frameworks */,
+				A2113A5620545CAD0084D4C4 /* Resources */,
+				234A4792B2E8C5562FB45031 /* [CP] Embed Pods Frameworks */,
+				CE61AD006BF85042416379A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AR Education";
+			productName = "AR Education";
+			productReference = A2113A5820545CAD0084D4C4 /* AR Education.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2113A6D20545CAD0084D4C4 /* AR EducationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2113A8520545CAD0084D4C4 /* Build configuration list for PBXNativeTarget "AR EducationTests" */;
+			buildPhases = (
+				7B75719DD296FE9F5311F1E9 /* [CP] Check Pods Manifest.lock */,
+				A2113A6A20545CAD0084D4C4 /* Sources */,
+				A2113A6B20545CAD0084D4C4 /* Frameworks */,
+				A2113A6C20545CAD0084D4C4 /* Resources */,
+				E56E325E2FE19C66822D9C44 /* [CP] Embed Pods Frameworks */,
+				6C446E2E577377BF3B658865 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2113A7020545CAD0084D4C4 /* PBXTargetDependency */,
+			);
+			name = "AR EducationTests";
+			productName = "AR EducationTests";
+			productReference = A2113A6E20545CAD0084D4C4 /* AR EducationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2113A7820545CAD0084D4C4 /* AR EducationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2113A8820545CAD0084D4C4 /* Build configuration list for PBXNativeTarget "AR EducationUITests" */;
+			buildPhases = (
+				C987552085440281E56890D1 /* [CP] Check Pods Manifest.lock */,
+				A2113A7520545CAD0084D4C4 /* Sources */,
+				A2113A7620545CAD0084D4C4 /* Frameworks */,
+				A2113A7720545CAD0084D4C4 /* Resources */,
+				395C1BB560CEFCB1E1E439C0 /* [CP] Embed Pods Frameworks */,
+				9C63C2B84C907A7A05C96831 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2113A7B20545CAD0084D4C4 /* PBXTargetDependency */,
+			);
+			name = "AR EducationUITests";
+			productName = "AR EducationUITests";
+			productReference = A2113A7920545CAD0084D4C4 /* AR EducationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2113A5020545CAD0084D4C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Mango Apps";
+				TargetAttributes = {
+					A2113A5720545CAD0084D4C4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A2113A6D20545CAD0084D4C4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A2113A5720545CAD0084D4C4;
+					};
+					A2113A7820545CAD0084D4C4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A2113A5720545CAD0084D4C4;
+					};
+				};
+			};
+			buildConfigurationList = A2113A5320545CAD0084D4C4 /* Build configuration list for PBXProject "AR Education" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2113A4F20545CAD0084D4C4;
+			productRefGroup = A2113A5920545CAD0084D4C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2113A5720545CAD0084D4C4 /* AR Education */,
+				A2113A6D20545CAD0084D4C4 /* AR EducationTests */,
+				A2113A7820545CAD0084D4C4 /* AR EducationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2113A5620545CAD0084D4C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8922E2C02054D15E005FE311 /* Constants.swift in Resources */,
+				8922E2BF2054C834005FE311 /* ARCameraViewController.swift in Resources */,
+				892C8F532054D44F00E2EFF6 /* wallj.scn in Resources */,
+				892C8F502054D44F00E2EFF6 /* wallg.scn in Resources */,
+				A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */,
+				892C8F712054E4D800E2EFF6 /* puzzleButton.png in Resources */,
+				899422CB205556DF001BFE1D /* 2_4.txt in Resources */,
+				892C8F4B2054D44F00E2EFF6 /* wallf.scn in Resources */,
+				A2C9AFAB20548895000EAF75 /* LaunchScreen.storyboard in Resources */,
+				899422CE205556DF001BFE1D /* 2_3.txt in Resources */,
+				892C8F542054D44F00E2EFF6 /* walld.scn in Resources */,
+				899422C8205556DF001BFE1D /* 1_4.txt in Resources */,
+				892C8F4D2054D44F00E2EFF6 /* ship.scn in Resources */,
+				899422CF205556DF001BFE1D /* 2_6.txt in Resources */,
+				A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */,
+				892C8F702054E4D800E2EFF6 /* menuBackground3.png in Resources */,
+				892C8F742054E4D800E2EFF6 /* loadingWheel.png in Resources */,
+				899422D0205556DF001BFE1D /* 2_5.txt in Resources */,
+				892C8F522054D44F00E2EFF6 /* walli.scn in Resources */,
+				892C8F482054D44F00E2EFF6 /* spik.scn in Resources */,
+				892C8F362054D3E900E2EFF6 /* AR.storyboard in Resources */,
+				899422CD205556DF001BFE1D /* 1_5.txt in Resources */,
+				892C8F562054D44F00E2EFF6 /* robot_c.scn in Resources */,
+				892C8F4F2054D44F00E2EFF6 /* ship.png in Resources */,
+				892C8F4C2054D44F00E2EFF6 /* walla.scn in Resources */,
+				89839E882054775B00E0B705 /* settings.png in Resources */,
+				892C8F512054D44F00E2EFF6 /* wallh.scn in Resources */,
+				892C8F552054D44F00E2EFF6 /* wallb.scn in Resources */,
+				892C8F722054E4D800E2EFF6 /* menuBackground1.png in Resources */,
+				899422CA205556DF001BFE1D /* 2_2.txt in Resources */,
+				899422D1205556DF001BFE1D /* 1_6.txt in Resources */,
+				899422D2205556DF001BFE1D /* 1_2.txt in Resources */,
+				892C8F4A2054D44F00E2EFF6 /* walle.scn in Resources */,
+				892C8F492054D44F00E2EFF6 /* wallc.scn in Resources */,
+				899422D3205556DF001BFE1D /* 1_1.txt in Resources */,
+				892C8F4E2054D44F00E2EFF6 /* collectibl.scn in Resources */,
+				899422CC205556DF001BFE1D /* 2_1.txt in Resources */,
+				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
+				892C8F732054E4D800E2EFF6 /* duelButton.png in Resources */,
+				899422C9205556DF001BFE1D /* 1_3.txt in Resources */,
+				8964D6372055250F00B254A0 /* Multiplayer.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2113A6C20545CAD0084D4C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2113A7720545CAD0084D4C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		234A4792B2E8C5562FB45031 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AR Education/Pods-AR Education-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Education/Pods-AR Education-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		395C1BB560CEFCB1E1E439C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR EducationUITests/Pods-AR EducationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C446E2E577377BF3B658865 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B75719DD296FE9F5311F1E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR EducationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C63C2B84C907A7A05C96831 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR EducationUITests/Pods-AR EducationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B873CC0EDD041E956DF399CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR Education-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C987552085440281E56890D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR EducationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE61AD006BF85042416379A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Education/Pods-AR Education-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56E325E2FE19C66822D9C44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2113A5420545CAD0084D4C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C9AFB0205488AF000EAF75 /* ARCameraViewController.swift in Sources */,
+				89839E8C205483C900E0B705 /* Constants.swift in Sources */,
+				89839E8A20547A4800E0B705 /* UIColor.swift in Sources */,
+				89839E9320548CEA00E0B705 /* LevelsViewController.swift in Sources */,
+				8922E2BD2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift in Sources */,
+				892C8F382054D41900E2EFF6 /* ProgramViewController.swift in Sources */,
+				A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */,
+				A2C9AFAF205488AF000EAF75 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2113A6A20545CAD0084D4C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A255BB0520550B760019033D /* ARCameraViewController.swift in Sources */,
+				A21A55B8205507B70010CF19 /* AppDelegate.swift in Sources */,
+				A2113A7320545CAD0084D4C4 /* AR_EducationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2113A7520545CAD0084D4C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A255BB0620550B770019033D /* ARCameraViewController.swift in Sources */,
+				A21A55B9205507B70010CF19 /* AppDelegate.swift in Sources */,
+				A2113A7E20545CAD0084D4C4 /* AR_EducationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2113A7020545CAD0084D4C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2113A5720545CAD0084D4C4 /* AR Education */;
+			targetProxy = A2113A6F20545CAD0084D4C4 /* PBXContainerItemProxy */;
+		};
+		A2113A7B20545CAD0084D4C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2113A5720545CAD0084D4C4 /* AR Education */;
+			targetProxy = A2113A7A20545CAD0084D4C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		892C8F342054D3E900E2EFF6 /* AR.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				892C8F352054D3E900E2EFF6 /* Base */,
+			);
+			name = AR.storyboard;
+			sourceTree = "<group>";
+		};
+		A2113A6620545CAD0084D4C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2113A6720545CAD0084D4C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A2C9AFA620548895000EAF75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2C9AFA720548895000EAF75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2C9AFA820548895000EAF75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2C9AFA920548895000EAF75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2113A8020545CAD0084D4C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2113A8120545CAD0084D4C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2113A8320545CAD0084D4C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84R2JMF96C;
+				INFOPLIST_FILE = "$(SRCROOT)/AR Education/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2113A8420545CAD0084D4C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1AC562C2F02BEF55476D16D /* Pods-AR Education.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84R2JMF96C;
+				INFOPLIST_FILE = "$(SRCROOT)/AR Education/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2113A8620545CAD0084D4C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2E029B5B9CEB0357CB827B7 /* Pods-AR EducationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65777GTD95;
+				INFOPLIST_FILE = "AR EducationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-EducationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR Education.app/AR Education";
+			};
+			name = Debug;
+		};
+		A2113A8720545CAD0084D4C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3393164AECA7458DFE9CAD /* Pods-AR EducationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65777GTD95;
+				INFOPLIST_FILE = "AR EducationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-EducationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR Education.app/AR Education";
+			};
+			name = Release;
+		};
+		A2113A8920545CAD0084D4C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0AFDF23DFBDC955D6D08DCE /* Pods-AR EducationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65777GTD95;
+				INFOPLIST_FILE = "AR EducationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-EducationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR Education";
+			};
+			name = Debug;
+		};
+		A2113A8A20545CAD0084D4C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E798E7165CEB1B4C744192 /* Pods-AR EducationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65777GTD95;
+				INFOPLIST_FILE = "AR EducationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-EducationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR Education";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2113A5320545CAD0084D4C4 /* Build configuration list for PBXProject "AR Education" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2113A8020545CAD0084D4C4 /* Debug */,
+				A2113A8120545CAD0084D4C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2113A8220545CAD0084D4C4 /* Build configuration list for PBXNativeTarget "AR Education" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2113A8320545CAD0084D4C4 /* Debug */,
+				A2113A8420545CAD0084D4C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2113A8520545CAD0084D4C4 /* Build configuration list for PBXNativeTarget "AR EducationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2113A8620545CAD0084D4C4 /* Debug */,
+				A2113A8720545CAD0084D4C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2113A8820545CAD0084D4C4 /* Build configuration list for PBXNativeTarget "AR EducationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2113A8920545CAD0084D4C4 /* Debug */,
+				A2113A8A20545CAD0084D4C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2113A5020545CAD0084D4C4 /* Project object */;
+}

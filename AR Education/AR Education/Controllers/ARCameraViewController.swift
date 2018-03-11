@@ -219,7 +219,10 @@ class ARCameraViewController: UIViewController {
                     collectibleNode2 = collectibleNode.copy() as!SCNNode
                     collectibleNode2.position = SCNVector3(x,y+0.075,z)
                     sceneView.scene.rootNode.addChildNode(collectibleNode2)
+<<<<<<< HEAD
+=======
                     
+>>>>>>> f0eceb3d9f6e1290750437233a8ebbc3d36ddaa6
                     if(ARCameraViewController.timeToCollectible != 0.0) {
                         DispatchQueue.main.asyncAfter(deadline: .now() + ARCameraViewController.timeToCollectible + 0.2) { // change 2 to desired number of seconds
                             self.collectibleNode2.removeFromParentNode()
