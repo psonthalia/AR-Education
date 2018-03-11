@@ -50,7 +50,6 @@
 		899422EC205572EA001BFE1D /* 2_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422E0205572EA001BFE1D /* 2_5.txt */; };
 		899422ED205572EA001BFE1D /* 1_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422E1205572EA001BFE1D /* 1_5.txt */; };
 		899422F12055786F001BFE1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 899422F02055786F001BFE1D /* GoogleService-Info.plist */; };
-		899422F320558733001BFE1D /* Multiplayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899422F220558733001BFE1D /* Multiplayer.storyboard */; };
 		899422F520558749001BFE1D /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899422F420558749001BFE1D /* MultiplayerViewController.swift */; };
 		899422F720558750001BFE1D /* ARCameraMultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899422F620558750001BFE1D /* ARCameraMultiplayerViewController.swift */; };
 		899422F920558CFB001BFE1D /* multiplayer.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422F820558CFB001BFE1D /* multiplayer.txt */; };
@@ -58,6 +57,7 @@
 		8994230A20558E9B001BFE1D /* pointr.scn in Resources */ = {isa = PBXBuildFile; fileRef = 8994230720558E6D001BFE1D /* pointr.scn */; };
 		8994230B20558E9B001BFE1D /* robot_c.scn in Resources */ = {isa = PBXBuildFile; fileRef = 8994230620558E64001BFE1D /* robot_c.scn */; };
 		8994230D205597A3001BFE1D /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 8994230C205597A3001BFE1D /* title.png */; };
+		8994231020559F6D001BFE1D /* Multiplayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8994230E20559F6D001BFE1D /* Multiplayer.storyboard */; };
 		89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */; };
 		A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2113A6420545CAD0084D4C4 /* Assets.xcassets */; };
@@ -136,7 +136,6 @@
 		899422E0205572EA001BFE1D /* 2_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2_5.txt; sourceTree = "<group>"; };
 		899422E1205572EA001BFE1D /* 1_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1_5.txt; sourceTree = "<group>"; };
 		899422F02055786F001BFE1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		899422F220558733001BFE1D /* Multiplayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Multiplayer.storyboard; path = ../../../../../../../Downloads/Multiplayer.storyboard; sourceTree = "<group>"; };
 		899422F420558749001BFE1D /* MultiplayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
 		899422F620558750001BFE1D /* ARCameraMultiplayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCameraMultiplayerViewController.swift; sourceTree = "<group>"; };
 		899422F820558CFB001BFE1D /* multiplayer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multiplayer.txt; sourceTree = "<group>"; };
@@ -144,6 +143,7 @@
 		8994230720558E6D001BFE1D /* pointr.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = pointr.scn; path = "AR Education/3D Objects/pointr.scn"; sourceTree = SOURCE_ROOT; };
 		8994230820558E79001BFE1D /* robot_c_e.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = robot_c_e.scn; path = "AR Education/3D Objects/robot_c_e.scn"; sourceTree = SOURCE_ROOT; };
 		8994230C205597A3001BFE1D /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		8994230F20559F6D001BFE1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/Multiplayer.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2113A5820545CAD0084D4C4 /* AR Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2113A6420545CAD0084D4C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -363,10 +363,10 @@
 		A2C9AFA52054887D000EAF75 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				899422F220558733001BFE1D /* Multiplayer.storyboard */,
 				A2C9AFA820548895000EAF75 /* LaunchScreen.storyboard */,
 				A2C9AFA620548895000EAF75 /* Main.storyboard */,
 				892C8F342054D3E900E2EFF6 /* AR.storyboard */,
+				8994230E20559F6D001BFE1D /* Multiplayer.storyboard */,
 			);
 			name = Storyboard;
 			path = "New Group1";
@@ -532,10 +532,10 @@
 				899422F12055786F001BFE1D /* GoogleService-Info.plist in Resources */,
 				899422E6205572EA001BFE1D /* 1_6.txt in Resources */,
 				892C8F4C2054D44F00E2EFF6 /* walla.scn in Resources */,
+				8994231020559F6D001BFE1D /* Multiplayer.storyboard in Resources */,
 				89839E882054775B00E0B705 /* settings.png in Resources */,
 				899422E7205572EA001BFE1D /* 1_1.txt in Resources */,
 				899422E5205572EA001BFE1D /* 2_6.txt in Resources */,
-				899422F320558733001BFE1D /* Multiplayer.storyboard in Resources */,
 				892C8F512054D44F00E2EFF6 /* wallh.scn in Resources */,
 				899422E2205572EA001BFE1D /* 1_2.txt in Resources */,
 				892C8F552054D44F00E2EFF6 /* wallb.scn in Resources */,
@@ -782,6 +782,14 @@
 				892C8F352054D3E900E2EFF6 /* Base */,
 			);
 			name = AR.storyboard;
+			sourceTree = "<group>";
+		};
+		8994230E20559F6D001BFE1D /* Multiplayer.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8994230F20559F6D001BFE1D /* Base */,
+			);
+			name = Multiplayer.storyboard;
 			sourceTree = "<group>";
 		};
 		A2113A6620545CAD0084D4C4 /* LaunchScreen.storyboard */ = {
