@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
-  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-03-10T23:15:32Z</created><keywords></keywords><modified>2018-03-10T23:15:32Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-03-10T23:42:13Z</created><keywords></keywords><modified>2018-03-10T23:42:13Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
   <library_materials>
     <material id="lambert1" name="lambert1">
       <instance_effect url="#lambert1-fx"/>
@@ -18,7 +18,7 @@
               <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
             </ambient>
             <diffuse>
-              <color sid="diffuse">0.400000  0.400000 0.400000 1.000000</color>
+              <color sid="diffuse">0.800000  0.800000 0.800000 1.000000</color>
             </diffuse>
             <transparent opaque="RGB_ZERO">
               <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
@@ -132,12 +132,12 @@
     </geometry>
   </library_geometries>
   <library_visual_scenes>
-    <visual_scene id="wa." name="wa.">
+    <visual_scene id="wa" name="wa">
       <node name="pCube1" id="pCube1" sid="pCube1"><matrix sid="matrix">0.050000 0.000000 0.000000 0.000000 0.000000 0.150000 0.000000 0.075000 0.000000 0.000000 0.200000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#pCube1-lib"><bind_material><technique_common><instance_material symbol="lambert1" target="#lambert1"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
       <extra><technique profile="MAX3D"><frame_rate>24.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.041667</start_time><end_time>8.333333</end_time></technique></extra>
     </visual_scene>
   </library_visual_scenes>
   <scene>
-    <instance_visual_scene url="#wa."></instance_visual_scene>
+    <instance_visual_scene url="#wa"></instance_visual_scene>
   </scene>
 </COLLADA>
