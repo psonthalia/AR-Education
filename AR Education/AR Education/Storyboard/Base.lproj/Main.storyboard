@@ -67,7 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="hTO-yn-hEw"/>
                     </view>
                     <navigationItem key="navigationItem" id="xid-tz-Ux7">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings.png" id="KIF-gl-R5g"/>
+                        <barButtonItem key="rightBarButtonItem" image="settings.png" id="KIF-gl-R5g"/>
                     </navigationItem>
                     <connections>
                         <outlet property="duelButton" destination="uZm-Iy-aQc" id="2qv-XG-BVh"/>
@@ -91,7 +91,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="154" id="Xb8-5U-yek" customClass="LevelsTableViewCell" customModule="AR_Education" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LevelsTableViewCell" rowHeight="154" id="Xb8-5U-yek" customClass="LevelsTableViewCell" customModule="AR_Education" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="154"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xb8-5U-yek" id="qWx-cx-uho">
@@ -109,7 +109,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="CPU-O2-724" secondAttribute="trailing" constant="50" id="5yc-hE-phT"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="CPU-O2-724" secondAttribute="trailing" constant="50" id="5yc-hE-phT"/>
                                                 <constraint firstItem="CPU-O2-724" firstAttribute="top" secondItem="qWx-cx-uho" secondAttribute="topMargin" id="Wps-nB-QLy"/>
                                                 <constraint firstItem="CPU-O2-724" firstAttribute="leading" secondItem="qWx-cx-uho" secondAttribute="leadingMargin" constant="50" id="XGA-E8-8Fn"/>
                                             </constraints>
