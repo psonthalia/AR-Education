@@ -105,25 +105,7 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="91" height="78"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlB-c7-36i">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <color key="backgroundColor" red="0.22745098039215686" green="0.31372549019607843" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="MXa-qc-9d7"/>
-                                                        <constraint firstAttribute="height" constant="50" id="b4V-2S-i23"/>
-                                                    </constraints>
-                                                    <state key="normal" title="Button"/>
-                                                </button>
-                                            </subviews>
                                         </view>
-                                        <constraints>
-                                            <constraint firstItem="LlB-c7-36i" firstAttribute="leading" secondItem="R0y-vA-0sV" secondAttribute="leading" id="Q1g-f0-PB3"/>
-                                            <constraint firstItem="LlB-c7-36i" firstAttribute="top" secondItem="R0y-vA-0sV" secondAttribute="top" id="xDi-y6-WcG"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="button" destination="LlB-c7-36i" id="LPJ-3u-NOw"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
