@@ -16,5 +16,6 @@ struct Constants {
         static let toAR = "toAR"
         static let toARCamera = "toARCamera"
         static let toMultiplayer = "toMultiplayer"
+        static let toARMultiplayerCamera = "toARMultiplayerCamera"
     }
 }

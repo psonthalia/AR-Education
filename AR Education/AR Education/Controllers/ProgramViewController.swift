@@ -77,6 +77,7 @@ class ProgramViewController: UIViewController {
         for number:Character in gridContents {
             if(number != "\n") {
                 positionArray[indexY].append(number)
+                print(number)
                 if(positionArray[indexY][indexX] == "s") {
                     originalPlayerX = indexX
                     originalPlayerY = indexY

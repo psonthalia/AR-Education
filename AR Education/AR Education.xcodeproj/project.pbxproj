@@ -34,7 +34,6 @@
 		892C8F732054E4D800E2EFF6 /* duelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6E2054E4D800E2EFF6 /* duelButton.png */; };
 		892C8F742054E4D800E2EFF6 /* loadingWheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6F2054E4D800E2EFF6 /* loadingWheel.png */; };
 		8964D6372055250F00B254A0 /* Multiplayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8964D6362055250F00B254A0 /* Multiplayer.storyboard */; };
-		89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89839E7C2054601C00E0B705 /* GoogleService-Info.plist */; };
 		89839E882054775B00E0B705 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 89839E872054775B00E0B705 /* settings.png */; };
 		89839E8A20547A4800E0B705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8920547A4800E0B705 /* UIColor.swift */; };
 		89839E8C205483C900E0B705 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8B205483C900E0B705 /* Constants.swift */; };
@@ -46,7 +45,9 @@
 		A2113A7E20545CAD0084D4C4 /* AR_EducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */; };
 		A21A55B8205507B70010CF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A21A55B9205507B70010CF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
-		A238098420552C7200D248BD /* Multiplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238098320552C7200D248BD /* Multiplayer.swift */; };
+		A238098420552C7200D248BD /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238098320552C7200D248BD /* MultiplayerViewController.swift */; };
+		A238098620553C8600D248BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A238098520553C8600D248BD /* GoogleService-Info.plist */; };
+		A2380988205551F200D248BD /* ARCameraMultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2380987205551F200D248BD /* ARCameraMultiplayerViewController.swift */; };
 		A255BB0520550B760019033D /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */; };
 		A255BB0620550B770019033D /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */; };
 		A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFA620548895000EAF75 /* Main.storyboard */; };
@@ -102,7 +103,6 @@
 		892C8F6E2054E4D800E2EFF6 /* duelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = duelButton.png; sourceTree = "<group>"; };
 		892C8F6F2054E4D800E2EFF6 /* loadingWheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingWheel.png; sourceTree = "<group>"; };
 		8964D6362055250F00B254A0 /* Multiplayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Multiplayer.storyboard; sourceTree = "<group>"; };
-		89839E7C2054601C00E0B705 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89839E872054775B00E0B705 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		89839E8920547A4800E0B705 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		89839E8B205483C900E0B705 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -119,7 +119,9 @@
 		A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_EducationUITests.swift; sourceTree = "<group>"; };
 		A2113A7F20545CAD0084D4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2113AA3205474050084D4C4 /* testGrid.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testGrid.txt; sourceTree = "<group>"; };
-		A238098320552C7200D248BD /* Multiplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplayer.swift; sourceTree = "<group>"; };
+		A238098320552C7200D248BD /* MultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
+		A238098520553C8600D248BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A2380987205551F200D248BD /* ARCameraMultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraMultiplayerViewController.swift; sourceTree = "<group>"; };
 		A2C9AFA720548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFA920548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "AR Education/Controllers/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -199,8 +201,8 @@
 		89839E8D2054842C00E0B705 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				A238098520553C8600D248BD /* GoogleService-Info.plist */,
 				89839E902054852C00E0B705 /* Info.plist */,
-				89839E7C2054601C00E0B705 /* GoogleService-Info.plist */,
 				89839E8B205483C900E0B705 /* Constants.swift */,
 			);
 			path = Supporting;
@@ -318,7 +320,8 @@
 		A2C9AFAC20548899000EAF75 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A238098320552C7200D248BD /* Multiplayer.swift */,
+				A2380987205551F200D248BD /* ARCameraMultiplayerViewController.swift */,
+				A238098320552C7200D248BD /* MultiplayerViewController.swift */,
 				892C8F372054D41900E2EFF6 /* ProgramViewController.swift */,
 				A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */,
 				A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */,
@@ -454,6 +457,7 @@
 				A2C9AFAB20548895000EAF75 /* LaunchScreen.storyboard in Resources */,
 				892C8F542054D44F00E2EFF6 /* walld.scn in Resources */,
 				892C8F4D2054D44F00E2EFF6 /* ship.scn in Resources */,
+				A238098620553C8600D248BD /* GoogleService-Info.plist in Resources */,
 				A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */,
 				892C8F702054E4D800E2EFF6 /* menuBackground3.png in Resources */,
 				892C8F742054E4D800E2EFF6 /* loadingWheel.png in Resources */,
@@ -470,7 +474,6 @@
 				892C8F4A2054D44F00E2EFF6 /* walle.scn in Resources */,
 				892C8F492054D44F00E2EFF6 /* wallc.scn in Resources */,
 				892C8F4E2054D44F00E2EFF6 /* collectibl.scn in Resources */,
-				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
 				A2C9AFB620548D5C000EAF75 /* testGrid.txt in Resources */,
 				892C8F732054E4D800E2EFF6 /* duelButton.png in Resources */,
 				8964D6372055250F00B254A0 /* Multiplayer.storyboard in Resources */,
@@ -653,9 +656,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C9AFB0205488AF000EAF75 /* ARCameraViewController.swift in Sources */,
+				A2380988205551F200D248BD /* ARCameraMultiplayerViewController.swift in Sources */,
 				89839E8C205483C900E0B705 /* Constants.swift in Sources */,
 				89839E8A20547A4800E0B705 /* UIColor.swift in Sources */,
-				A238098420552C7200D248BD /* Multiplayer.swift in Sources */,
+				A238098420552C7200D248BD /* MultiplayerViewController.swift in Sources */,
 				89839E9320548CEA00E0B705 /* LevelsViewController.swift in Sources */,
 				8922E2BD2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift in Sources */,
 				892C8F382054D41900E2EFF6 /* ProgramViewController.swift in Sources */,
