@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
-  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-03-11T00:50:15Z</created><keywords></keywords><modified>2018-03-11T00:50:15Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-03-11T01:10:33Z</created><keywords></keywords><modified>2018-03-11T01:10:33Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
   <library_materials>
     <material id="lambert1" name="lambert1">
       <instance_effect url="#lambert1-fx"/>
@@ -252,7 +252,7 @@
   </library_geometries>
   <library_visual_scenes>
     <visual_scene id="spike" name="spike">
-      <node name="pCone1" id="pCone1" sid="pCone1"><matrix sid="matrix">0.080000 0.000000 0.000000 0.000000 0.000000 0.080000 0.000000 0.080000 0.000000 0.000000 0.080000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#pCone1-lib"><bind_material><technique_common><instance_material symbol="lambert1" target="#lambert1"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <node name="pCone1" id="pCone1" sid="pCone1"><matrix sid="matrix">0.080000 0.000000 0.000000 0.000000 0.000000 0.080000 0.000000 0.000000 0.000000 0.000000 0.080000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#pCone1-lib"><bind_material><technique_common><instance_material symbol="lambert1" target="#lambert1"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
       <extra><technique profile="MAX3D"><frame_rate>24.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.041667</start_time><end_time>8.333333</end_time></technique></extra>
     </visual_scene>
   </library_visual_scenes>
