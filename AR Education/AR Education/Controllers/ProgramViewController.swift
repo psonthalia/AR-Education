@@ -109,7 +109,7 @@ class ProgramViewController: UIViewController {
             }
         }
         let hoverSequence = SCNAction.sequence(commandArray)
-        ViewController.programSequence = hoverSequence
+        ARCameraViewController.programSequence = hoverSequence
         self.performSegue(withIdentifier: Constants.Segue.toARCamera, sender: nil)
     }
 }

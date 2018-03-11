@@ -10,7 +10,7 @@ import UIKit
 import ARKit
 import Foundation
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ARCameraViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet weak var sceneView: ARSCNView!
     var gridContents:String = ""
@@ -59,7 +59,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     func addTapGestureToSceneView() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.setUpGrid(withGestureRecognizer:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARCameraViewController.setUpGrid(withGestureRecognizer:)))
         
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
@@ -187,7 +187,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 else if(number == "s") {
                     let node = robotNode.copy() as!SCNNode
                     node.position = SCNVector3(x,y-0.387,z)
-                    node.runAction(ViewController.programSequence)
+                    node.runAction(ARCameraViewController.programSequence)
                     sceneView.scene.rootNode.addChildNode(node)
                 }
                 else if(number == "*") {
