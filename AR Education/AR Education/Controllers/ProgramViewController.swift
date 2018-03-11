@@ -64,16 +64,22 @@ class ProgramViewController: UIViewController {
     }
     @objc func buildGrid() {
         var gridContents = ""
-        let fileName: String = convert(self.level)
-        print(fileName)
-        if let filepath = Bundle.main.path(forResource: fileName, ofType: "txt") {
-            do {
-                gridContents = try String(contentsOfFile: filepath)
-            } catch {
-                // contents could not be loaded
-            }
+        var fileName = ""
+        if(self.level == -1) {
+            gridContents = QRScannerViewController.customLevel!
         } else {
-            // example.txt not found!
+            fileName = convert(self.level)
+            
+            print(fileName)
+            if let filepath = Bundle.main.path(forResource: fileName, ofType: "txt") {
+                do {
+                    gridContents = try String(contentsOfFile: filepath)
+                } catch {
+                    // contents could not be loaded
+                }
+            } else {
+                // example.txt not found!
+            }
         }
         
         print(gridContents)

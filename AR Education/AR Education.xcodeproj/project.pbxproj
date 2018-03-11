@@ -51,7 +51,6 @@
 		899422EB205572EA001BFE1D /* 2_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422DF205572EA001BFE1D /* 2_2.txt */; };
 		899422EC205572EA001BFE1D /* 2_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422E0205572EA001BFE1D /* 2_5.txt */; };
 		899422ED205572EA001BFE1D /* 1_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422E1205572EA001BFE1D /* 1_5.txt */; };
-		899422EF205574F9001BFE1D /* custom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422EE205574F9001BFE1D /* custom.txt */; };
 		899422F12055786F001BFE1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 899422F02055786F001BFE1D /* GoogleService-Info.plist */; };
 		89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */; };
 		A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
@@ -132,7 +131,6 @@
 		899422DF205572EA001BFE1D /* 2_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2_2.txt; sourceTree = "<group>"; };
 		899422E0205572EA001BFE1D /* 2_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2_5.txt; sourceTree = "<group>"; };
 		899422E1205572EA001BFE1D /* 1_5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1_5.txt; sourceTree = "<group>"; };
-		899422EE205574F9001BFE1D /* custom.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = custom.txt; sourceTree = "<group>"; };
 		899422F02055786F001BFE1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2113A5820545CAD0084D4C4 /* AR Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -253,7 +251,6 @@
 				899422D8205572EA001BFE1D /* 2_4.txt */,
 				899422E0205572EA001BFE1D /* 2_5.txt */,
 				899422D9205572EA001BFE1D /* 2_6.txt */,
-				899422EE205574F9001BFE1D /* custom.txt */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -518,7 +515,6 @@
 				899422E7205572EA001BFE1D /* 1_1.txt in Resources */,
 				899422E5205572EA001BFE1D /* 2_6.txt in Resources */,
 				892C8F512054D44F00E2EFF6 /* wallh.scn in Resources */,
-				899422EF205574F9001BFE1D /* custom.txt in Resources */,
 				899422E2205572EA001BFE1D /* 1_2.txt in Resources */,
 				892C8F552054D44F00E2EFF6 /* wallb.scn in Resources */,
 				892C8F722054E4D800E2EFF6 /* menuBackground1.png in Resources */,

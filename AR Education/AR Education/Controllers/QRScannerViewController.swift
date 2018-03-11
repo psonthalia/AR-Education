@@ -15,6 +15,8 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
     
+    static var customLevel: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -91,19 +93,7 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
             if let text = metadataObj.stringValue {
                 print("QR Text: " + text)
                 
-                let file: String = "custom.txt"
-                if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-                    
-                    let fileURL = dir.appendingPathComponent(file)
-                    
-                    //writing
-                    do {
-                        try text.write(to: fileURL, atomically: false, encoding: .utf8)
-                    }
-                    catch {/* error handling here */}
-                    
-                }
-                
+                QRScannerViewController.customLevel = text
             }
         }
     }
