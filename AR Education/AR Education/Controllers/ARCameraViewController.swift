@@ -18,7 +18,8 @@ class ARCameraViewController: UIViewController {
     static var timeToCollectible = 0.0
     var displayPlane = true
     var collectibleNode2 = SCNNode()
-    
+    var pointerNode2 = SCNNode()
+
     var x:Float = 0.0
     var y:Float = 0.0
     var z:Float = 0.0
@@ -98,6 +99,10 @@ class ARCameraViewController: UIViewController {
  
         guard let robotScene = SCNScene(named: "robot_c.scn"),
             let robotNode = robotScene.rootNode.childNode(withName: "robot_combine", recursively: false)
+            else { return }
+        
+        guard let pointerScene = SCNScene(named: "pointr.scn"),
+            let pointerNode = pointerScene.rootNode.childNode(withName: "pointer", recursively: false)
             else { return }
         
         guard let waScene = SCNScene(named: "walla.scn"),
@@ -210,22 +215,32 @@ class ARCameraViewController: UIViewController {
                 else if(number == "s") {
                     let node = robotNode.copy() as!SCNNode
                     node.position = SCNVector3(x,y-0.387,z)
+                    pointerNode2 = pointerNode.copy() as! SCNNode
+                    pointerNode2.position = SCNVector3(x+0.05,y+0.05,z)
                     if(ARCameraViewController.programSequence != nil) {
                         node.runAction(ARCameraViewController.programSequence)
+                        pointerNode2.runAction(ARCameraViewController.programSequence)
                     }
                     sceneView.scene.rootNode.addChildNode(node)
+                    sceneView.scene.rootNode.addChildNode(pointerNode2)
                 }
                 else if(number == "*") {
                     collectibleNode2 = collectibleNode.copy() as!SCNNode
                     collectibleNode2.position = SCNVector3(x,y+0.075,z)
                     sceneView.scene.rootNode.addChildNode(collectibleNode2)
-<<<<<<< HEAD
-=======
                     
->>>>>>> f0eceb3d9f6e1290750437233a8ebbc3d36ddaa6
                     if(ARCameraViewController.timeToCollectible != 0.0) {
                         DispatchQueue.main.asyncAfter(deadline: .now() + ARCameraViewController.timeToCollectible + 0.2) { // change 2 to desired number of seconds
                             self.collectibleNode2.removeFromParentNode()
+                            
+                            let myalert = UIAlertController(title: "Congratulations!", message: "You have completed the level!", preferredStyle: UIAlertControllerStyle.alert)
+                            
+                            myalert.addAction(UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
+                                print("Selected")
+                            })
+                            
+                            self.present(myalert, animated: true)
+                            ARCameraViewController.timeToCollectible = 0.0
                         }
                     }
                 }

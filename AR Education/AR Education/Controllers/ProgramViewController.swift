@@ -29,6 +29,7 @@ class ProgramViewController: UIViewController {
         fixedSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
         fixedSpace.width = 20.0
         
+        
         self.navigationItem.rightBarButtonItems = [runButton, fixedSpace, viewLevelButton]
     }
 
@@ -46,6 +47,7 @@ class ProgramViewController: UIViewController {
         self.view.addGestureRecognizer(tap)
         
         codeView.text = "moveForward\nmoveForward\nmoveLeft\nmoveLeft\nmoveBackward\nmoveBackward\nmoveRight\nmoveRight"
+        
     }
     @objc func viewLevel() {
         viewLevelButton.isEnabled = true
@@ -91,7 +93,6 @@ class ProgramViewController: UIViewController {
         for number:Character in gridContents {
             if(number != " ") {
                 positionArray[indexY].append(number)
-                print(number)
                 if(positionArray[indexY][indexX] == "s") {
                     originalPlayerX = indexX
                     originalPlayerY = indexY

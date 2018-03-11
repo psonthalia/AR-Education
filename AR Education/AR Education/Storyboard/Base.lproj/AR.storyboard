@@ -24,14 +24,15 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="moveForward" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oL5-ER-0Ka">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="308"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="backgroundColor" red="0.22745098039215686" green="0.31372549019607843" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.67843137254901964" green="0.96078431372549022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0078431372549019607" green="0.16862745098039217" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="i6S-Hb-A1Y"/>
                     </view>
                     <toolbarItems/>
