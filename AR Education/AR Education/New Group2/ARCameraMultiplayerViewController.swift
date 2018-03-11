@@ -34,7 +34,10 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
     var ref: DatabaseReference!
     var postDict: [String] = []
     
+<<<<<<< HEAD
     @IBOutlet weak var codeLabel: UILabel!
+=======
+>>>>>>> 21bb891e9f01480bcf7acae31cc00b105f09f2a3
     var playerX = 0
     var playerZ = 0
     
@@ -45,7 +48,10 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         codeLabel.text = ARCameraMultiplayerViewController.code
+=======
+>>>>>>> 21bb891e9f01480bcf7acae31cc00b105f09f2a3
         if(ARCameraMultiplayerViewController.playerName == "player1") {
             playerX = 1
             playerZ = 1

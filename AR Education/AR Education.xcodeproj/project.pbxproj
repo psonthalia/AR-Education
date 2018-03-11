@@ -36,6 +36,18 @@
 		89839E8A20547A4800E0B705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8920547A4800E0B705 /* UIColor.swift */; };
 		89839E8C205483C900E0B705 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8B205483C900E0B705 /* Constants.swift */; };
 		89839E9320548CEA00E0B705 /* LevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E9220548CEA00E0B705 /* LevelsViewController.swift */; };
+<<<<<<< HEAD
+		899422C8205556DF001BFE1D /* 1_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422BC205556DE001BFE1D /* 1_4.txt */; };
+		899422C9205556DF001BFE1D /* 1_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422BD205556DE001BFE1D /* 1_3.txt */; };
+		899422CA205556DF001BFE1D /* 2_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422BE205556DE001BFE1D /* 2_2.txt */; };
+		899422CB205556DF001BFE1D /* 2_4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422BF205556DE001BFE1D /* 2_4.txt */; };
+		899422CD205556DF001BFE1D /* 1_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C1205556DE001BFE1D /* 1_5.txt */; };
+		899422CE205556DF001BFE1D /* 2_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C2205556DE001BFE1D /* 2_3.txt */; };
+		899422D0205556DF001BFE1D /* 2_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C4205556DF001BFE1D /* 2_5.txt */; };
+		899422D1205556DF001BFE1D /* 1_6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C5205556DF001BFE1D /* 1_6.txt */; };
+		899422D2205556DF001BFE1D /* 1_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C6205556DF001BFE1D /* 1_2.txt */; };
+		899422D3205556DF001BFE1D /* 1_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422C7205556DF001BFE1D /* 1_1.txt */; };
+=======
 		899422D520556813001BFE1D /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899422D420556813001BFE1D /* QRScannerViewController.swift */; };
 		899422E2205572EA001BFE1D /* 1_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422D6205572EA001BFE1D /* 1_2.txt */; };
 		899422E3205572EA001BFE1D /* 2_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422D7205572EA001BFE1D /* 2_3.txt */; };
@@ -50,6 +62,7 @@
 		899422EC205572EA001BFE1D /* 2_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422E0205572EA001BFE1D /* 2_5.txt */; };
 		899422ED205572EA001BFE1D /* 1_5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 899422E1205572EA001BFE1D /* 1_5.txt */; };
 		899422F12055786F001BFE1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 899422F02055786F001BFE1D /* GoogleService-Info.plist */; };
+<<<<<<< HEAD
 		899422F320558733001BFE1D /* Multiplayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899422F220558733001BFE1D /* Multiplayer.storyboard */; };
 		899422F520558749001BFE1D /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899422F420558749001BFE1D /* MultiplayerViewController.swift */; };
 		899422F720558750001BFE1D /* ARCameraMultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899422F620558750001BFE1D /* ARCameraMultiplayerViewController.swift */; };
@@ -57,6 +70,9 @@
 		8994230920558E9B001BFE1D /* robot_c_e.scn in Resources */ = {isa = PBXBuildFile; fileRef = 8994230820558E79001BFE1D /* robot_c_e.scn */; };
 		8994230A20558E9B001BFE1D /* pointr.scn in Resources */ = {isa = PBXBuildFile; fileRef = 8994230720558E6D001BFE1D /* pointr.scn */; };
 		8994230B20558E9B001BFE1D /* robot_c.scn in Resources */ = {isa = PBXBuildFile; fileRef = 8994230620558E64001BFE1D /* robot_c.scn */; };
+=======
+>>>>>>> f0eceb3d9f6e1290750437233a8ebbc3d36ddaa6
+>>>>>>> 21bb891e9f01480bcf7acae31cc00b105f09f2a3
 		89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */; };
 		A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2113A6420545CAD0084D4C4 /* Assets.xcassets */; };
@@ -64,6 +80,13 @@
 		A2113A7E20545CAD0084D4C4 /* AR_EducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */; };
 		A21A55B8205507B70010CF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A21A55B9205507B70010CF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
+		A238098420552C7200D248BD /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A238098320552C7200D248BD /* MultiplayerViewController.swift */; };
+		A238098620553C8600D248BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A238098520553C8600D248BD /* GoogleService-Info.plist */; };
+		A2380988205551F200D248BD /* ARCameraMultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2380987205551F200D248BD /* ARCameraMultiplayerViewController.swift */; };
+		A238098C2055693900D248BD /* robot_c_e.scn in Resources */ = {isa = PBXBuildFile; fileRef = A238098B2055693100D248BD /* robot_c_e.scn */; };
+		A238098E2055711000D248BD /* multiplayer.txt in Resources */ = {isa = PBXBuildFile; fileRef = A238098D2055711000D248BD /* multiplayer.txt */; };
+		A238099220557B1C00D248BD /* robot_c.scn in Resources */ = {isa = PBXBuildFile; fileRef = A238099120557AEE00D248BD /* robot_c.scn */; };
+		A238099620557B3600D248BD /* pointr.scn in Resources */ = {isa = PBXBuildFile; fileRef = A238099520557B3200D248BD /* pointr.scn */; };
 		A255BB0520550B760019033D /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */; };
 		A255BB0620550B770019033D /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */; };
 		A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFA620548895000EAF75 /* Main.storyboard */; };
@@ -152,6 +175,13 @@
 		A2113A7920545CAD0084D4C4 /* AR EducationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR EducationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_EducationUITests.swift; sourceTree = "<group>"; };
 		A2113A7F20545CAD0084D4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A238098320552C7200D248BD /* MultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
+		A238098520553C8600D248BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A2380987205551F200D248BD /* ARCameraMultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraMultiplayerViewController.swift; sourceTree = "<group>"; };
+		A238098B2055693100D248BD /* robot_c_e.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = robot_c_e.scn; path = "AR Education/3D Objects/robot_c_e.scn"; sourceTree = SOURCE_ROOT; };
+		A238098D2055711000D248BD /* multiplayer.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = multiplayer.txt; path = levels/multiplayer.txt; sourceTree = SOURCE_ROOT; };
+		A238099120557AEE00D248BD /* robot_c.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = robot_c.scn; path = "AR Education/3D Objects/robot_c.scn"; sourceTree = SOURCE_ROOT; };
+		A238099520557B3200D248BD /* pointr.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = pointr.scn; path = "AR Education/3D Objects/pointr.scn"; sourceTree = SOURCE_ROOT; };
 		A2C9AFA720548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFA920548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "AR Education/Controllers/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -231,8 +261,12 @@
 		89839E8D2054842C00E0B705 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				A238098520553C8600D248BD /* GoogleService-Info.plist */,
 				89839E902054852C00E0B705 /* Info.plist */,
+<<<<<<< HEAD
+=======
 				899422F02055786F001BFE1D /* GoogleService-Info.plist */,
+>>>>>>> f0eceb3d9f6e1290750437233a8ebbc3d36ddaa6
 				89839E8B205483C900E0B705 /* Constants.swift */,
 			);
 			path = Supporting;
@@ -249,6 +283,21 @@
 		899422BB205556C7001BFE1D /* Levels */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				A238098D2055711000D248BD /* multiplayer.txt */,
+				899422C7205556DF001BFE1D /* 1_1.txt */,
+				899422C6205556DF001BFE1D /* 1_2.txt */,
+				899422BD205556DE001BFE1D /* 1_3.txt */,
+				899422BC205556DE001BFE1D /* 1_4.txt */,
+				899422C1205556DE001BFE1D /* 1_5.txt */,
+				899422C5205556DF001BFE1D /* 1_6.txt */,
+				899422C0205556DE001BFE1D /* 2_1.txt */,
+				899422BE205556DE001BFE1D /* 2_2.txt */,
+				899422C2205556DE001BFE1D /* 2_3.txt */,
+				899422BF205556DE001BFE1D /* 2_4.txt */,
+				899422C4205556DF001BFE1D /* 2_5.txt */,
+				899422C3205556DE001BFE1D /* 2_6.txt */,
+=======
 				899422DB205572EA001BFE1D /* 1_1.txt */,
 				899422D6205572EA001BFE1D /* 1_2.txt */,
 				899422DD205572EA001BFE1D /* 1_3.txt */,
@@ -261,7 +310,11 @@
 				899422D8205572EA001BFE1D /* 2_4.txt */,
 				899422E0205572EA001BFE1D /* 2_5.txt */,
 				899422D9205572EA001BFE1D /* 2_6.txt */,
+<<<<<<< HEAD
 				899422F820558CFB001BFE1D /* multiplayer.txt */,
+=======
+>>>>>>> f0eceb3d9f6e1290750437233a8ebbc3d36ddaa6
+>>>>>>> 21bb891e9f01480bcf7acae31cc00b105f09f2a3
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -327,10 +380,16 @@
 		A2113A9620546FA30084D4C4 /* 3D Objects */ = {
 			isa = PBXGroup;
 			children = (
+				A238098B2055693100D248BD /* robot_c_e.scn */,
+				A238099520557B3200D248BD /* pointr.scn */,
+				A238099120557AEE00D248BD /* robot_c.scn */,
 				892C8F3F2054D44E00E2EFF6 /* collectibl.scn */,
+<<<<<<< HEAD
 				8994230820558E79001BFE1D /* robot_c_e.scn */,
 				8994230720558E6D001BFE1D /* pointr.scn */,
 				8994230620558E64001BFE1D /* robot_c.scn */,
+=======
+>>>>>>> 21bb891e9f01480bcf7acae31cc00b105f09f2a3
 				892C8F402054D44E00E2EFF6 /* ship.png */,
 				892C8F3E2054D44E00E2EFF6 /* ship.scn */,
 				892C8F392054D44E00E2EFF6 /* spik.scn */,
@@ -372,6 +431,8 @@
 		A2C9AFAC20548899000EAF75 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A2380987205551F200D248BD /* ARCameraMultiplayerViewController.swift */,
+				A238098320552C7200D248BD /* MultiplayerViewController.swift */,
 				892C8F372054D41900E2EFF6 /* ProgramViewController.swift */,
 				A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */,
 				A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */,
@@ -502,18 +563,34 @@
 			files = (
 				8922E2C02054D15E005FE311 /* Constants.swift in Resources */,
 				8922E2BF2054C834005FE311 /* ARCameraViewController.swift in Resources */,
+				A238098C2055693900D248BD /* robot_c_e.scn in Resources */,
 				892C8F532054D44F00E2EFF6 /* wallj.scn in Resources */,
 				892C8F502054D44F00E2EFF6 /* wallg.scn in Resources */,
 				A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */,
 				892C8F712054E4D800E2EFF6 /* puzzleButton.png in Resources */,
+<<<<<<< HEAD
+				A238099220557B1C00D248BD /* robot_c.scn in Resources */,
+				899422CB205556DF001BFE1D /* 2_4.txt in Resources */,
+=======
+>>>>>>> f0eceb3d9f6e1290750437233a8ebbc3d36ddaa6
 				892C8F4B2054D44F00E2EFF6 /* wallf.scn in Resources */,
 				899422ED205572EA001BFE1D /* 1_5.txt in Resources */,
 				899422E3205572EA001BFE1D /* 2_3.txt in Resources */,
 				A2C9AFAB20548895000EAF75 /* LaunchScreen.storyboard in Resources */,
+<<<<<<< HEAD
+				899422CE205556DF001BFE1D /* 2_3.txt in Resources */,
+				A238099620557B3600D248BD /* pointr.scn in Resources */,
+=======
 				899422E8205572EA001BFE1D /* 1_4.txt in Resources */,
+>>>>>>> f0eceb3d9f6e1290750437233a8ebbc3d36ddaa6
 				892C8F542054D44F00E2EFF6 /* walld.scn in Resources */,
 				892C8F4D2054D44F00E2EFF6 /* ship.scn in Resources */,
+<<<<<<< HEAD
+				A238098620553C8600D248BD /* GoogleService-Info.plist in Resources */,
+=======
+>>>>>>> f0eceb3d9f6e1290750437233a8ebbc3d36ddaa6
 				A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */,
+				A238098E2055711000D248BD /* multiplayer.txt in Resources */,
 				892C8F702054E4D800E2EFF6 /* menuBackground3.png in Resources */,
 				892C8F742054E4D800E2EFF6 /* loadingWheel.png in Resources */,
 				8994230920558E9B001BFE1D /* robot_c_e.scn in Resources */,
@@ -523,7 +600,15 @@
 				892C8F522054D44F00E2EFF6 /* walli.scn in Resources */,
 				892C8F482054D44F00E2EFF6 /* spik.scn in Resources */,
 				892C8F362054D3E900E2EFF6 /* AR.storyboard in Resources */,
+<<<<<<< HEAD
+				899422CD205556DF001BFE1D /* 1_5.txt in Resources */,
+=======
 				899422EC205572EA001BFE1D /* 2_5.txt in Resources */,
+<<<<<<< HEAD
+=======
+				892C8F562054D44F00E2EFF6 /* robot_c.scn in Resources */,
+>>>>>>> f0eceb3d9f6e1290750437233a8ebbc3d36ddaa6
+>>>>>>> 21bb891e9f01480bcf7acae31cc00b105f09f2a3
 				892C8F4F2054D44F00E2EFF6 /* ship.png in Resources */,
 				899422F920558CFB001BFE1D /* multiplayer.txt in Resources */,
 				899422F12055786F001BFE1D /* GoogleService-Info.plist in Resources */,
@@ -723,10 +808,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C9AFB0205488AF000EAF75 /* ARCameraViewController.swift in Sources */,
+<<<<<<< HEAD
 				899422F520558749001BFE1D /* MultiplayerViewController.swift in Sources */,
 				89839E8C205483C900E0B705 /* Constants.swift in Sources */,
 				89839E8A20547A4800E0B705 /* UIColor.swift in Sources */,
 				899422F720558750001BFE1D /* ARCameraMultiplayerViewController.swift in Sources */,
+=======
+				A2380988205551F200D248BD /* ARCameraMultiplayerViewController.swift in Sources */,
+				89839E8C205483C900E0B705 /* Constants.swift in Sources */,
+				89839E8A20547A4800E0B705 /* UIColor.swift in Sources */,
+				A238098420552C7200D248BD /* MultiplayerViewController.swift in Sources */,
+>>>>>>> 21bb891e9f01480bcf7acae31cc00b105f09f2a3
 				89839E9320548CEA00E0B705 /* LevelsViewController.swift in Sources */,
 				8922E2BD2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift in Sources */,
 				899422D520556813001BFE1D /* QRScannerViewController.swift in Sources */,
@@ -920,7 +1012,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84R2JMF96C;
+				DEVELOPMENT_TEAM = 65777GTD95;
 				INFOPLIST_FILE = "$(SRCROOT)/AR Education/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
@@ -936,7 +1028,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84R2JMF96C;
+				DEVELOPMENT_TEAM = 65777GTD95;
 				INFOPLIST_FILE = "$(SRCROOT)/AR Education/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
