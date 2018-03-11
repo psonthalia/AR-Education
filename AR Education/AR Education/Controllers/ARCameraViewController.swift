@@ -8,19 +8,26 @@
 
 import UIKit
 import ARKit
-import Foundation
 
-class ViewController: UIViewController {
+class ARCameraViewController: UIViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
     var gridContents:String = ""
     static var programSequence:SCNAction! = nil
+    static var positionArray: [[Character]] = []
+    static var timeToCollectible = 0.0
+    var displayPlane = true
+    var collectibleNode2 = SCNNode()
+    
+    var x:Float = 0.0
+    var y:Float = 0.0
+    var z:Float = 0.0
+    var originalX:Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addTapGestureToSceneView()
         configureLighting()
-        //        addCar()
         
         if let filepath = Bundle.main.path(forResource: "testGrid", ofType: "txt") {
             do {
@@ -58,30 +65,8 @@ class ViewController: UIViewController {
         sceneView.automaticallyUpdatesLighting = true
     }
     
-    //    func addCar(x: Float = 0, y: Float = 0, z: Float = -0.5) {
-    //        guard let carScene = SCNScene(named: "car.dae") else { return }
-    //        let carNode = SCNNode()
-    //        let carSceneChildNodes = carScene.rootNode.childNodes
-    //        for childNode in carSceneChildNodes {
-    //            carNode.addChildNode(childNode)
-    //        }
-    //        carNode.position = SCNVector3(x, y, z)
-    //        carNode.scale = SCNVector3(0.5, 0.5, 0.5)
-    //
-    //        let moveForward = SCNAction.move(by: SCNVector3(1.0, 0, 0), duration: 1)
-    //        let moveBack = SCNAction.move(by: SCNVector3(-1.0,0,0), duration: 1)
-    //        let waitAction = SCNAction.wait(duration: 0.25)
-    //        let hoverSequence = SCNAction.sequence([moveForward,waitAction,moveBack])
-    //        let loopSequence = SCNAction.repeatForever(hoverSequence)
-    //        carNode.runAction(loopSequence)
-    //
-    //        self.sceneView.scene.rootNode.addChildNode(carNode)
-    //
-    //        sceneView.scene.rootNode.addChildNode(carNode)
-    //    }
-    
     func addTapGestureToSceneView() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.addCar(withGestureRecognizer:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARCameraViewController.setUpGrid(withGestureRecognizer:)))
         
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
@@ -92,81 +77,75 @@ class ViewController: UIViewController {
         
         guard let hitTestResult = hitTestResults.first else { return }
         let translation = hitTestResult.worldTransform.translation
-        var x = translation.x
-        let y = translation.y
-        var z = translation.z
+        x = translation.x - 0.2
+        originalX = translation.x - 0.2
+        y = translation.y
+        z = translation.z - 1.2
         
-//        guard let shipScene = SCNScene(named: "ship.scn"),
-//            let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
-//            else { return }
-        
-        guard let robotScene = SCNScene(named: "robot_combine.scn"),
+        guard let robotScene = SCNScene(named: "robot_c.scn"),
             let robotNode = robotScene.rootNode.childNode(withName: "robot_combine", recursively: false)
             else { return }
         
-        guard let waScene = SCNScene(named: "wa.scn"),
+        guard let waScene = SCNScene(named: "walla.scn"),
             let waNode = waScene.rootNode.childNode(withName: "wa", recursively: false)
             else { return }
         
-        guard let wbScene = SCNScene(named: "wb.scn"),
+        guard let wbScene = SCNScene(named: "wallb.scn"),
             let wbNode = wbScene.rootNode.childNode(withName: "wb", recursively: false)
             else { return }
         
-        guard let wcScene = SCNScene(named: "wc.scn"),
+        guard let wcScene = SCNScene(named: "wallc.scn"),
             let wcNode = wcScene.rootNode.childNode(withName: "wc", recursively: false)
             else { return }
         
-        guard let wdScene = SCNScene(named: "wd.scn"),
+        guard let wdScene = SCNScene(named: "walld.scn"),
             let wdNode = wdScene.rootNode.childNode(withName: "wd", recursively: false)
             else { return }
         
-        guard let weScene = SCNScene(named: "we.scn"),
+        guard let weScene = SCNScene(named: "walle.scn"),
             let weNode = weScene.rootNode.childNode(withName: "we", recursively: false)
             else { return }
         
-        guard let wfScene = SCNScene(named: "wf.scn"),
+        guard let wfScene = SCNScene(named: "wallf.scn"),
             let wfNode = wfScene.rootNode.childNode(withName: "wf", recursively: false)
             else { return }
         
-        guard let wgScene = SCNScene(named: "wg.scn"),
+        guard let wgScene = SCNScene(named: "wallg.scn"),
             let wgNode = wgScene.rootNode.childNode(withName: "wg", recursively: false)
             else { return }
         
-        guard let whScene = SCNScene(named: "wh.scn"),
+        guard let whScene = SCNScene(named: "wallh.scn"),
             let whNode = whScene.rootNode.childNode(withName: "wh", recursively: false)
             else { return }
         
-        guard let wiScene = SCNScene(named: "wi.scn"),
+        guard let wiScene = SCNScene(named: "walli.scn"),
             let wiNode = wiScene.rootNode.childNode(withName: "wi", recursively: false)
             else { return }
         
-        guard let wjScene = SCNScene(named: "wj.scn"),
+        guard let wjScene = SCNScene(named: "wallj.scn"),
             let wjNode = wjScene.rootNode.childNode(withName: "wj", recursively: false)
             else { return }
         
-        guard let collectibleScene = SCNScene(named: "collectible.scn"),
+        guard let collectibleScene = SCNScene(named: "collectibl.scn"),
             let collectibleNode = collectibleScene.rootNode.childNode(withName: "collectible", recursively: false)
             else { return }
         
-        guard let spikeScene = SCNScene(named: "spike.scn"),
+        guard let spikeScene = SCNScene(named: "spik.scn"),
             let spikeNode = spikeScene.rootNode.childNode(withName: "spike", recursively: false)
             else { return }
         
-        for number:Character in gridContents {
-            if(number != "\n") {                
-//                if(number == "1") {
-//                    let shipNode2 = shipNode.copy() as!SCNNode
-//                    shipNode2.position = SCNVector3(x,y,z)
-//                    sceneView.scene.rootNode.addChildNode(shipNode2)
-//                }
+        for i in 0...ARCameraViewController.positionArray.count-1 {
+            for j in 0...ARCameraViewController.positionArray[i].count-1 {
+                let number = ARCameraViewController.positionArray[i][j]
+                displayPlane = false
                 if(number == "a") {
                     let node = waNode.copy() as!SCNNode
-                    node.position = SCNVector3(x,y,z)
+                    node.position = SCNVector3(x,y+0.075,z)
                     sceneView.scene.rootNode.addChildNode(node)
                 }
                 else if(number == "b") {
                     let node = wbNode.copy() as!SCNNode
-                    node.position = SCNVector3(x,y,z)
+                    node.position = SCNVector3(x,y+0.075,z)
                     sceneView.scene.rootNode.addChildNode(node)
                 }
                 else if(number == "c") {
@@ -216,51 +195,28 @@ class ViewController: UIViewController {
                 }
                 else if(number == "s") {
                     let node = robotNode.copy() as!SCNNode
-                    node.position = SCNVector3(x,y,z)
+                    node.position = SCNVector3(x,y-0.387,z)
+                    if(ARCameraViewController.programSequence != nil) {
+                        node.runAction(ARCameraViewController.programSequence)
+                    }
                     sceneView.scene.rootNode.addChildNode(node)
                 }
                 else if(number == "*") {
-                    let robotNode2 = collectibleNode.copy() as!SCNNode
-                    robotNode2.position = SCNVector3(x,y,z)
-                    sceneView.scene.rootNode.addChildNode(robotNode2)
+                    collectibleNode2 = collectibleNode.copy() as!SCNNode
+                    collectibleNode2.position = SCNVector3(x,y+0.075,z)
+                    sceneView.scene.rootNode.addChildNode(collectibleNode2)
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + ARCameraViewController.timeToCollectible + 0.2) { // change 2 to desired number of seconds
+                        self.collectibleNode2.removeFromParentNode()
+                    }
                 }
                 x += 0.2
-            } else {
-                x = translation.x
-                z += 0.2
             }
+            x = originalX
+            z += 0.2
         }
     }
-    
-    @objc func addCar(withGestureRecognizer recognizer: UIGestureRecognizer) {
-        setUpGrid(withGestureRecognizer: recognizer)
-        let tapLocation = recognizer.location(in: sceneView)
-        let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
-        
-        guard let hitTestResult = hitTestResults.first else { return }
-        let translation = hitTestResult.worldTransform.translation
-        let x = translation.x
-        let y = translation.y
-        let z = translation.z
-        
-        guard let carScene = SCNScene(named: "ship.scn"),
-            let carNode = carScene.rootNode.childNode(withName: "ship", recursively: false)
-            else { return }
-//
-//
-//        carNode.position = SCNVector3(x,y,z)
-//        let moveForward = SCNAction.move(by: SCNVector3(1.0, 0, 0), duration: 1)
-//        let moveBack = SCNAction.move(by: SCNVector3(-1.0,0,0), duration: 1)
-//        let waitAction = SCNAction.wait(duration: 0.25)
-//        let hoverSequence = SCNAction.sequence([moveForward,waitAction,moveBack])
-//        let loopSequence = SCNAction.repeatForever(hoverSequence)
-        carNode.runAction(ViewController.programSequence)
-//
-        sceneView.scene.rootNode.addChildNode(carNode)
-    }
-    
 }
-
 
 extension float4x4 {
     var translation: float3 {
@@ -275,33 +231,34 @@ extension UIColor {
     }
 }
 
-extension ViewController: ARSCNViewDelegate {
+extension ARCameraViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         // 1
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
-        
+
         // 2
         let width = CGFloat(planeAnchor.extent.x)
         let height = CGFloat(planeAnchor.extent.z)
         let plane = SCNPlane(width: width, height: height)
-        
+
         // 3
         plane.materials.first?.diffuse.contents = UIColor.transparentLightBlue
-        
+
         // 4
         let planeNode = SCNNode(geometry: plane)
-        
+
         // 5
         let x = CGFloat(planeAnchor.center.x)
         let y = CGFloat(planeAnchor.center.y)
         let z = CGFloat(planeAnchor.center.z)
         planeNode.position = SCNVector3(x,y,z)
         planeNode.eulerAngles.x = -.pi / 2
-        
+
         // 6
         node.addChildNode(planeNode)
     }
     
+
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         // 1
         guard let planeAnchor = anchor as?  ARPlaneAnchor,
@@ -315,6 +272,11 @@ extension ViewController: ARSCNViewDelegate {
         plane.width = width
         plane.height = height
         
+        if(displayPlane == false) {
+            plane.width = 0
+            plane.height = 0
+        }
+        
         // 3
         let x = CGFloat(planeAnchor.center.x)
         let y = CGFloat(planeAnchor.center.y)
@@ -322,4 +284,3 @@ extension ViewController: ARSCNViewDelegate {
         planeNode.position = SCNVector3(x, y, z)
     }
 }
-
