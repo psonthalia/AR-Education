@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2018-03-11T01:21:40Z</created><keywords></keywords><modified>2018-03-11T01:21:40Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_materials>
+    <material id="lambert1" name="lambert1">
+      <instance_effect url="#lambert1-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert1-fx" name="lambert1">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.800000  0.800000 0.800000 1.000000</color>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="wi-lib" name="wiMesh">
+      <mesh>
+        <source id="wi-POSITION">
+          <float_array id="wi-POSITION-array" count="48">
+-0.025000 0.000000 -0.025000
+-0.025000 0.000000 0.025000
+-0.025000 0.150000 -0.025000
+-0.025000 0.150000 0.025000
+0.100000 0.150000 -0.025000
+0.100000 0.150000 0.025000
+0.100000 0.000000 -0.025000
+0.100000 0.000000 0.025000
+-0.025000 0.000000 0.100000
+0.025000 0.000000 0.100000
+-0.025000 0.150000 0.100000
+0.025000 0.150000 0.100000
+-0.025000 0.150000 -0.100000
+0.025000 0.150000 -0.100000
+-0.025000 0.000000 -0.100000
+0.025000 0.000000 -0.100000
+</float_array>
+          <technique_common>
+            <accessor source="#wi-POSITION-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wi-Normal0">
+          <float_array id="wi-Normal0-array" count="216">
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+-1.000000 0.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#wi-Normal0-array" count="72" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="wi-UV0">
+          <float_array id="wi-UV0-array" count="56">
+0.375000 0.000000
+0.625000 0.000000
+0.625000 0.250000
+0.375000 0.250000
+0.625000 0.500000
+0.375000 0.500000
+0.625000 0.750000
+0.375000 0.750000
+0.625000 1.000000
+0.375000 1.000000
+0.875000 0.000000
+0.875000 0.250000
+0.125000 0.000000
+0.125000 0.250000
+0.375000 0.000000
+0.625000 0.000000
+0.625000 0.250000
+0.375000 0.250000
+0.625000 0.500000
+0.375000 0.500000
+0.625000 0.750000
+0.375000 0.750000
+0.625000 1.000000
+0.375000 1.000000
+0.875000 0.000000
+0.875000 0.250000
+0.125000 0.000000
+0.125000 0.250000
+</float_array>
+          <technique_common>
+            <accessor source="#wi-UV0-array" count="28" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="wi-VERTEX">
+          <input semantic="POSITION" source="#wi-POSITION"/>
+        </vertices>
+        <triangles count="24" material="lambert1"><input semantic="VERTEX" offset="0" source="#wi-VERTEX"/><input semantic="NORMAL" offset="1" source="#wi-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#wi-UV0"/><p> 3 0 2 0 1 0 1 2 1 0 3 0 3 4 2 2 5 3 5 6 4 2 7 3 3 8 2 2 9 3 5 10 4 4 11 5 7 12 6 4 13 5 5 14 4 4 15 5 7 16 6 6 17 7 1 18 8 6 19 7 7 20 6 6 21 7 1 22 8 0 23 9 5 24 11 3 25 2 1 26 1 5 27 11 1 28 1 7 29 10 0 30 0 2 31 3 6 32 12 6 33 12 2 34 3 4 35 13 10 36 17 8 37 14 11 38 16 11 39 16 8 40 14 9 41 15 11 42 16 13 43 18 10 44 17 10 45 17 13 46 18 12 47 19 14 48 21 12 49 19 15 50 20 15 51 20 12 52 19 13 53 18 8 54 23 14 55 21 9 56 22 9 57 22 14 58 21 15 59 20 11 60 16 9 61 15 13 62 25 9 63 15 15 64 24 13 65 25 10 66 17 14 67 26 8 68 14 14 69 26 10 70 17 12 71 27</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="wi" name="wi">
+      <node name="pCube1" id="pCube1" sid="pCube1"><matrix sid="matrix">0.000000 0.000000 0.125000 -0.037500 0.000000 0.150000 0.000000 0.075000 -0.050000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="transform1" id="transform1" sid="transform1"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>0.000000</visibility></technique></extra></node></node>
+      <node name="group" id="group" sid="group"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="pasted__pCube1" id="pasted__pCube1" sid="pasted__pCube1"><matrix sid="matrix">0.050000 0.000000 0.000000 0.000000 0.000000 0.150000 0.000000 0.075000 0.000000 0.000000 0.125000 0.037500 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="transform2" id="transform2" sid="transform2"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>0.000000</visibility></technique></extra></node></node></node>
+      <node name="pasted__pCube1_ncl1_1" id="pasted__pCube1_ncl1_1" sid="pasted__pCube1_ncl1_1"><matrix sid="matrix">0.000000 0.000000 -1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="polySurface1" id="polySurface1" sid="polySurface1"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 -0.075000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="transform5" id="transform5" sid="transform5"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>0.000000</visibility></technique></extra></node></node><node name="transform3" id="transform3" sid="transform3"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>0.000000</visibility></technique></extra></node></node>
+      <node name="pCube2" id="pCube2" sid="pCube2"><matrix sid="matrix">0.050000 0.000000 0.000000 0.000000 0.000000 0.150000 0.000000 0.075000 0.000000 0.000000 0.200000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="transform4" id="transform4" sid="transform4"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>0.000000</visibility></technique></extra></node></node>
+      <node name="wi" id="wi" sid="wi"><matrix sid="matrix">-1.000000 0.000000 0.000000 -0.000000 0.000000 1.000000 0.000000 0.000000 -0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#wi-lib"><bind_material><technique_common><instance_material symbol="lambert1" target="#lambert1"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>24.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.041667</start_time><end_time>8.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#wi"></instance_visual_scene>
+  </scene>
+</COLLADA>

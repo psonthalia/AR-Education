@@ -18,6 +18,8 @@ class ProgramViewController: UIViewController {
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tap)
+        
+        codeView.text = "moveForward\nmoveForward\nmoveLeft\nmoveLeft\nmoveBackward\nmoveBackward\nmoveRight\nmoveRight"
     }
     @objc func dismissKeyboard() {
         codeView.resignFirstResponder()
@@ -35,6 +37,15 @@ class ProgramViewController: UIViewController {
 //                let count:Double! = Double(lineArray[i].suffix(lineArray[i].count - 12))
                 commandArray.append(SCNAction.move(by: SCNVector3(0.1, 0, 0), duration: 0.2))
 //                print(count)
+            }
+            else if(lineArray[i].contains("moveBackward")) {
+                commandArray.append(SCNAction.move(by: SCNVector3(-0.1, 0, 0), duration: 0.2))
+            }
+            else if(lineArray[i].contains("moveLeft")) {
+                commandArray.append(SCNAction.move(by: SCNVector3(0, 0, 0.1), duration: 0.2))
+            }
+            else if(lineArray[i].contains("moveRight")) {
+                commandArray.append(SCNAction.move(by: SCNVector3(0.1, 0, -0.1), duration: 0.2))
             }
         }
         let hoverSequence = SCNAction.sequence(commandArray)
