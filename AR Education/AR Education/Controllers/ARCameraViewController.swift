@@ -77,11 +77,25 @@ class ARCameraViewController: UIViewController {
         
         guard let hitTestResult = hitTestResults.first else { return }
         let translation = hitTestResult.worldTransform.translation
+        x = translation.x - 1.2
+        originalX = translation.x - 1.2
+        y = translation.y
+        z = translation.z - 1.5
+        
+        /* iPhone X
         x = translation.x - 0.2
         originalX = translation.x - 0.2
         y = translation.y
         z = translation.z - 1.2
+        */
         
+        /*  iPhone 6s
+        x = translation.x - 1.2
+        originalX = translation.x - 1.2
+        y = translation.y
+        z = translation.z - 1.5
+        */
+ 
         guard let robotScene = SCNScene(named: "robot_c.scn"),
             let robotNode = robotScene.rootNode.childNode(withName: "robot_combine", recursively: false)
             else { return }
@@ -206,8 +220,10 @@ class ARCameraViewController: UIViewController {
                     collectibleNode2.position = SCNVector3(x,y+0.075,z)
                     sceneView.scene.rootNode.addChildNode(collectibleNode2)
                     
-                    DispatchQueue.main.asyncAfter(deadline: .now() + ARCameraViewController.timeToCollectible + 0.2) { // change 2 to desired number of seconds
-                        self.collectibleNode2.removeFromParentNode()
+                    if(ARCameraViewController.timeToCollectible != 0.0) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + ARCameraViewController.timeToCollectible + 0.2) { // change 2 to desired number of seconds
+                            self.collectibleNode2.removeFromParentNode()
+                        }
                     }
                 }
                 x += 0.2

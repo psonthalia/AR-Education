@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>948600128528-hjcktmb5k9pso1r705petehmremf0ich.apps.googleusercontent.com</string>
+	<string>989386350074-9vkjajst5uffapu4mi0ihupbgkdkggvs.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.948600128528-hjcktmb5k9pso1r705petehmremf0ich</string>
+	<string>com.googleusercontent.apps.989386350074-9vkjajst5uffapu4mi0ihupbgkdkggvs</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAPZa3rzrXiq-lokhCGUxiJDXDFS5nTFZc</string>
+	<string>AIzaSyCFDj9ySksKaVYCafVg60p0HTUC2KrVPE4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>948600128528</string>
+	<string>989386350074</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.hwang.College-Planner</string>
+	<string>Mango-Apps.AR-Education</string>
 	<key>PROJECT_ID</key>
-	<string>collegeplanner-e05b9</string>
+	<string>ar-education</string>
 	<key>STORAGE_BUCKET</key>
-	<string>collegeplanner-e05b9.appspot.com</string>
+	<string>ar-education.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:948600128528:ios:47da2fc7cc5e0a6d</string>
+	<string>1:989386350074:ios:f9b44cb74dd8acde</string>
 	<key>DATABASE_URL</key>
-	<string>https://collegeplanner-e05b9.firebaseio.com</string>
+	<string>https://ar-education.firebaseio.com</string>
 </dict>
 </plist>

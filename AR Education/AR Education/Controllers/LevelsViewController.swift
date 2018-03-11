@@ -15,6 +15,8 @@ class LevelsViewController: UIViewController, UICollectionViewDelegate, UICollec
 
     var lastLevel = 0
     
+    @IBOutlet weak var addButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +26,10 @@ class LevelsViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: Constants.Segue.toQR, sender: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
