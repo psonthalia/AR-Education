@@ -8,19 +8,20 @@
 
 import UIKit
 
-class LevelsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class LevelsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
-    let cellReuseIdentifier = "LevelsTableViewCell"
+    let cellReuseIdentifier = "LevelSelectCollectionViewCell"
+    let levels = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(LevelsTableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        self.collectionView.register(LevelSelectCollectionViewCell.self, forCellWithReuseIdentifier: cellReuseIdentifier)
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        //collectionView.delegate = self
+        //collectionView.dataSource = self
         
         // Do any additional setup after loading the view.
     }
@@ -30,36 +31,32 @@ class LevelsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Dispose of any resources that can be recreated.
     }
     
-    // number of rows in table view
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return levels
     }
     
-    
-    // create a cell for each table view row
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! LevelSelectCollectionViewCell
         
-        // create a new cell if needed or reuse an old one
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
+        cell.backgroundColor = UIColor(color: UIColor.Color.med)
         
+        //cell.button = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        //let title = "/(indexPath.item)"
+        //cell.button.setTitle(title, for: .normal)
+        //let color = UIColor(color: UIColor.Color.med)
+        //cell.button.setTitleColor(color, for: <#T##UIControlState#>)
         
         return cell
     }
     
+    // MARK: - UICollectionViewDelegate protocol
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // handle tap events
+        print("You selected cell #\(indexPath.item)!")
         self.performSegue(withIdentifier: Constants.Segue.toAR, sender: nil)
     }
     
-    
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        
-    }
     /*
     // MARK: - Navigation
 
