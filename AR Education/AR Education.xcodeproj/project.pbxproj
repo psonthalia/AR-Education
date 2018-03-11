@@ -27,7 +27,6 @@
 		A2C9AFAF205488AF000EAF75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */; };
 		A2C9AFB0205488AF000EAF75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ViewController.swift */; };
 		A2C9AFB620548D5C000EAF75 /* testGrid.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2113AA3205474050084D4C4 /* testGrid.txt */; };
-		A2C9AFBA20549848000EAF75 /* robot_combine.scn in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFB920549841000EAF75 /* robot_combine.scn */; };
 		A2C9AFBE2054A4CD000EAF75 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFBD2054A4CD000EAF75 /* ProgramViewController.swift */; };
 		EBB18B9251567DE8D57D8FD6 /* Pods_AR_Education.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */; };
 /* End PBXBuildFile section */
@@ -84,11 +83,13 @@
 		A21A553D2054AB170010CF19 /* wj.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wj.scn; sourceTree = "<group>"; };
 		A21A553E2054AB240010CF19 /* wh.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wh.scn; sourceTree = "<group>"; };
 		A21A553F2054AB2C0010CF19 /* wi.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wi.scn; sourceTree = "<group>"; };
+		A21A55462054AC000010CF19 /* collectible.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = collectible.scn; sourceTree = "<group>"; };
+		A21A55472054AC1E0010CF19 /* robot_combine.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = robot_combine.scn; sourceTree = "<group>"; };
+		A21A55482054AC330010CF19 /* spike.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = spike.scn; sourceTree = "<group>"; };
 		A2C9AFA720548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFA920548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "AR Education/Controllers/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
 		A2C9AFAE205488AE000EAF75 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "AR Education/Controllers/ViewController.swift"; sourceTree = SOURCE_ROOT; };
-		A2C9AFB920549841000EAF75 /* robot_combine.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = robot_combine.scn; sourceTree = "<group>"; };
 		A2C9AFBD2054A4CD000EAF75 /* ProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
 		A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Education.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Education/Pods-AR Education.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E029B5B9CEB0357CB827B7 /* Pods-AR EducationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -237,6 +238,9 @@
 			isa = PBXGroup;
 			children = (
 				A21A55362054AAC70010CF19 /* wa.scn */,
+				A21A55462054AC000010CF19 /* collectible.scn */,
+				A21A55472054AC1E0010CF19 /* robot_combine.scn */,
+				A21A55482054AC330010CF19 /* spike.scn */,
 				A21A55372054AADB0010CF19 /* wb.scn */,
 				A21A55382054AAE40010CF19 /* wc.scn */,
 				A21A55392054AAEC0010CF19 /* wd.scn */,
@@ -246,7 +250,6 @@
 				A21A553E2054AB240010CF19 /* wh.scn */,
 				A21A553F2054AB2C0010CF19 /* wi.scn */,
 				A21A553D2054AB170010CF19 /* wj.scn */,
-				A2C9AFB920549841000EAF75 /* robot_combine.scn */,
 				A2113A9720546FD80084D4C4 /* ship.png */,
 				A2113A9920546FD80084D4C4 /* ship.scn */,
 			);
@@ -408,7 +411,6 @@
 				89839E882054775B00E0B705 /* settings.png in Resources */,
 				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
 				A2C9AFB620548D5C000EAF75 /* testGrid.txt in Resources */,
-				A2C9AFBA20549848000EAF75 /* robot_combine.scn in Resources */,
 				A2113A9D20546FD80084D4C4 /* ship.scn in Resources */,
 				A2113A9B20546FD80084D4C4 /* ship.png in Resources */,
 			);
