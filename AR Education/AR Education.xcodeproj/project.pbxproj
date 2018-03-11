@@ -9,35 +9,35 @@
 /* Begin PBXBuildFile section */
 		4177A90D4ADD75F66E96C9C8 /* Pods_AR_EducationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55E4D6E89022B6E99A09CA1 /* Pods_AR_EducationTests.framework */; };
 		8922E2BD2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8922E2BC2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift */; };
-		8922E2BE2054C7DC005FE311 /* ProgramViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFBD2054A4CD000EAF75 /* ProgramViewController.swift */; };
 		8922E2BF2054C834005FE311 /* ViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ViewController.swift */; };
 		8922E2C02054D15E005FE311 /* Constants.swift in Resources */ = {isa = PBXBuildFile; fileRef = 89839E8B205483C900E0B705 /* Constants.swift */; };
+		892C8F362054D3E900E2EFF6 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F342054D3E900E2EFF6 /* AR.storyboard */; };
+		892C8F382054D41900E2EFF6 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C8F372054D41900E2EFF6 /* ProgramViewController.swift */; };
+		892C8F482054D44F00E2EFF6 /* spik.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F392054D44E00E2EFF6 /* spik.scn */; };
+		892C8F492054D44F00E2EFF6 /* wallc.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3A2054D44E00E2EFF6 /* wallc.scn */; };
+		892C8F4A2054D44F00E2EFF6 /* walle.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3B2054D44E00E2EFF6 /* walle.scn */; };
+		892C8F4B2054D44F00E2EFF6 /* wallf.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3C2054D44E00E2EFF6 /* wallf.scn */; };
+		892C8F4C2054D44F00E2EFF6 /* walla.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3D2054D44E00E2EFF6 /* walla.scn */; };
+		892C8F4D2054D44F00E2EFF6 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3E2054D44E00E2EFF6 /* ship.scn */; };
+		892C8F4E2054D44F00E2EFF6 /* collectibl.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F3F2054D44E00E2EFF6 /* collectibl.scn */; };
+		892C8F4F2054D44F00E2EFF6 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F402054D44E00E2EFF6 /* ship.png */; };
+		892C8F502054D44F00E2EFF6 /* wallg.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F412054D44E00E2EFF6 /* wallg.scn */; };
+		892C8F512054D44F00E2EFF6 /* wallh.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F422054D44E00E2EFF6 /* wallh.scn */; };
+		892C8F522054D44F00E2EFF6 /* walli.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F432054D44E00E2EFF6 /* walli.scn */; };
+		892C8F532054D44F00E2EFF6 /* wallj.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F442054D44E00E2EFF6 /* wallj.scn */; };
+		892C8F542054D44F00E2EFF6 /* walld.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F452054D44F00E2EFF6 /* walld.scn */; };
+		892C8F552054D44F00E2EFF6 /* wallb.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F462054D44F00E2EFF6 /* wallb.scn */; };
+		892C8F562054D44F00E2EFF6 /* robot_c.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F472054D44F00E2EFF6 /* robot_c.scn */; };
 		89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89839E7C2054601C00E0B705 /* GoogleService-Info.plist */; };
 		89839E882054775B00E0B705 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 89839E872054775B00E0B705 /* settings.png */; };
 		89839E8A20547A4800E0B705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8920547A4800E0B705 /* UIColor.swift */; };
 		89839E8C205483C900E0B705 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8B205483C900E0B705 /* Constants.swift */; };
 		89839E9320548CEA00E0B705 /* LevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E9220548CEA00E0B705 /* LevelsViewController.swift */; };
-		89839E95205496F200E0B705 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89839E94205496F200E0B705 /* AR.storyboard */; };
 		89D83970D0FC0350A91D59D6 /* Pods_AR_EducationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */; };
 		A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2113A6420545CAD0084D4C4 /* Assets.xcassets */; };
 		A2113A7320545CAD0084D4C4 /* AR_EducationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7220545CAD0084D4C4 /* AR_EducationTests.swift */; };
 		A2113A7E20545CAD0084D4C4 /* AR_EducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */; };
-		A2113A9B20546FD80084D4C4 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = A2113A9720546FD80084D4C4 /* ship.png */; };
-		A2113A9D20546FD80084D4C4 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = A2113A9920546FD80084D4C4 /* ship.scn */; };
-		A21A55AB2054C2DD0010CF19 /* robot_c.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A559F2054C25F0010CF19 /* robot_c.scn */; };
-		A21A55AC2054C2DD0010CF19 /* spik.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A02054C2690010CF19 /* spik.scn */; };
-		A21A55AD2054C2DD0010CF19 /* walla.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A12054C2720010CF19 /* walla.scn */; };
-		A21A55AE2054C2DD0010CF19 /* wallb.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A22054C27C0010CF19 /* wallb.scn */; };
-		A21A55AF2054C2DD0010CF19 /* wallc.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A32054C2870010CF19 /* wallc.scn */; };
-		A21A55B02054C2DD0010CF19 /* walld.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A42054C2930010CF19 /* walld.scn */; };
-		A21A55B12054C2DD0010CF19 /* walle.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A52054C29D0010CF19 /* walle.scn */; };
-		A21A55B22054C2DD0010CF19 /* wallf.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A62054C2A50010CF19 /* wallf.scn */; };
-		A21A55B32054C2DD0010CF19 /* wallg.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A72054C2AC0010CF19 /* wallg.scn */; };
-		A21A55B42054C2DD0010CF19 /* wallh.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A82054C2B50010CF19 /* wallh.scn */; };
-		A21A55B52054C2DD0010CF19 /* walli.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A92054C2C30010CF19 /* walli.scn */; };
-		A21A55B62054C2DD0010CF19 /* wallj.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55AA2054C2CF0010CF19 /* wallj.scn */; };
-		A21A55B72054C2E00010CF19 /* collectibl.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A559E2054C2580010CF19 /* collectibl.scn */; };
 		A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFA620548895000EAF75 /* Main.storyboard */; };
 		A2C9AFAB20548895000EAF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFA820548895000EAF75 /* LaunchScreen.storyboard */; };
 		A2C9AFAF205488AF000EAF75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */; };
@@ -68,13 +68,29 @@
 		2C7B0E87E8C8B7E262C6D903 /* Pods_AR_EducationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_EducationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3393164AECA7458DFE9CAD /* Pods-AR EducationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests.release.xcconfig"; sourceTree = "<group>"; };
 		8922E2BC2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		892C8F352054D3E900E2EFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/AR.storyboard"; sourceTree = SOURCE_ROOT; };
+		892C8F372054D41900E2EFF6 /* ProgramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgramViewController.swift; path = "AR Education/Controllers/ProgramViewController.swift"; sourceTree = SOURCE_ROOT; };
+		892C8F392054D44E00E2EFF6 /* spik.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = spik.scn; path = "AR Education/3D Objects/spik.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3A2054D44E00E2EFF6 /* wallc.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallc.scn; path = "AR Education/3D Objects/wallc.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3B2054D44E00E2EFF6 /* walle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = walle.scn; path = "AR Education/3D Objects/walle.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3C2054D44E00E2EFF6 /* wallf.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallf.scn; path = "AR Education/3D Objects/wallf.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3D2054D44E00E2EFF6 /* walla.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = walla.scn; path = "AR Education/3D Objects/walla.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3E2054D44E00E2EFF6 /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = ship.scn; path = "AR Education/3D Objects/ship.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F3F2054D44E00E2EFF6 /* collectibl.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = collectibl.scn; path = "AR Education/3D Objects/collectibl.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F402054D44E00E2EFF6 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship.png; path = "AR Education/3D Objects/ship.png"; sourceTree = SOURCE_ROOT; };
+		892C8F412054D44E00E2EFF6 /* wallg.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallg.scn; path = "AR Education/3D Objects/wallg.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F422054D44E00E2EFF6 /* wallh.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallh.scn; path = "AR Education/3D Objects/wallh.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F432054D44E00E2EFF6 /* walli.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = walli.scn; path = "AR Education/3D Objects/walli.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F442054D44E00E2EFF6 /* wallj.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallj.scn; path = "AR Education/3D Objects/wallj.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F452054D44F00E2EFF6 /* walld.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = walld.scn; path = "AR Education/3D Objects/walld.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F462054D44F00E2EFF6 /* wallb.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallb.scn; path = "AR Education/3D Objects/wallb.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F472054D44F00E2EFF6 /* robot_c.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = robot_c.scn; path = "AR Education/3D Objects/robot_c.scn"; sourceTree = SOURCE_ROOT; };
 		89839E7C2054601C00E0B705 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89839E872054775B00E0B705 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		89839E8920547A4800E0B705 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		89839E8B205483C900E0B705 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		89839E902054852C00E0B705 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89839E9220548CEA00E0B705 /* LevelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelsViewController.swift; path = "AR Education/Controllers/LevelsViewController.swift"; sourceTree = SOURCE_ROOT; };
-		89839E94205496F200E0B705 /* AR.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
 		A2113A5820545CAD0084D4C4 /* AR Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2113A6420545CAD0084D4C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,27 +101,11 @@
 		A2113A7920545CAD0084D4C4 /* AR EducationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR EducationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_EducationUITests.swift; sourceTree = "<group>"; };
 		A2113A7F20545CAD0084D4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2113A9720546FD80084D4C4 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
-		A2113A9920546FD80084D4C4 /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ship.scn; sourceTree = "<group>"; };
 		A2113AA3205474050084D4C4 /* testGrid.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testGrid.txt; sourceTree = "<group>"; };
-		A21A559E2054C2580010CF19 /* collectibl.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = collectibl.scn; sourceTree = "<group>"; };
-		A21A559F2054C25F0010CF19 /* robot_c.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = robot_c.scn; sourceTree = "<group>"; };
-		A21A55A02054C2690010CF19 /* spik.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = spik.scn; sourceTree = "<group>"; };
-		A21A55A12054C2720010CF19 /* walla.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = walla.scn; sourceTree = "<group>"; };
-		A21A55A22054C27C0010CF19 /* wallb.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallb.scn; sourceTree = "<group>"; };
-		A21A55A32054C2870010CF19 /* wallc.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallc.scn; sourceTree = "<group>"; };
-		A21A55A42054C2930010CF19 /* walld.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = walld.scn; sourceTree = "<group>"; };
-		A21A55A52054C29D0010CF19 /* walle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = walle.scn; sourceTree = "<group>"; };
-		A21A55A62054C2A50010CF19 /* wallf.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallf.scn; sourceTree = "<group>"; };
-		A21A55A72054C2AC0010CF19 /* wallg.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallg.scn; sourceTree = "<group>"; };
-		A21A55A82054C2B50010CF19 /* wallh.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallh.scn; sourceTree = "<group>"; };
-		A21A55A92054C2C30010CF19 /* walli.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = walli.scn; sourceTree = "<group>"; };
-		A21A55AA2054C2CF0010CF19 /* wallj.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallj.scn; sourceTree = "<group>"; };
 		A2C9AFA720548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFA920548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "AR Education/Controllers/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
 		A2C9AFAE205488AE000EAF75 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "AR Education/Controllers/ViewController.swift"; sourceTree = SOURCE_ROOT; };
-		A2C9AFBD2054A4CD000EAF75 /* ProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
 		A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Education.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Education/Pods-AR Education.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E029B5B9CEB0357CB827B7 /* Pods-AR EducationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR EducationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR EducationTests/Pods-AR EducationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3CA2638EA3242E5DCAC6713 /* Pods_AR_Education.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Education.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -252,21 +252,21 @@
 		A2113A9620546FA30084D4C4 /* 3D Objects */ = {
 			isa = PBXGroup;
 			children = (
-				A21A559E2054C2580010CF19 /* collectibl.scn */,
-				A21A559F2054C25F0010CF19 /* robot_c.scn */,
-				A21A55A02054C2690010CF19 /* spik.scn */,
-				A21A55A12054C2720010CF19 /* walla.scn */,
-				A21A55A22054C27C0010CF19 /* wallb.scn */,
-				A21A55A32054C2870010CF19 /* wallc.scn */,
-				A21A55A42054C2930010CF19 /* walld.scn */,
-				A21A55A52054C29D0010CF19 /* walle.scn */,
-				A21A55A62054C2A50010CF19 /* wallf.scn */,
-				A21A55A72054C2AC0010CF19 /* wallg.scn */,
-				A21A55A82054C2B50010CF19 /* wallh.scn */,
-				A21A55A92054C2C30010CF19 /* walli.scn */,
-				A21A55AA2054C2CF0010CF19 /* wallj.scn */,
-				A2113A9720546FD80084D4C4 /* ship.png */,
-				A2113A9920546FD80084D4C4 /* ship.scn */,
+				892C8F3F2054D44E00E2EFF6 /* collectibl.scn */,
+				892C8F472054D44F00E2EFF6 /* robot_c.scn */,
+				892C8F402054D44E00E2EFF6 /* ship.png */,
+				892C8F3E2054D44E00E2EFF6 /* ship.scn */,
+				892C8F392054D44E00E2EFF6 /* spik.scn */,
+				892C8F3D2054D44E00E2EFF6 /* walla.scn */,
+				892C8F462054D44F00E2EFF6 /* wallb.scn */,
+				892C8F3A2054D44E00E2EFF6 /* wallc.scn */,
+				892C8F452054D44F00E2EFF6 /* walld.scn */,
+				892C8F3B2054D44E00E2EFF6 /* walle.scn */,
+				892C8F3C2054D44E00E2EFF6 /* wallf.scn */,
+				892C8F412054D44E00E2EFF6 /* wallg.scn */,
+				892C8F422054D44E00E2EFF6 /* wallh.scn */,
+				892C8F432054D44E00E2EFF6 /* walli.scn */,
+				892C8F442054D44E00E2EFF6 /* wallj.scn */,
 			);
 			name = "3D Objects";
 			path = "New Group";
@@ -285,7 +285,7 @@
 			children = (
 				A2C9AFA820548895000EAF75 /* LaunchScreen.storyboard */,
 				A2C9AFA620548895000EAF75 /* Main.storyboard */,
-				89839E94205496F200E0B705 /* AR.storyboard */,
+				892C8F342054D3E900E2EFF6 /* AR.storyboard */,
 			);
 			name = Storyboard;
 			path = "New Group1";
@@ -294,7 +294,7 @@
 		A2C9AFAC20548899000EAF75 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A2C9AFBD2054A4CD000EAF75 /* ProgramViewController.swift */,
+				892C8F372054D41900E2EFF6 /* ProgramViewController.swift */,
 				A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */,
 				A2C9AFAE205488AE000EAF75 /* ViewController.swift */,
 				89839E9220548CEA00E0B705 /* LevelsViewController.swift */,
@@ -421,29 +421,28 @@
 			files = (
 				8922E2C02054D15E005FE311 /* Constants.swift in Resources */,
 				8922E2BF2054C834005FE311 /* ViewController.swift in Resources */,
-				8922E2BE2054C7DC005FE311 /* ProgramViewController.swift in Resources */,
+				892C8F532054D44F00E2EFF6 /* wallj.scn in Resources */,
+				892C8F502054D44F00E2EFF6 /* wallg.scn in Resources */,
 				A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */,
+				892C8F4B2054D44F00E2EFF6 /* wallf.scn in Resources */,
 				A2C9AFAB20548895000EAF75 /* LaunchScreen.storyboard in Resources */,
+				892C8F542054D44F00E2EFF6 /* walld.scn in Resources */,
+				892C8F4D2054D44F00E2EFF6 /* ship.scn in Resources */,
 				A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */,
-				89839E95205496F200E0B705 /* AR.storyboard in Resources */,
-				A21A55B72054C2E00010CF19 /* collectibl.scn in Resources */,
+				892C8F522054D44F00E2EFF6 /* walli.scn in Resources */,
+				892C8F482054D44F00E2EFF6 /* spik.scn in Resources */,
+				892C8F362054D3E900E2EFF6 /* AR.storyboard in Resources */,
+				892C8F562054D44F00E2EFF6 /* robot_c.scn in Resources */,
+				892C8F4F2054D44F00E2EFF6 /* ship.png in Resources */,
+				892C8F4C2054D44F00E2EFF6 /* walla.scn in Resources */,
 				89839E882054775B00E0B705 /* settings.png in Resources */,
-				A21A55AB2054C2DD0010CF19 /* robot_c.scn in Resources */,
-				A21A55AC2054C2DD0010CF19 /* spik.scn in Resources */,
-				A21A55AD2054C2DD0010CF19 /* walla.scn in Resources */,
-				A21A55AE2054C2DD0010CF19 /* wallb.scn in Resources */,
-				A21A55AF2054C2DD0010CF19 /* wallc.scn in Resources */,
-				A21A55B02054C2DD0010CF19 /* walld.scn in Resources */,
-				A21A55B12054C2DD0010CF19 /* walle.scn in Resources */,
-				A21A55B22054C2DD0010CF19 /* wallf.scn in Resources */,
-				A21A55B32054C2DD0010CF19 /* wallg.scn in Resources */,
-				A21A55B42054C2DD0010CF19 /* wallh.scn in Resources */,
-				A21A55B52054C2DD0010CF19 /* walli.scn in Resources */,
-				A21A55B62054C2DD0010CF19 /* wallj.scn in Resources */,
+				892C8F512054D44F00E2EFF6 /* wallh.scn in Resources */,
+				892C8F552054D44F00E2EFF6 /* wallb.scn in Resources */,
+				892C8F4A2054D44F00E2EFF6 /* walle.scn in Resources */,
+				892C8F492054D44F00E2EFF6 /* wallc.scn in Resources */,
+				892C8F4E2054D44F00E2EFF6 /* collectibl.scn in Resources */,
 				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
 				A2C9AFB620548D5C000EAF75 /* testGrid.txt in Resources */,
-				A2113A9D20546FD80084D4C4 /* ship.scn in Resources */,
-				A2113A9B20546FD80084D4C4 /* ship.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +626,7 @@
 				89839E8A20547A4800E0B705 /* UIColor.swift in Sources */,
 				89839E9320548CEA00E0B705 /* LevelsViewController.swift in Sources */,
 				8922E2BD2054B4EC005FE311 /* LevelSelectCollectionViewCell.swift in Sources */,
+				892C8F382054D41900E2EFF6 /* ProgramViewController.swift in Sources */,
 				A2113A5C20545CAD0084D4C4 /* AppDelegate.swift in Sources */,
 				A2C9AFAF205488AF000EAF75 /* HomeViewController.swift in Sources */,
 			);
@@ -664,6 +664,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		892C8F342054D3E900E2EFF6 /* AR.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				892C8F352054D3E900E2EFF6 /* Base */,
+			);
+			name = AR.storyboard;
+			sourceTree = "<group>";
+		};
 		A2113A6620545CAD0084D4C4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
