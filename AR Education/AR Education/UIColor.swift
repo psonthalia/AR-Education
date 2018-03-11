@@ -17,6 +17,14 @@ extension UIColor {
         brightest = 0xADF5FF
     }
     
+    convenience init(color: Color, opaque: CGFloat = 1.0) {
+        let color = color.rawValue
+        let red = (color & 0xFF0000) >> 16
+        let green = (color & 0x00FF00) >> 8
+        let blue = color & 0x0000FF
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: opaque)
+    }
     
 }
 
