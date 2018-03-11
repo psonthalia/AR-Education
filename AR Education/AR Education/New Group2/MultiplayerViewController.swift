@@ -17,8 +17,16 @@ class MultiplayerViewController: UIViewController {
     var originalPlayerX = 0
     var originalPlayerY = 0
     @IBOutlet weak var joinGameField: UITextField!
+    @IBOutlet weak var createGameButton: UIButton!
+    @IBOutlet weak var joinButton: UIButton!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        joinGameField.layer.cornerRadius = 10
+        createGameButton.layer.cornerRadius = 10
+        joinButton.layer.cornerRadius = 10
+        
         ref = Database.database().reference()
         buildGrid()
     }

@@ -22,6 +22,9 @@ class ProgramViewController: UIViewController {
     var level: Int = 0
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        codeView.layer.cornerRadius = 10
+        
         print("Level: \(level)")
         
         runButton = UIBarButtonItem(title: "Run", style: UIBarButtonItemStyle.plain, target: self, action: #selector(RunClicked))
@@ -46,7 +49,7 @@ class ProgramViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tap)
         
-        codeView.text = "moveForward\nmoveForward\nmoveLeft\nmoveLeft\nmoveBackward\nmoveBackward\nmoveRight\nmoveRight"
+        //codeView.text = "moveForward\nmoveForward\nmoveLeft\nmoveLeft\nmoveBackward\nmoveBackward\nmoveRight\nmoveRight"
         
     }
     @objc func viewLevel() {
