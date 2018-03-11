@@ -44,6 +44,9 @@
                                 <state key="normal" title="Duel" image="duelButton.png">
                                     <color key="titleColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="duelButtonTapped:" destination="acD-4l-gaY" eventType="touchUpInside" id="uc6-KX-qFI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.16862745098039217" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,11 +70,12 @@
                         <outlet property="duelButton" destination="uZm-Iy-aQc" id="2qv-XG-BVh"/>
                         <outlet property="puzzleButton" destination="SUF-t3-E7X" id="P7m-9E-QY1"/>
                         <segue destination="Yll-it-nei" kind="show" identifier="toPuzzle" id="QOp-5r-W14"/>
+                        <segue destination="tyg-Zt-g7l" kind="show" identifier="toMultiplayer" id="G8j-xd-e1s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rw-PT-ecA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-327.19999999999999" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-383" y="133"/>
         </scene>
         <!--Levels View Controller-->
         <scene sceneID="TPX-n6-kG5">
@@ -131,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lmo-hi-YeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="495.19999999999999" y="131.78410794602701"/>
+            <point key="canvasLocation" x="503" y="-16"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C3H-6c-nVx">
@@ -157,7 +161,15 @@
                 <viewControllerPlaceholder storyboardName="AR" id="tSe-36-fXo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgq-hL-kJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1282" y="133"/>
+            <point key="canvasLocation" x="1059" y="-17"/>
+        </scene>
+        <!--Multiplayer-->
+        <scene sceneID="662-Hh-Kve">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Multiplayer" id="tyg-Zt-g7l" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ian-TV-WaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="420"/>
         </scene>
     </scenes>
     <resources>

@@ -33,6 +33,7 @@
 		892C8F722054E4D800E2EFF6 /* menuBackground1.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6D2054E4D800E2EFF6 /* menuBackground1.png */; };
 		892C8F732054E4D800E2EFF6 /* duelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6E2054E4D800E2EFF6 /* duelButton.png */; };
 		892C8F742054E4D800E2EFF6 /* loadingWheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6F2054E4D800E2EFF6 /* loadingWheel.png */; };
+		8964D6372055250F00B254A0 /* Multiplayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8964D6362055250F00B254A0 /* Multiplayer.storyboard */; };
 		89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89839E7C2054601C00E0B705 /* GoogleService-Info.plist */; };
 		89839E882054775B00E0B705 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 89839E872054775B00E0B705 /* settings.png */; };
 		89839E8A20547A4800E0B705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8920547A4800E0B705 /* UIColor.swift */; };
@@ -99,6 +100,7 @@
 		892C8F6D2054E4D800E2EFF6 /* menuBackground1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuBackground1.png; sourceTree = "<group>"; };
 		892C8F6E2054E4D800E2EFF6 /* duelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = duelButton.png; sourceTree = "<group>"; };
 		892C8F6F2054E4D800E2EFF6 /* loadingWheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingWheel.png; sourceTree = "<group>"; };
+		8964D6362055250F00B254A0 /* Multiplayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Multiplayer.storyboard; sourceTree = "<group>"; };
 		89839E7C2054601C00E0B705 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89839E872054775B00E0B705 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		89839E8920547A4800E0B705 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 		A2C9AFA52054887D000EAF75 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				8964D6362055250F00B254A0 /* Multiplayer.storyboard */,
 				A2C9AFA820548895000EAF75 /* LaunchScreen.storyboard */,
 				A2C9AFA620548895000EAF75 /* Main.storyboard */,
 				892C8F342054D3E900E2EFF6 /* AR.storyboard */,
@@ -467,6 +470,7 @@
 				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
 				A2C9AFB620548D5C000EAF75 /* testGrid.txt in Resources */,
 				892C8F732054E4D800E2EFF6 /* duelButton.png in Resources */,
+				8964D6372055250F00B254A0 /* Multiplayer.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,7 +844,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65777GTD95;
+				DEVELOPMENT_TEAM = 84R2JMF96C;
 				INFOPLIST_FILE = "$(SRCROOT)/AR Education/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
@@ -856,7 +860,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65777GTD95;
+				DEVELOPMENT_TEAM = 84R2JMF96C;
 				INFOPLIST_FILE = "$(SRCROOT)/AR Education/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";

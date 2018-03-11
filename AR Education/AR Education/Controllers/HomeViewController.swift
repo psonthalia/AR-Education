@@ -33,11 +33,13 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        
         self.performSegue(withIdentifier: Constants.Segue.toPuzzle, sender: nil)
     }
     
-
+    @IBAction func duelButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: Constants.Segue.toMultiplayer, sender: nil)
+    }
+    
     /*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
