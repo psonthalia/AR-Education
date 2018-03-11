@@ -1,15 +1,16 @@
 //
-//  ViewController.swift
+//  ARCameraMultiplayerViewController.swift
 //  AR Education
 //
-//  Created by Paran Sonthalia on 3/10/18.
+//  Created by Paran Sonthalia on 3/11/18.
 //  Copyright © 2018 Mango Apps. All rights reserved.
 //
 
 import UIKit
 import ARKit
+import Firebase
 
-class ARCameraViewController: UIViewController {
+class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var sceneView: ARSCNView!
     var gridContents:String = ""
@@ -18,26 +19,68 @@ class ARCameraViewController: UIViewController {
     static var timeToCollectible = 0.0
     var displayPlane = true
     var collectibleNode2 = SCNNode()
-    
+    var robotNode2 = SCNNode()
+    var pointerNode2 = SCNNode()
+    var robotOpponentNode2 = SCNNode()
+
     var x:Float = 0.0
     var y:Float = 0.0
     var z:Float = 0.0
     var originalX:Float = 0.0
     
+    @IBOutlet weak var codeField: UITextField!
+    static var code = ""
+    static var playerName = ""
+    var ref: DatabaseReference!
+    var postDict: [String] = []
+    
+    var playerX = 0
+    var playerZ = 0
+    
+    var opponentX = 0
+    var opponentY = 0
+    
+    var movesCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(ARCameraMultiplayerViewController.playerName == "player1") {
+            playerX = 1
+            playerZ = 1
+            opponentX = 14
+            opponentY = 14
+        } else {
+            playerX = 14
+            playerZ = 14
+            opponentX = 1
+            opponentY = 1
+        }
         addTapGestureToSceneView()
         configureLighting()
         
-        if let filepath = Bundle.main.path(forResource: "testGrid", ofType: "txt") {
-            do {
-                gridContents = try String(contentsOfFile: filepath)
-            } catch {
-                // contents could not be loaded
-            }
+        codeField.delegate = self
+        
+        ref = Database.database().reference()
+        
+        var tempString = ""
+        if(ARCameraMultiplayerViewController.playerName == "player1") {
+            tempString = "player2"
         } else {
-            // example.txt not found!
+            tempString = "player1"
         }
+        var refHandler = ref.child(ARCameraMultiplayerViewController.code).child(tempString).observe(DataEventType.value, with: { (snapshot) in
+            self.postDict = snapshot.value as! [String]
+            if(self.postDict[self.postDict.count-1].contains("moveForward")) {
+                self.robotOpponentNode2.runAction(SCNAction.move(by: SCNVector3(0.2, 0, 0), duration: 0.5))
+            } else if(self.postDict[self.postDict.count-1].contains("moveBackward")) {
+                self.robotOpponentNode2.runAction(SCNAction.move(by: SCNVector3(-0.2, 0, 0), duration: 0.5))
+            } else if(self.postDict[self.postDict.count-1].contains("moveLeft")) {
+                self.robotOpponentNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, -0.2), duration: 0.5))
+            } else if(self.postDict[self.postDict.count-1].contains("moveRight")) {
+                self.robotOpponentNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, 0.2), duration: 0.5))
+            }
+            print(self.postDict)
+        })
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,10 +109,77 @@ class ARCameraViewController: UIViewController {
     }
     
     func addTapGestureToSceneView() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARCameraViewController.setUpGrid(withGestureRecognizer:)))
-        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ARCameraMultiplayerViewController.setUpGrid(withGestureRecognizer:)))
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        var array = postDict
+        let codeFieldText = codeField.text!
+        array.append(codeFieldText)
+        if(codeFieldText.contains("moveBackward")) {
+            //IF there's nothing in front of it, then:
+            if (0 <= playerZ-1 && (ARCameraMultiplayerViewController.positionArray[playerZ-1][playerX] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ-1][playerX] == "*")) {
+                robotNode2.runAction(SCNAction.move(by: SCNVector3(0.2, 0, 0), duration: 0.5))
+                pointerNode2.runAction(SCNAction.move(by: SCNVector3(0.2, 0, 0), duration: 0.5))
+                playerZ -= 1
+                if(ARCameraMultiplayerViewController.positionArray[playerZ][playerX] == "*") {
+                    //                    ARCameraViewController.timeToCollectible = timeToCollectible
+                }
+                self.ref.child(ARCameraMultiplayerViewController.code).updateChildValues([ARCameraMultiplayerViewController.playerName: array])
+                //                timeToCollectible += 0.5
+                
+            }
+        }
+            
+        else if(codeFieldText.contains("moveForward")) {
+            //IF nothing behind it, then:
+            print(ARCameraMultiplayerViewController.positionArray[playerZ+1][playerX])
+            if((ARCameraMultiplayerViewController.positionArray.count-1) >= (playerZ+1) && (ARCameraMultiplayerViewController.positionArray[playerZ+1][playerX] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ+1][playerX] == "*")) {
+                print("asdf2")
+                robotNode2.runAction(SCNAction.move(by: SCNVector3(-0.2, 0, 0), duration: 0.5))
+                pointerNode2.runAction(SCNAction.move(by: SCNVector3(-0.2, 0, 0), duration: 0.5))
+                playerZ += 1
+                if(ARCameraMultiplayerViewController.positionArray[playerZ][playerX] == "*") {
+                    //                    ARCameraViewController.timeToCollectible = timeToCollectible
+                }
+                self.ref.child(ARCameraMultiplayerViewController.code).updateChildValues([ARCameraMultiplayerViewController.playerName: array])
+                //                timeToCollectible += 0.5
+            }
+        }
+            
+        else if(codeFieldText.contains("moveRight")) {
+            print(ARCameraMultiplayerViewController.positionArray)
+            print(ARCameraMultiplayerViewController.positionArray.count)
+            
+            if(0 <= playerX-1 && (ARCameraMultiplayerViewController.positionArray[playerZ][playerX-1] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ][playerX-1] == "*")) {
+                robotNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, 0.2), duration: 0.5))
+                pointerNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, 0.2), duration: 0.5))
+                playerX -= 1
+                if(ARCameraMultiplayerViewController.positionArray[playerZ][playerX] == "*") {
+                    //                    ARCameraViewController.timeToCollectible = timeToCollectible
+                }
+                self.ref.child(ARCameraMultiplayerViewController.code).updateChildValues([ARCameraMultiplayerViewController.playerName: array])
+                //                timeToCollectible += 0.5
+            }
+        }
+            
+        else if(codeFieldText.contains("moveLeft")) {
+            if(ARCameraMultiplayerViewController.positionArray[playerZ].count-1 >= playerX+1 && (ARCameraMultiplayerViewController.positionArray[playerZ][playerX+1] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ][playerX+1] == "*")) {
+                robotNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, -0.2), duration: 0.5))
+                pointerNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, -0.2), duration: 0.5))
+                playerX += 1
+                if(ARCameraMultiplayerViewController.positionArray[playerZ][playerX] == "*") {
+                    //                    ARCameraViewController.timeToCollectible = timeToCollectible
+                }
+                self.ref.child(ARCameraMultiplayerViewController.code).updateChildValues([ARCameraMultiplayerViewController.playerName: array])
+                //                timeToCollectible += 0.5
+            }
+        }
+        
+        return true
+    }
+
     
     @objc func setUpGrid(withGestureRecognizer recognizer: UIGestureRecognizer) {
         let tapLocation = recognizer.location(in: sceneView)
@@ -77,27 +187,17 @@ class ARCameraViewController: UIViewController {
         
         guard let hitTestResult = hitTestResults.first else { return }
         let translation = hitTestResult.worldTransform.translation
-        x = translation.x - 1.2
-        originalX = translation.x - 1.2
+        x = translation.x - 0.5
+        originalX = translation.x - 0.5
         y = translation.y
-        z = translation.z - 1.5
+        z = translation.z - 2.0
         
-        /* iPhone X
-        x = translation.x - 0.2
-        originalX = translation.x - 0.2
-        y = translation.y
-        z = translation.z - 1.2
-        */
-        
-        /*  iPhone 6s
-        x = translation.x - 1.2
-        originalX = translation.x - 1.2
-        y = translation.y
-        z = translation.z - 1.5
-        */
- 
         guard let robotScene = SCNScene(named: "robot_c.scn"),
             let robotNode = robotScene.rootNode.childNode(withName: "robot_combine", recursively: false)
+            else { return }
+        
+        guard let pointerScene = SCNScene(named: "pointr.scn"),
+            let pointerNode = pointerScene.rootNode.childNode(withName: "pointer", recursively: false)
             else { return }
         
         guard let waScene = SCNScene(named: "walla.scn"),
@@ -148,9 +248,13 @@ class ARCameraViewController: UIViewController {
             let spikeNode = spikeScene.rootNode.childNode(withName: "spike", recursively: false)
             else { return }
         
-        for i in 0...ARCameraViewController.positionArray.count-1 {
-            for j in 0...ARCameraViewController.positionArray[i].count-1 {
-                let number = ARCameraViewController.positionArray[i][j]
+        guard let robotOpponentScene = SCNScene(named: "robot_c_e.scn"),
+            let robotOpponentNode = robotOpponentScene.rootNode.childNode(withName: "robot_c_e", recursively: false)
+            else { return }
+        
+        for i in 0...ARCameraMultiplayerViewController.positionArray.count-1 {
+            for j in 0...ARCameraMultiplayerViewController.positionArray[i].count-1 {
+                let number = ARCameraMultiplayerViewController.positionArray[i][j]
                 displayPlane = false
                 if(number == "a") {
                     let node = waNode.copy() as!SCNNode
@@ -208,23 +312,25 @@ class ARCameraViewController: UIViewController {
                     sceneView.scene.rootNode.addChildNode(node)
                 }
                 else if(number == "s") {
-                    let node = robotNode.copy() as!SCNNode
-                    node.position = SCNVector3(x,y-0.387,z)
-                    if(ARCameraViewController.programSequence != nil) {
-                        node.runAction(ARCameraViewController.programSequence)
-                    }
-                    sceneView.scene.rootNode.addChildNode(node)
+                    robotNode2 = robotNode.copy() as!SCNNode
+                    robotNode2.position = SCNVector3(x,y-0.387,z)
+                    sceneView.scene.rootNode.addChildNode(robotNode2)
+                    
+                    pointerNode2 = pointerNode.copy() as!SCNNode
+                    pointerNode2.position = SCNVector3(x+0.1,y,z)
+                    sceneView.scene.rootNode.addChildNode(pointerNode2)
+                }
+                else if(number == "x") {
+                    robotOpponentNode2 = robotOpponentNode.copy() as!SCNNode
+                    robotOpponentNode2.position = SCNVector3(x,y-0.387,z)
+                    sceneView.scene.rootNode.addChildNode(robotOpponentNode2)
                 }
                 else if(number == "*") {
                     collectibleNode2 = collectibleNode.copy() as!SCNNode
                     collectibleNode2.position = SCNVector3(x,y+0.075,z)
                     sceneView.scene.rootNode.addChildNode(collectibleNode2)
-<<<<<<< HEAD
-=======
-                    
->>>>>>> f0eceb3d9f6e1290750437233a8ebbc3d36ddaa6
-                    if(ARCameraViewController.timeToCollectible != 0.0) {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + ARCameraViewController.timeToCollectible + 0.2) { // change 2 to desired number of seconds
+                    if(ARCameraMultiplayerViewController.timeToCollectible != 0.0) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + ARCameraMultiplayerViewController.timeToCollectible + 0.2) {
                             self.collectibleNode2.removeFromParentNode()
                         }
                     }
@@ -234,50 +340,51 @@ class ARCameraViewController: UIViewController {
             x = originalX
             z += 0.2
         }
+        sceneView.scene.rootNode.addChildNode(robotOpponentNode2)
     }
 }
 
-extension float4x4 {
-    var translation: float3 {
-        let translation = self.columns.3
-        return float3(translation.x, translation.y, translation.z)
-    }
-}
+//extension float4x4 {
+//    var translation: float3 {
+//        let translation = self.columns.3
+//        return float3(translation.x, translation.y, translation.z)
+//    }
+//}
+//
+//extension UIColor {
+//    open class var transparentLightBlue: UIColor {
+//        return UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 0.50)
+//    }
+//}
 
-extension UIColor {
-    open class var transparentLightBlue: UIColor {
-        return UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 0.50)
-    }
-}
-
-extension ARCameraViewController: ARSCNViewDelegate {
+extension ARCameraMultiplayerViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         // 1
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
-
+        
         // 2
         let width = CGFloat(planeAnchor.extent.x)
         let height = CGFloat(planeAnchor.extent.z)
         let plane = SCNPlane(width: width, height: height)
-
+        
         // 3
         plane.materials.first?.diffuse.contents = UIColor.transparentLightBlue
-
+        
         // 4
         let planeNode = SCNNode(geometry: plane)
-
+        
         // 5
         let x = CGFloat(planeAnchor.center.x)
         let y = CGFloat(planeAnchor.center.y)
         let z = CGFloat(planeAnchor.center.z)
         planeNode.position = SCNVector3(x,y,z)
         planeNode.eulerAngles.x = -.pi / 2
-
+        
         // 6
         node.addChildNode(planeNode)
     }
     
-
+    
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         // 1
         guard let planeAnchor = anchor as?  ARPlaneAnchor,
@@ -303,3 +410,4 @@ extension ARCameraViewController: ARSCNViewDelegate {
         planeNode.position = SCNVector3(x, y, z)
     }
 }
+

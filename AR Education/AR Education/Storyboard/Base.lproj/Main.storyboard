@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -129,8 +130,25 @@
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.16862745098039217" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="3UA-xf-xuj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="912-mt-Q5Z">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="6Vc-pQ-3eV">
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="Yll-it-nei" id="Avd-IK-Vcx"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="play" id="cZQ-Sg-k5v">
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="Yll-it-nei" id="COW-7D-xor"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
+                        <outlet property="addButton" destination="6Vc-pQ-3eV" id="mhw-Tn-Zq7"/>
+                        <outlet property="playButton" destination="cZQ-Sg-k5v" id="HlO-gz-FKa"/>
                         <segue destination="tSe-36-fXo" kind="show" identifier="toAR" id="7tN-Ba-SMI"/>
+                        <segue destination="2Xc-ev-7Bd" kind="show" identifier="toQR" id="U6h-1x-O0p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lmo-hi-YeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,13 +173,28 @@
             </objects>
             <point key="canvasLocation" x="-1185" y="133"/>
         </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="tXy-Ir-Vi6">
+            <objects>
+                <viewController id="2Xc-ev-7Bd" customClass="QRScannerViewController" customModule="AR_Education" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ZG-n8-371">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2NU-5g-I3C"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nT1-gz-fUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="-178"/>
+        </scene>
         <!--AR-->
         <scene sceneID="jL6-0H-ls5">
             <objects>
                 <viewControllerPlaceholder storyboardName="AR" id="tSe-36-fXo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgq-hL-kJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1059" y="-17"/>
+            <point key="canvasLocation" x="1125" y="239"/>
         </scene>
         <!--Multiplayer-->
         <scene sceneID="662-Hh-Kve">
