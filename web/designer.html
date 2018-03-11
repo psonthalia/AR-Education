@@ -421,8 +421,8 @@
         $("#compilebutton").click(function(){
             var tot = "";
             alert("compiled");
-            for(i = 1;i<=16;i++){ //i = x, j = y
-                for(j=1;j<=16;j++){
+            for(j = 1;j<=16;j++){ //i = x, j = y
+                for(i=1;i<=16;i++){
                     var cur = $("#"+i+"v"+j).text();
                     if(cur=="."){
                         tot+="0";
@@ -437,6 +437,7 @@
                         var n = ".";
                         var w = ".";
                         var s = ".";
+                        var chosen = "";
                         if(i<=15){
                             e = $("#"+(i+1)+"v"+j).text();
                         } if(j>=2){
@@ -447,28 +448,43 @@
                         } if(j<=15){
                             s = $("#"+i+"v"+(j+1)).text();
                         }
-                        if((n=="W"||s=="W")&&e!="W"&&w!="W"){
-                            tot+="a";
-                        } else if((e=="W"||w=="W")&&n!="W"&&s!="W"){
-                            tot+="b";
-                        } else if(w=="W"&&s=="W"&&e!="W"&&n!="W"){
+                        if((n=="W"||s=="W")){
+                            if(e!="W"&&w!="W"){
+                                tot+="a";
+                                chosen="a";
+                            }
+                        } if((e=="W"||w=="W")){
+                            if(n!="W"&&s!="W"){
+                                tot+="b";
+                                chosen="b";
+                            }
+                        } if(w=="W"&&s=="W"&&e!="W"&&n!="W"){
                             tot+="c";
+                            chosen="c";
                         } else if(w!="W"&&s=="W"&&e=="W"&&n!="W"){
                             tot+="d";
+                            chosen="d";
                         } else if(w!="W"&&s!="W"&&e=="W"&&n=="W"){
                             tot+="e";
+                            chosen="e";
                         } else if(w=="W"&&s!="W"&&e!="W"&&n=="W"){
                             tot+="f";
+                            chosen="f";
                         } else if(w!="W"&&s=="W"&&e=="W"&&n=="W"){
                             tot+="g";
+                            chosen="g";
                         } else if(w=="W"&&s!="W"&&e=="W"&&n=="W"){
                             tot+="h";
+                            chosen="h";
                         } else if(w=="W"&&s=="W"&&e!="W"&&n=="W"){
                             tot+="i";
+                            chosen="i";
                         } else if(w=="W"&&s=="W"&&e=="W"&&n!="W"){
                             tot+="j";
+                            chosen="j";
                         } else if(w=="W"&&s=="W"&&e=="W"&&n=="W"){
                             tot+="k";
+                            chosen="k";
                         }
                     }
                 }
