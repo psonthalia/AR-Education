@@ -13,7 +13,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var puzzleButton: UIButton!
     @IBOutlet weak var duelButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
