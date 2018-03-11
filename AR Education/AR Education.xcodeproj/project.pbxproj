@@ -63,6 +63,7 @@
 		A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2113A6420545CAD0084D4C4 /* Assets.xcassets */; };
 		A2113A7320545CAD0084D4C4 /* AR_EducationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7220545CAD0084D4C4 /* AR_EducationTests.swift */; };
 		A2113A7E20545CAD0084D4C4 /* AR_EducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */; };
+		A2193FC420559FF30004FAD6 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = A2193FC320559FF30004FAD6 /* AppIcon.appiconset */; };
 		A21A55B8205507B70010CF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A21A55B9205507B70010CF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */; };
 		A255BB0520550B760019033D /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAE205488AE000EAF75 /* ARCameraViewController.swift */; };
@@ -154,6 +155,7 @@
 		A2113A7920545CAD0084D4C4 /* AR EducationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR EducationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_EducationUITests.swift; sourceTree = "<group>"; };
 		A2113A7F20545CAD0084D4C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2193FC320559FF30004FAD6 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		A2C9AFA720548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFA920548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "AR Education/Controllers/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -295,6 +297,7 @@
 		A2113A5A20545CAD0084D4C4 /* AR Education */ = {
 			isa = PBXGroup;
 			children = (
+				A2193FC320559FF30004FAD6 /* AppIcon.appiconset */,
 				A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */,
 				899422BB205556C7001BFE1D /* Levels */,
 				A2C9AFAC20548899000EAF75 /* Controllers */,
@@ -507,6 +510,7 @@
 				8922E2BF2054C834005FE311 /* ARCameraViewController.swift in Resources */,
 				892C8F532054D44F00E2EFF6 /* wallj.scn in Resources */,
 				892C8F502054D44F00E2EFF6 /* wallg.scn in Resources */,
+				A2193FC420559FF30004FAD6 /* AppIcon.appiconset in Resources */,
 				A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */,
 				892C8F712054E4D800E2EFF6 /* puzzleButton.png in Resources */,
 				892C8F4B2054D44F00E2EFF6 /* wallf.scn in Resources */,
@@ -930,9 +934,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A67B4881EE5B64706D312E5C /* Pods-AR Education.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84R2JMF96C;
+				DEVELOPMENT_TEAM = 65777GTD95;
 				INFOPLIST_FILE = "$(SRCROOT)/AR Education/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
@@ -946,9 +950,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1AC562C2F02BEF55476D16D /* Pods-AR Education.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84R2JMF96C;
+				DEVELOPMENT_TEAM = 65777GTD95;
 				INFOPLIST_FILE = "$(SRCROOT)/AR Education/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mango-Apps.AR-Education";
