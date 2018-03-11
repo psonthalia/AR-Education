@@ -76,7 +76,7 @@
             </objects>
             <point key="canvasLocation" x="-383" y="133"/>
         </scene>
-        <!--Levels View Controller-->
+        <!--Levels-->
         <scene sceneID="TPX-n6-kG5">
             <objects>
                 <viewController id="Yll-it-nei" customClass="LevelsViewController" customModule="AR_Education" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,11 +124,24 @@
                                     <outlet property="delegate" destination="Yll-it-nei" id="DoT-sH-Y8s"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj7-UC-lIx">
+                                <rect key="frame" x="304" y="609" width="61" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Help"/>
+                                <connections>
+                                    <action selector="helpButtonTapped:" destination="ryE-xi-c0q" eventType="touchUpInside" id="iG3-Fo-p4k"/>
+                                    <action selector="helpButtonTapped:" destination="Yll-it-nei" eventType="touchUpInside" id="wzI-m9-dub"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.16862745098039217" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3UA-xf-xuj" firstAttribute="bottom" secondItem="Cj7-UC-lIx" secondAttribute="bottom" constant="10" id="Gx0-w9-iWT"/>
+                            <constraint firstItem="3UA-xf-xuj" firstAttribute="trailing" secondItem="Cj7-UC-lIx" secondAttribute="trailing" constant="10" id="jce-o3-0jJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3UA-xf-xuj"/>
                     </view>
-                    <navigationItem key="navigationItem" id="912-mt-Q5Z">
+                    <navigationItem key="navigationItem" title="Levels" id="912-mt-Q5Z">
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="6Vc-pQ-3eV">
                                 <connections>
@@ -147,11 +160,13 @@
                         <outlet property="playButton" destination="cZQ-Sg-k5v" id="HlO-gz-FKa"/>
                         <segue destination="tSe-36-fXo" kind="show" identifier="toAR" id="7tN-Ba-SMI"/>
                         <segue destination="2Xc-ev-7Bd" kind="show" identifier="toQR" id="U6h-1x-O0p"/>
+                        <segue destination="ceZ-M4-DR7" kind="show" identifier="toHelp" id="CZ1-uX-62m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lmo-hi-YeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ryE-xi-c0q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="503" y="-16"/>
+            <point key="canvasLocation" x="501.60000000000002" y="-16.641679160419791"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C3H-6c-nVx">
@@ -193,6 +208,112 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgq-hL-kJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1125" y="239"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qgM-pT-5ud">
+            <objects>
+                <viewController id="ceZ-M4-DR7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i2s-cj-Gt4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Kj-qY-nUE">
+                                <rect key="frame" x="87.5" y="89" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hA5-en-VgC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.75294117647058822" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Or1-Qk-NHc">
+                                <rect key="frame" x="75" y="169" width="163.5" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commands:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuY-7D-GEX">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="lIw-dX-TYN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. moveForward" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEL-sS-DCh">
+                                        <rect key="frame" x="0.0" y="50" width="135.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="iWt-US-OQn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.67843137254901964" green="0.96078431372549022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. moveBackwards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WT-Fw-a1V">
+                                        <rect key="frame" x="0.0" y="100" width="163.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xwa-cu-a1t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.67843137254901964" green="0.96078431372549022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. moveLeft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhJ-GW-WCb">
+                                        <rect key="frame" x="0.0" y="150" width="102.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="O6b-vH-PDA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.67843137254901964" green="0.96078431372549022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. moveRight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW0-pB-9kp">
+                                        <rect key="frame" x="0.0" y="200" width="114.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hvr-fW-bIP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.67843137254901964" green="0.96078431372549022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: The pointer on the robot points forward" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0A-Un-wNJ">
+                                <rect key="frame" x="10" y="607" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gXt-g1-KmJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use these commands to navigate your robot in Augmented Reality towards the green polygon." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFO-tb-jt8">
+                                <rect key="frame" x="15" y="457" width="345" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="1Hm-Bv-MIK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0078431372549019607" green="0.16862745098039217" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Kj-qY-nUE" firstAttribute="top" secondItem="6Y7-fL-JGx" secondAttribute="top" constant="25" id="69I-Rg-f8h"/>
+                            <constraint firstItem="Or1-Qk-NHc" firstAttribute="top" secondItem="2Kj-qY-nUE" secondAttribute="bottom" constant="30" id="AT2-Jv-P7o"/>
+                            <constraint firstItem="A0A-Un-wNJ" firstAttribute="leading" secondItem="6Y7-fL-JGx" secondAttribute="leading" constant="10" id="Iav-xS-BCN"/>
+                            <constraint firstItem="A0A-Un-wNJ" firstAttribute="top" secondItem="gFO-tb-jt8" secondAttribute="bottom" constant="20" id="R99-2e-Bgl"/>
+                            <constraint firstItem="6Y7-fL-JGx" firstAttribute="trailing" secondItem="gFO-tb-jt8" secondAttribute="trailing" constant="15" id="TpW-au-h8e"/>
+                            <constraint firstItem="6Y7-fL-JGx" firstAttribute="bottom" secondItem="A0A-Un-wNJ" secondAttribute="bottom" constant="10" id="Xod-rn-yr1"/>
+                            <constraint firstItem="6Y7-fL-JGx" firstAttribute="trailing" secondItem="A0A-Un-wNJ" secondAttribute="trailing" constant="10" id="e2e-RM-cT4"/>
+                            <constraint firstItem="Or1-Qk-NHc" firstAttribute="leading" secondItem="6Y7-fL-JGx" secondAttribute="leading" constant="75" id="qD5-do-mCb"/>
+                            <constraint firstItem="2Kj-qY-nUE" firstAttribute="centerX" secondItem="6Y7-fL-JGx" secondAttribute="centerX" id="wRq-7V-1mH"/>
+                            <constraint firstItem="gFO-tb-jt8" firstAttribute="leading" secondItem="6Y7-fL-JGx" secondAttribute="leading" constant="15" id="xne-6k-ifP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Y7-fL-JGx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrb-d8-clA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261.5999999999999" y="751.57421289355329"/>
         </scene>
         <!--Multiplayer-->
         <scene sceneID="662-Hh-Kve">

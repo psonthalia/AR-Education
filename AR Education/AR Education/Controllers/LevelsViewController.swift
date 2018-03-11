@@ -38,6 +38,10 @@ class LevelsViewController: UIViewController, UICollectionViewDelegate, UICollec
         self.performSegue(withIdentifier: Constants.Segue.toAR, sender: nil)
     }
     
+    @IBAction func helpButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: Constants.Segue.toHelp, sender: nil)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.items.count
     }
