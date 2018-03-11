@@ -28,6 +28,11 @@
 		892C8F542054D44F00E2EFF6 /* walld.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F452054D44F00E2EFF6 /* walld.scn */; };
 		892C8F552054D44F00E2EFF6 /* wallb.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F462054D44F00E2EFF6 /* wallb.scn */; };
 		892C8F562054D44F00E2EFF6 /* robot_c.scn in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F472054D44F00E2EFF6 /* robot_c.scn */; };
+		892C8F702054E4D800E2EFF6 /* menuBackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6B2054E4D700E2EFF6 /* menuBackground3.png */; };
+		892C8F712054E4D800E2EFF6 /* puzzleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6C2054E4D700E2EFF6 /* puzzleButton.png */; };
+		892C8F722054E4D800E2EFF6 /* menuBackground1.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6D2054E4D800E2EFF6 /* menuBackground1.png */; };
+		892C8F732054E4D800E2EFF6 /* duelButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6E2054E4D800E2EFF6 /* duelButton.png */; };
+		892C8F742054E4D800E2EFF6 /* loadingWheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 892C8F6F2054E4D800E2EFF6 /* loadingWheel.png */; };
 		89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89839E7C2054601C00E0B705 /* GoogleService-Info.plist */; };
 		89839E882054775B00E0B705 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 89839E872054775B00E0B705 /* settings.png */; };
 		89839E8A20547A4800E0B705 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89839E8920547A4800E0B705 /* UIColor.swift */; };
@@ -85,6 +90,11 @@
 		892C8F452054D44F00E2EFF6 /* walld.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = walld.scn; path = "AR Education/3D Objects/walld.scn"; sourceTree = SOURCE_ROOT; };
 		892C8F462054D44F00E2EFF6 /* wallb.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = wallb.scn; path = "AR Education/3D Objects/wallb.scn"; sourceTree = SOURCE_ROOT; };
 		892C8F472054D44F00E2EFF6 /* robot_c.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = robot_c.scn; path = "AR Education/3D Objects/robot_c.scn"; sourceTree = SOURCE_ROOT; };
+		892C8F6B2054E4D700E2EFF6 /* menuBackground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuBackground3.png; sourceTree = "<group>"; };
+		892C8F6C2054E4D700E2EFF6 /* puzzleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puzzleButton.png; sourceTree = "<group>"; };
+		892C8F6D2054E4D800E2EFF6 /* menuBackground1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuBackground1.png; sourceTree = "<group>"; };
+		892C8F6E2054E4D800E2EFF6 /* duelButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = duelButton.png; sourceTree = "<group>"; };
+		892C8F6F2054E4D800E2EFF6 /* loadingWheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingWheel.png; sourceTree = "<group>"; };
 		89839E7C2054601C00E0B705 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89839E872054775B00E0B705 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		89839E8920547A4800E0B705 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -168,6 +178,11 @@
 		89839E842054769900E0B705 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				892C8F6E2054E4D800E2EFF6 /* duelButton.png */,
+				892C8F6F2054E4D800E2EFF6 /* loadingWheel.png */,
+				892C8F6D2054E4D800E2EFF6 /* menuBackground1.png */,
+				892C8F6B2054E4D700E2EFF6 /* menuBackground3.png */,
+				892C8F6C2054E4D700E2EFF6 /* puzzleButton.png */,
 				89839E872054775B00E0B705 /* settings.png */,
 			);
 			path = Images;
@@ -218,11 +233,11 @@
 		A2113A5A20545CAD0084D4C4 /* AR Education */ = {
 			isa = PBXGroup;
 			children = (
+				A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */,
 				A2C9AFAC20548899000EAF75 /* Controllers */,
 				A2C9AFA52054887D000EAF75 /* Storyboard */,
 				89839E842054769900E0B705 /* Images */,
 				A2113A9620546FA30084D4C4 /* 3D Objects */,
-				A2113A5B20545CAD0084D4C4 /* AppDelegate.swift */,
 				A2113A6420545CAD0084D4C4 /* Assets.xcassets */,
 				89839E8D2054842C00E0B705 /* Supporting */,
 				89839E8920547A4800E0B705 /* UIColor.swift */,
@@ -424,11 +439,14 @@
 				892C8F532054D44F00E2EFF6 /* wallj.scn in Resources */,
 				892C8F502054D44F00E2EFF6 /* wallg.scn in Resources */,
 				A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */,
+				892C8F712054E4D800E2EFF6 /* puzzleButton.png in Resources */,
 				892C8F4B2054D44F00E2EFF6 /* wallf.scn in Resources */,
 				A2C9AFAB20548895000EAF75 /* LaunchScreen.storyboard in Resources */,
 				892C8F542054D44F00E2EFF6 /* walld.scn in Resources */,
 				892C8F4D2054D44F00E2EFF6 /* ship.scn in Resources */,
 				A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */,
+				892C8F702054E4D800E2EFF6 /* menuBackground3.png in Resources */,
+				892C8F742054E4D800E2EFF6 /* loadingWheel.png in Resources */,
 				892C8F522054D44F00E2EFF6 /* walli.scn in Resources */,
 				892C8F482054D44F00E2EFF6 /* spik.scn in Resources */,
 				892C8F362054D3E900E2EFF6 /* AR.storyboard in Resources */,
@@ -438,11 +456,13 @@
 				89839E882054775B00E0B705 /* settings.png in Resources */,
 				892C8F512054D44F00E2EFF6 /* wallh.scn in Resources */,
 				892C8F552054D44F00E2EFF6 /* wallb.scn in Resources */,
+				892C8F722054E4D800E2EFF6 /* menuBackground1.png in Resources */,
 				892C8F4A2054D44F00E2EFF6 /* walle.scn in Resources */,
 				892C8F492054D44F00E2EFF6 /* wallc.scn in Resources */,
 				892C8F4E2054D44F00E2EFF6 /* collectibl.scn in Resources */,
 				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
 				A2C9AFB620548D5C000EAF75 /* testGrid.txt in Resources */,
+				892C8F732054E4D800E2EFF6 /* duelButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
