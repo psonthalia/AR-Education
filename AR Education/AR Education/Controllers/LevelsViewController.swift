@@ -40,9 +40,12 @@ class LevelsViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         cell.backgroundColor = UIColor(color: UIColor.Color.med)
         
-        //cell.button = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        //let title = "/(indexPath.item)"
-        //cell.button.setTitle(title, for: .normal)
+        let cellButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        cell.button = cellButton
+        print(cell.button)
+        let title = "/(indexPath.item)"
+        let state = UIControlState.normal
+        cell.button.setTitle(title, for: state)
         //let color = UIColor(color: UIColor.Color.med)
         //cell.button.setTitleColor(color, for: <#T##UIControlState#>)
         
