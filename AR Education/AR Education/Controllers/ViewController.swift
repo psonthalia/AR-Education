@@ -153,12 +153,7 @@ class ViewController: UIViewController {
             else { return }
         
         for number:Character in gridContents {
-            if(number != "\n") {                
-//                if(number == "1") {
-//                    let shipNode2 = shipNode.copy() as!SCNNode
-//                    shipNode2.position = SCNVector3(x,y,z)
-//                    sceneView.scene.rootNode.addChildNode(shipNode2)
-//                }
+            if(number != "\n") {
                 if(number == "a") {
                     let node = waNode.copy() as!SCNNode
                     node.position = SCNVector3(x,y,z)
@@ -217,6 +212,7 @@ class ViewController: UIViewController {
                 else if(number == "s") {
                     let node = robotNode.copy() as!SCNNode
                     node.position = SCNVector3(x,y,z)
+                    node.runAction(ViewController.programSequence)
                     sceneView.scene.rootNode.addChildNode(node)
                 }
                 else if(number == "*") {
@@ -243,9 +239,9 @@ class ViewController: UIViewController {
         let y = translation.y
         let z = translation.z
         
-        guard let carScene = SCNScene(named: "ship.scn"),
-            let carNode = carScene.rootNode.childNode(withName: "ship", recursively: false)
-            else { return }
+//        guard let carScene = SCNScene(named: "ship.scn"),
+//            let carNode = carScene.rootNode.childNode(withName: "ship", recursively: false)
+//            else { return }
 //
 //
 //        carNode.position = SCNVector3(x,y,z)
@@ -254,9 +250,9 @@ class ViewController: UIViewController {
 //        let waitAction = SCNAction.wait(duration: 0.25)
 //        let hoverSequence = SCNAction.sequence([moveForward,waitAction,moveBack])
 //        let loopSequence = SCNAction.repeatForever(hoverSequence)
-        carNode.runAction(ViewController.programSequence)
+//        carNode.runAction(ViewController.programSequence)
 //
-        sceneView.scene.rootNode.addChildNode(carNode)
+//        sceneView.scene.rootNode.addChildNode(carNode)
     }
     
 }
