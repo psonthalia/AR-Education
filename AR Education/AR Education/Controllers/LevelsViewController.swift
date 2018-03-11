@@ -34,7 +34,7 @@ class LevelsViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         cell.label.text = self.items[indexPath.item]
         
-        cell.backgroundColor = UIColor(color: UIColor.Color.med)
+        cell.backgroundColor = UIColor(color: UIColor.Color.bright)
         //cell.layer.cornerRadius = 10
         //cell.frame.size.width = 100
         //cell.frame.size.height = 100
