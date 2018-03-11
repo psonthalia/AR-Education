@@ -10,11 +10,12 @@ import UIKit
 import ARKit
 import Foundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet weak var sceneView: ARSCNView!
     var gridContents:String = ""
     static var programSequence:SCNAction! = nil
+    var displayPlane = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,7 +82,7 @@ class ViewController: UIViewController {
     //    }
     
     func addTapGestureToSceneView() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.addCar(withGestureRecognizer:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.setUpGrid(withGestureRecognizer:)))
         
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
@@ -96,72 +97,69 @@ class ViewController: UIViewController {
         let y = translation.y
         var z = translation.z
         
-//        guard let shipScene = SCNScene(named: "ship.scn"),
-//            let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
-//            else { return }
-        
-        guard let robotScene = SCNScene(named: "robot_combine.scn"),
+        guard let robotScene = SCNScene(named: "robot_c.scn"),
             let robotNode = robotScene.rootNode.childNode(withName: "robot_combine", recursively: false)
             else { return }
         
-        guard let waScene = SCNScene(named: "wa.scn"),
+        guard let waScene = SCNScene(named: "walla.scn"),
             let waNode = waScene.rootNode.childNode(withName: "wa", recursively: false)
             else { return }
         
-        guard let wbScene = SCNScene(named: "wb.scn"),
+        guard let wbScene = SCNScene(named: "wallb.scn"),
             let wbNode = wbScene.rootNode.childNode(withName: "wb", recursively: false)
             else { return }
         
-        guard let wcScene = SCNScene(named: "wc.scn"),
+        guard let wcScene = SCNScene(named: "wallc.scn"),
             let wcNode = wcScene.rootNode.childNode(withName: "wc", recursively: false)
             else { return }
         
-        guard let wdScene = SCNScene(named: "wd.scn"),
+        guard let wdScene = SCNScene(named: "walld.scn"),
             let wdNode = wdScene.rootNode.childNode(withName: "wd", recursively: false)
             else { return }
         
-        guard let weScene = SCNScene(named: "we.scn"),
+        guard let weScene = SCNScene(named: "walle.scn"),
             let weNode = weScene.rootNode.childNode(withName: "we", recursively: false)
             else { return }
         
-        guard let wfScene = SCNScene(named: "wf.scn"),
+        guard let wfScene = SCNScene(named: "wallf.scn"),
             let wfNode = wfScene.rootNode.childNode(withName: "wf", recursively: false)
             else { return }
         
-        guard let wgScene = SCNScene(named: "wg.scn"),
+        guard let wgScene = SCNScene(named: "wallg.scn"),
             let wgNode = wgScene.rootNode.childNode(withName: "wg", recursively: false)
             else { return }
         
-        guard let whScene = SCNScene(named: "wh.scn"),
+        guard let whScene = SCNScene(named: "wallh.scn"),
             let whNode = whScene.rootNode.childNode(withName: "wh", recursively: false)
             else { return }
         
-        guard let wiScene = SCNScene(named: "wi.scn"),
+        guard let wiScene = SCNScene(named: "walli.scn"),
             let wiNode = wiScene.rootNode.childNode(withName: "wi", recursively: false)
             else { return }
         
-        guard let wjScene = SCNScene(named: "wj.scn"),
+        guard let wjScene = SCNScene(named: "wallj.scn"),
             let wjNode = wjScene.rootNode.childNode(withName: "wj", recursively: false)
             else { return }
         
-        guard let collectibleScene = SCNScene(named: "collectible.scn"),
+        guard let collectibleScene = SCNScene(named: "collectibl.scn"),
             let collectibleNode = collectibleScene.rootNode.childNode(withName: "collectible", recursively: false)
             else { return }
         
-        guard let spikeScene = SCNScene(named: "spike.scn"),
+        guard let spikeScene = SCNScene(named: "spik.scn"),
             let spikeNode = spikeScene.rootNode.childNode(withName: "spike", recursively: false)
             else { return }
         
         for number:Character in gridContents {
             if(number != "\n") {
+                displayPlane = false
                 if(number == "a") {
                     let node = waNode.copy() as!SCNNode
-                    node.position = SCNVector3(x,y,z)
+                    node.position = SCNVector3(x,y+0.075,z)
                     sceneView.scene.rootNode.addChildNode(node)
                 }
                 else if(number == "b") {
                     let node = wbNode.copy() as!SCNNode
-                    node.position = SCNVector3(x,y,z)
+                    node.position = SCNVector3(x,y+0.075,z)
                     sceneView.scene.rootNode.addChildNode(node)
                 }
                 else if(number == "c") {
@@ -206,18 +204,18 @@ class ViewController: UIViewController {
                 }
                 else if(number == "o") {
                     let node = spikeNode.copy() as!SCNNode
-                    node.position = SCNVector3(x,y,z)
+                    node.position = SCNVector3(x,y+0.075,z)
                     sceneView.scene.rootNode.addChildNode(node)
                 }
                 else if(number == "s") {
                     let node = robotNode.copy() as!SCNNode
-                    node.position = SCNVector3(x,y,z)
+                    node.position = SCNVector3(x,y-0.387,z)
                     node.runAction(ViewController.programSequence)
                     sceneView.scene.rootNode.addChildNode(node)
                 }
                 else if(number == "*") {
                     let robotNode2 = collectibleNode.copy() as!SCNNode
-                    robotNode2.position = SCNVector3(x,y,z)
+                    robotNode2.position = SCNVector3(x,y+0.075,z)
                     sceneView.scene.rootNode.addChildNode(robotNode2)
                 }
                 x += 0.2
@@ -228,50 +226,8 @@ class ViewController: UIViewController {
         }
     }
     
-    @objc func addCar(withGestureRecognizer recognizer: UIGestureRecognizer) {
-        setUpGrid(withGestureRecognizer: recognizer)
-        let tapLocation = recognizer.location(in: sceneView)
-        let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
-        
-        guard let hitTestResult = hitTestResults.first else { return }
-        let translation = hitTestResult.worldTransform.translation
-        let x = translation.x
-        let y = translation.y
-        let z = translation.z
-        
-//        guard let carScene = SCNScene(named: "ship.scn"),
-//            let carNode = carScene.rootNode.childNode(withName: "ship", recursively: false)
-//            else { return }
-//
-//
-//        carNode.position = SCNVector3(x,y,z)
-//        let moveForward = SCNAction.move(by: SCNVector3(1.0, 0, 0), duration: 1)
-//        let moveBack = SCNAction.move(by: SCNVector3(-1.0,0,0), duration: 1)
-//        let waitAction = SCNAction.wait(duration: 0.25)
-//        let hoverSequence = SCNAction.sequence([moveForward,waitAction,moveBack])
-//        let loopSequence = SCNAction.repeatForever(hoverSequence)
-//        carNode.runAction(ViewController.programSequence)
-//
-//        sceneView.scene.rootNode.addChildNode(carNode)
-    }
     
-}
-
-
-extension float4x4 {
-    var translation: float3 {
-        let translation = self.columns.3
-        return float3(translation.x, translation.y, translation.z)
-    }
-}
-
-extension UIColor {
-    open class var transparentLightBlue: UIColor {
-        return UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 0.50)
-    }
-}
-
-extension ViewController: ARSCNViewDelegate {
+    
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         // 1
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
@@ -299,6 +255,7 @@ extension ViewController: ARSCNViewDelegate {
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+        print("render")
         // 1
         guard let planeAnchor = anchor as?  ARPlaneAnchor,
             let planeNode = node.childNodes.first,
@@ -311,11 +268,30 @@ extension ViewController: ARSCNViewDelegate {
         plane.width = width
         plane.height = height
         
+        if(displayPlane == false) {
+            plane.width = 0
+            plane.height = 0
+        }
+        
         // 3
         let x = CGFloat(planeAnchor.center.x)
         let y = CGFloat(planeAnchor.center.y)
         let z = CGFloat(planeAnchor.center.z)
         planeNode.position = SCNVector3(x, y, z)
     }
+    
 }
 
+
+extension float4x4 {
+    var translation: float3 {
+        let translation = self.columns.3
+        return float3(translation.x, translation.y, translation.z)
+    }
+}
+
+extension UIColor {
+    open class var transparentLightBlue: UIColor {
+        return UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 0.50)
+    }
+}

@@ -22,19 +22,19 @@
 		A2113A7E20545CAD0084D4C4 /* AR_EducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2113A7D20545CAD0084D4C4 /* AR_EducationUITests.swift */; };
 		A2113A9B20546FD80084D4C4 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = A2113A9720546FD80084D4C4 /* ship.png */; };
 		A2113A9D20546FD80084D4C4 /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = A2113A9920546FD80084D4C4 /* ship.scn */; };
-		A21A55772054BCE10010CF19 /* wi.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A556A2054BCE10010CF19 /* wi.dae */; };
-		A21A55782054BCE10010CF19 /* wb.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A556B2054BCE10010CF19 /* wb.dae */; };
-		A21A55792054BCE10010CF19 /* we.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A556C2054BCE10010CF19 /* we.dae */; };
-		A21A557A2054BCE10010CF19 /* collectible.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A556D2054BCE10010CF19 /* collectible.dae */; };
-		A21A557B2054BCE10010CF19 /* wc.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A556E2054BCE10010CF19 /* wc.dae */; };
-		A21A557C2054BCE10010CF19 /* wj.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A556F2054BCE10010CF19 /* wj.dae */; };
-		A21A557D2054BCE10010CF19 /* robot_combine.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A55702054BCE10010CF19 /* robot_combine.dae */; };
-		A21A557E2054BCE10010CF19 /* wf.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A55712054BCE10010CF19 /* wf.dae */; };
-		A21A557F2054BCE10010CF19 /* wa.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A55722054BCE10010CF19 /* wa.dae */; };
-		A21A55802054BCE10010CF19 /* wd.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A55732054BCE10010CF19 /* wd.dae */; };
-		A21A55812054BCE10010CF19 /* wh.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A55742054BCE10010CF19 /* wh.dae */; };
-		A21A55822054BCE10010CF19 /* spike.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A55752054BCE10010CF19 /* spike.dae */; };
-		A21A55832054BCE10010CF19 /* wg.dae in Resources */ = {isa = PBXBuildFile; fileRef = A21A55762054BCE10010CF19 /* wg.dae */; };
+		A21A55AB2054C2DD0010CF19 /* robot_c.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A559F2054C25F0010CF19 /* robot_c.scn */; };
+		A21A55AC2054C2DD0010CF19 /* spik.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A02054C2690010CF19 /* spik.scn */; };
+		A21A55AD2054C2DD0010CF19 /* walla.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A12054C2720010CF19 /* walla.scn */; };
+		A21A55AE2054C2DD0010CF19 /* wallb.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A22054C27C0010CF19 /* wallb.scn */; };
+		A21A55AF2054C2DD0010CF19 /* wallc.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A32054C2870010CF19 /* wallc.scn */; };
+		A21A55B02054C2DD0010CF19 /* walld.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A42054C2930010CF19 /* walld.scn */; };
+		A21A55B12054C2DD0010CF19 /* walle.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A52054C29D0010CF19 /* walle.scn */; };
+		A21A55B22054C2DD0010CF19 /* wallf.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A62054C2A50010CF19 /* wallf.scn */; };
+		A21A55B32054C2DD0010CF19 /* wallg.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A72054C2AC0010CF19 /* wallg.scn */; };
+		A21A55B42054C2DD0010CF19 /* wallh.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A82054C2B50010CF19 /* wallh.scn */; };
+		A21A55B52054C2DD0010CF19 /* walli.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55A92054C2C30010CF19 /* walli.scn */; };
+		A21A55B62054C2DD0010CF19 /* wallj.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A55AA2054C2CF0010CF19 /* wallj.scn */; };
+		A21A55B72054C2E00010CF19 /* collectibl.scn in Resources */ = {isa = PBXBuildFile; fileRef = A21A559E2054C2580010CF19 /* collectibl.scn */; };
 		A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFA620548895000EAF75 /* Main.storyboard */; };
 		A2C9AFAB20548895000EAF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C9AFA820548895000EAF75 /* LaunchScreen.storyboard */; };
 		A2C9AFAF205488AF000EAF75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */; };
@@ -86,19 +86,19 @@
 		A2113A9720546FD80084D4C4 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
 		A2113A9920546FD80084D4C4 /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ship.scn; sourceTree = "<group>"; };
 		A2113AA3205474050084D4C4 /* testGrid.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testGrid.txt; sourceTree = "<group>"; };
-		A21A556A2054BCE10010CF19 /* wi.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wi.dae; sourceTree = "<group>"; };
-		A21A556B2054BCE10010CF19 /* wb.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wb.dae; sourceTree = "<group>"; };
-		A21A556C2054BCE10010CF19 /* we.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = we.dae; sourceTree = "<group>"; };
-		A21A556D2054BCE10010CF19 /* collectible.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = collectible.dae; sourceTree = "<group>"; };
-		A21A556E2054BCE10010CF19 /* wc.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wc.dae; sourceTree = "<group>"; };
-		A21A556F2054BCE10010CF19 /* wj.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wj.dae; sourceTree = "<group>"; };
-		A21A55702054BCE10010CF19 /* robot_combine.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = robot_combine.dae; sourceTree = "<group>"; };
-		A21A55712054BCE10010CF19 /* wf.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wf.dae; sourceTree = "<group>"; };
-		A21A55722054BCE10010CF19 /* wa.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wa.dae; sourceTree = "<group>"; };
-		A21A55732054BCE10010CF19 /* wd.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wd.dae; sourceTree = "<group>"; };
-		A21A55742054BCE10010CF19 /* wh.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wh.dae; sourceTree = "<group>"; };
-		A21A55752054BCE10010CF19 /* spike.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = spike.dae; sourceTree = "<group>"; };
-		A21A55762054BCE10010CF19 /* wg.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wg.dae; sourceTree = "<group>"; };
+		A21A559E2054C2580010CF19 /* collectibl.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = collectibl.scn; sourceTree = "<group>"; };
+		A21A559F2054C25F0010CF19 /* robot_c.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = robot_c.scn; sourceTree = "<group>"; };
+		A21A55A02054C2690010CF19 /* spik.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = spik.scn; sourceTree = "<group>"; };
+		A21A55A12054C2720010CF19 /* walla.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = walla.scn; sourceTree = "<group>"; };
+		A21A55A22054C27C0010CF19 /* wallb.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallb.scn; sourceTree = "<group>"; };
+		A21A55A32054C2870010CF19 /* wallc.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallc.scn; sourceTree = "<group>"; };
+		A21A55A42054C2930010CF19 /* walld.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = walld.scn; sourceTree = "<group>"; };
+		A21A55A52054C29D0010CF19 /* walle.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = walle.scn; sourceTree = "<group>"; };
+		A21A55A62054C2A50010CF19 /* wallf.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallf.scn; sourceTree = "<group>"; };
+		A21A55A72054C2AC0010CF19 /* wallg.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallg.scn; sourceTree = "<group>"; };
+		A21A55A82054C2B50010CF19 /* wallh.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallh.scn; sourceTree = "<group>"; };
+		A21A55A92054C2C30010CF19 /* walli.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = walli.scn; sourceTree = "<group>"; };
+		A21A55AA2054C2CF0010CF19 /* wallj.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wallj.scn; sourceTree = "<group>"; };
 		A2C9AFA720548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFA920548895000EAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AR Education/Storyboard/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		A2C9AFAD205488AE000EAF75 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "AR Education/Controllers/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -250,19 +250,19 @@
 		A2113A9620546FA30084D4C4 /* 3D Objects */ = {
 			isa = PBXGroup;
 			children = (
-				A21A556D2054BCE10010CF19 /* collectible.dae */,
-				A21A55702054BCE10010CF19 /* robot_combine.dae */,
-				A21A55752054BCE10010CF19 /* spike.dae */,
-				A21A55722054BCE10010CF19 /* wa.dae */,
-				A21A556B2054BCE10010CF19 /* wb.dae */,
-				A21A556E2054BCE10010CF19 /* wc.dae */,
-				A21A55732054BCE10010CF19 /* wd.dae */,
-				A21A556C2054BCE10010CF19 /* we.dae */,
-				A21A55712054BCE10010CF19 /* wf.dae */,
-				A21A55762054BCE10010CF19 /* wg.dae */,
-				A21A55742054BCE10010CF19 /* wh.dae */,
-				A21A556A2054BCE10010CF19 /* wi.dae */,
-				A21A556F2054BCE10010CF19 /* wj.dae */,
+				A21A559E2054C2580010CF19 /* collectibl.scn */,
+				A21A559F2054C25F0010CF19 /* robot_c.scn */,
+				A21A55A02054C2690010CF19 /* spik.scn */,
+				A21A55A12054C2720010CF19 /* walla.scn */,
+				A21A55A22054C27C0010CF19 /* wallb.scn */,
+				A21A55A32054C2870010CF19 /* wallc.scn */,
+				A21A55A42054C2930010CF19 /* walld.scn */,
+				A21A55A52054C29D0010CF19 /* walle.scn */,
+				A21A55A62054C2A50010CF19 /* wallf.scn */,
+				A21A55A72054C2AC0010CF19 /* wallg.scn */,
+				A21A55A82054C2B50010CF19 /* wallh.scn */,
+				A21A55A92054C2C30010CF19 /* walli.scn */,
+				A21A55AA2054C2CF0010CF19 /* wallj.scn */,
 				A2113A9720546FD80084D4C4 /* ship.png */,
 				A2113A9920546FD80084D4C4 /* ship.scn */,
 			);
@@ -417,28 +417,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A21A557C2054BCE10010CF19 /* wj.dae in Resources */,
-				A21A55772054BCE10010CF19 /* wi.dae in Resources */,
 				A2113A6520545CAD0084D4C4 /* Assets.xcassets in Resources */,
-				A21A55792054BCE10010CF19 /* we.dae in Resources */,
 				A2C9AFAB20548895000EAF75 /* LaunchScreen.storyboard in Resources */,
-				A21A55812054BCE10010CF19 /* wh.dae in Resources */,
 				A2C9AFAA20548895000EAF75 /* Main.storyboard in Resources */,
-				A21A557F2054BCE10010CF19 /* wa.dae in Resources */,
 				89839E95205496F200E0B705 /* AR.storyboard in Resources */,
+				A21A55B72054C2E00010CF19 /* collectibl.scn in Resources */,
 				89839E882054775B00E0B705 /* settings.png in Resources */,
+				A21A55AB2054C2DD0010CF19 /* robot_c.scn in Resources */,
+				A21A55AC2054C2DD0010CF19 /* spik.scn in Resources */,
+				A21A55AD2054C2DD0010CF19 /* walla.scn in Resources */,
+				A21A55AE2054C2DD0010CF19 /* wallb.scn in Resources */,
+				A21A55AF2054C2DD0010CF19 /* wallc.scn in Resources */,
+				A21A55B02054C2DD0010CF19 /* walld.scn in Resources */,
+				A21A55B12054C2DD0010CF19 /* walle.scn in Resources */,
+				A21A55B22054C2DD0010CF19 /* wallf.scn in Resources */,
+				A21A55B32054C2DD0010CF19 /* wallg.scn in Resources */,
+				A21A55B42054C2DD0010CF19 /* wallh.scn in Resources */,
+				A21A55B52054C2DD0010CF19 /* walli.scn in Resources */,
+				A21A55B62054C2DD0010CF19 /* wallj.scn in Resources */,
 				89839E7D2054601C00E0B705 /* GoogleService-Info.plist in Resources */,
-				A21A55782054BCE10010CF19 /* wb.dae in Resources */,
 				A2C9AFB620548D5C000EAF75 /* testGrid.txt in Resources */,
-				A21A55822054BCE10010CF19 /* spike.dae in Resources */,
-				A21A55832054BCE10010CF19 /* wg.dae in Resources */,
-				A21A557D2054BCE10010CF19 /* robot_combine.dae in Resources */,
-				A21A557B2054BCE10010CF19 /* wc.dae in Resources */,
 				A2113A9D20546FD80084D4C4 /* ship.scn in Resources */,
 				A2113A9B20546FD80084D4C4 /* ship.png in Resources */,
-				A21A55802054BCE10010CF19 /* wd.dae in Resources */,
-				A21A557E2054BCE10010CF19 /* wf.dae in Resources */,
-				A21A557A2054BCE10010CF19 /* collectible.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
