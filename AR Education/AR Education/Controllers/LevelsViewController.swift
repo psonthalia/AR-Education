@@ -38,25 +38,20 @@ class LevelsViewController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! LevelSelectCollectionViewCell
         
-        cell.backgroundColor = UIColor(color: UIColor.Color.med)
+        //cell.backgroundColor = UIColor(color: UIColor.Color.med)
         
         let cellButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        cell.button = cellButton
-        print(cell.button)
-        let title = "/(indexPath.item)"
-        let state = UIControlState.normal
-        cell.button.setTitle(title, for: state)
-        //let color = UIColor(color: UIColor.Color.med)
-        //cell.button.setTitleColor(color, for: <#T##UIControlState#>)
+        cellButton.titleLabel?.text = "/(indexPath.item)"
+        let color = UIColor(color: UIColor.Color.med)
+        cellButton.backgroundColor = color
+        cellButton.addTarget(self, action: #selector(action), for: UIControlEvents.touchUpInside)
+        
+        cell.addSubview(cellButton)
         
         return cell
     }
     
-    // MARK: - UICollectionViewDelegate protocol
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // handle tap events
-        print("You selected cell #\(indexPath.item)!")
+    @objc func action() {
         self.performSegue(withIdentifier: Constants.Segue.toAR, sender: nil)
     }
     
