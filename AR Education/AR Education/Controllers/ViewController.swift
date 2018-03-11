@@ -21,7 +21,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewDidLoad()
         addTapGestureToSceneView()
         configureLighting()
-        //        addCar()
         
         if let filepath = Bundle.main.path(forResource: "testGrid", ofType: "txt") {
             do {
@@ -58,28 +57,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.autoenablesDefaultLighting = true
         sceneView.automaticallyUpdatesLighting = true
     }
-    
-    //    func addCar(x: Float = 0, y: Float = 0, z: Float = -0.5) {
-    //        guard let carScene = SCNScene(named: "car.dae") else { return }
-    //        let carNode = SCNNode()
-    //        let carSceneChildNodes = carScene.rootNode.childNodes
-    //        for childNode in carSceneChildNodes {
-    //            carNode.addChildNode(childNode)
-    //        }
-    //        carNode.position = SCNVector3(x, y, z)
-    //        carNode.scale = SCNVector3(0.5, 0.5, 0.5)
-    //
-    //        let moveForward = SCNAction.move(by: SCNVector3(1.0, 0, 0), duration: 1)
-    //        let moveBack = SCNAction.move(by: SCNVector3(-1.0,0,0), duration: 1)
-    //        let waitAction = SCNAction.wait(duration: 0.25)
-    //        let hoverSequence = SCNAction.sequence([moveForward,waitAction,moveBack])
-    //        let loopSequence = SCNAction.repeatForever(hoverSequence)
-    //        carNode.runAction(loopSequence)
-    //
-    //        self.sceneView.scene.rootNode.addChildNode(carNode)
-    //
-    //        sceneView.scene.rootNode.addChildNode(carNode)
-    //    }
     
     func addTapGestureToSceneView() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.setUpGrid(withGestureRecognizer:)))
@@ -255,7 +232,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-        print("render")
         // 1
         guard let planeAnchor = anchor as?  ARPlaneAnchor,
             let planeNode = node.childNodes.first,
