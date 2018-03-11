@@ -19,7 +19,11 @@ class ProgramViewController: UIViewController {
     var viewLevelButton = UIBarButtonItem()
     var fixedSpace = UIBarButtonItem()
     
+    var level: Int = 0
+    
     override func viewWillAppear(_ animated: Bool) {
+        print("Level: \(level)")
+        
         runButton = UIBarButtonItem(title: "Run", style: UIBarButtonItemStyle.plain, target: self, action: #selector(RunClicked))
         viewLevelButton = UIBarButtonItem(title: "View Level", style: UIBarButtonItemStyle.plain, target: self, action: #selector(viewLevel))
         fixedSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
