@@ -10,7 +10,7 @@ import UIKit
 
 class LevelSelectCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var label: UILabel!
     
     
 }
