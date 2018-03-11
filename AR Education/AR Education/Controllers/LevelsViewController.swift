@@ -38,20 +38,15 @@ class LevelsViewController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! LevelSelectCollectionViewCell
         
-        //cell.backgroundColor = UIColor(color: UIColor.Color.med)
-        
-        let cellButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        cellButton.titleLabel?.text = "/(indexPath.item)"
-        let color = UIColor(color: UIColor.Color.med)
-        cellButton.backgroundColor = color
-        cellButton.addTarget(self, action: #selector(action), for: UIControlEvents.touchUpInside)
-        
-        cell.addSubview(cellButton)
+        cell.backgroundColor = UIColor(color: UIColor.Color.med)
+        cell.layer.cornerRadius = 10
+        cell.frame.size.width = 100
+        cell.frame.size.height = 100
         
         return cell
     }
     
-    @objc func action() {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: Constants.Segue.toAR, sender: nil)
     }
     
