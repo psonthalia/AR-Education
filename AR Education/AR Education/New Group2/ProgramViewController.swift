@@ -17,9 +17,17 @@ class ProgramViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = runButton
     }
     @objc func RunClicked() {
-        let countLines:Int = codeView.text.components(separatedBy:"\n").count
-        for i in 0 ... countLines {
-            
+        let lineArray = codeView.text.components(separatedBy:"\n")
+        var commandArray = [SCNAction]()
+        for i in 0 ... lineArray.count-1 {
+            if(lineArray[i].contains("moveForward")) {
+                let count = Int(lineArray[i].suffix(lineArray[i].count - 12))
+                commandArray.append(SCNAction.move(by: SCNVector3(1.0, 0, 0), duration: 1))
+                print(count!)
+            }
         }
+        let hoverSequence = SCNAction.sequence(commandArray)
+        ViewController.programSequence = hoverSequence
+        self.performSegue(withIdentifier: Constants.Segue.toARCamera, sender: nil)
     }
 }

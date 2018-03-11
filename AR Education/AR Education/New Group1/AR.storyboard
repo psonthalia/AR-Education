@@ -33,6 +33,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="codeView" destination="oL5-ER-0Ka" id="HzB-lL-WN0"/>
+                        <segue destination="BV1-FR-VrT" kind="show" identifier="toARCamera" id="7Yj-DN-xLY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kqr-aw-45I" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
     var gridContents:String = ""
+    static var programSequence:SCNAction! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,40 +96,138 @@ class ViewController: UIViewController {
         let y = translation.y
         var z = translation.z
         
-        guard let shipScene = SCNScene(named: "ship.scn"),
-            let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
-            else { return }
+//        guard let shipScene = SCNScene(named: "ship.scn"),
+//            let shipNode = shipScene.rootNode.childNode(withName: "ship", recursively: false)
+//            else { return }
         
         guard let robotScene = SCNScene(named: "robot_combine.scn"),
             let robotNode = robotScene.rootNode.childNode(withName: "robot_combine", recursively: false)
             else { return }
         
-        guard let planeScene = SCNScene(named: "plane.scn"),
-            let planeNode = planeScene.rootNode.childNode(withName: "plane", recursively: false)
+        guard let waScene = SCNScene(named: "wa.scn"),
+            let waNode = waScene.rootNode.childNode(withName: "wa", recursively: false)
+            else { return }
+        
+        guard let wbScene = SCNScene(named: "wb.scn"),
+            let wbNode = wbScene.rootNode.childNode(withName: "wb", recursively: false)
+            else { return }
+        
+        guard let wcScene = SCNScene(named: "wc.scn"),
+            let wcNode = wcScene.rootNode.childNode(withName: "wc", recursively: false)
+            else { return }
+        
+        guard let wdScene = SCNScene(named: "wd.scn"),
+            let wdNode = wdScene.rootNode.childNode(withName: "wd", recursively: false)
+            else { return }
+        
+        guard let weScene = SCNScene(named: "we.scn"),
+            let weNode = weScene.rootNode.childNode(withName: "we", recursively: false)
+            else { return }
+        
+        guard let wfScene = SCNScene(named: "wf.scn"),
+            let wfNode = wfScene.rootNode.childNode(withName: "wf", recursively: false)
+            else { return }
+        
+        guard let wgScene = SCNScene(named: "wg.scn"),
+            let wgNode = wgScene.rootNode.childNode(withName: "wg", recursively: false)
+            else { return }
+        
+        guard let whScene = SCNScene(named: "wh.scn"),
+            let whNode = whScene.rootNode.childNode(withName: "wh", recursively: false)
+            else { return }
+        
+        guard let wiScene = SCNScene(named: "wi.scn"),
+            let wiNode = wiScene.rootNode.childNode(withName: "wi", recursively: false)
+            else { return }
+        
+        guard let wjScene = SCNScene(named: "wj.scn"),
+            let wjNode = wjScene.rootNode.childNode(withName: "wj", recursively: false)
+            else { return }
+        
+        guard let collectibleScene = SCNScene(named: "collectible.scn"),
+            let collectibleNode = collectibleScene.rootNode.childNode(withName: "collectible", recursively: false)
+            else { return }
+        
+        guard let spikeScene = SCNScene(named: "spike.scn"),
+            let spikeNode = spikeScene.rootNode.childNode(withName: "spike", recursively: false)
             else { return }
         
         for number:Character in gridContents {
             if(number != "\n") {                
-                if(number == "1") {
-                    let shipNode2 = shipNode.copy() as!SCNNode
-                    shipNode2.position = SCNVector3(x,y,z)
-                    sceneView.scene.rootNode.addChildNode(shipNode2)
+//                if(number == "1") {
+//                    let shipNode2 = shipNode.copy() as!SCNNode
+//                    shipNode2.position = SCNVector3(x,y,z)
+//                    sceneView.scene.rootNode.addChildNode(shipNode2)
+//                }
+                if(number == "a") {
+                    let node = waNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
                 }
-                else if(number == "2") {
-                    let robotNode2 = robotNode.copy() as!SCNNode
+                else if(number == "b") {
+                    let node = wbNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "c") {
+                    let node = wcNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "d") {
+                    let node = wdNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "e") {
+                    let node = weNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "f") {
+                    let node = wfNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "g") {
+                    let node = wgNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "h") {
+                    let node = whNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "i") {
+                    let node = wiNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "j") {
+                    let node = wjNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "o") {
+                    let node = spikeNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "s") {
+                    let node = robotNode.copy() as!SCNNode
+                    node.position = SCNVector3(x,y,z)
+                    sceneView.scene.rootNode.addChildNode(node)
+                }
+                else if(number == "*") {
+                    let robotNode2 = collectibleNode.copy() as!SCNNode
                     robotNode2.position = SCNVector3(x,y,z)
                     sceneView.scene.rootNode.addChildNode(robotNode2)
                 }
-                else if(number == "3") {
-                    print("plane")
-                    let planeNode2 = planeNode.copy() as!SCNNode
-                    planeNode2.position = SCNVector3(x,y,z)
-                    sceneView.scene.rootNode.addChildNode(planeNode2)
-                }
-                x += 0.3
+                x += 0.2
             } else {
                 x = translation.x
-                z += 1
+                z += 0.2
             }
         }
     }
@@ -147,16 +246,16 @@ class ViewController: UIViewController {
         guard let carScene = SCNScene(named: "ship.scn"),
             let carNode = carScene.rootNode.childNode(withName: "ship", recursively: false)
             else { return }
-        
-        
-        carNode.position = SCNVector3(x,y,z)
-        let moveForward = SCNAction.move(by: SCNVector3(1.0, 0, 0), duration: 1)
-        let moveBack = SCNAction.move(by: SCNVector3(-1.0,0,0), duration: 1)
-        let waitAction = SCNAction.wait(duration: 0.25)
-        let hoverSequence = SCNAction.sequence([moveForward,waitAction,moveBack])
-        let loopSequence = SCNAction.repeatForever(hoverSequence)
-        carNode.runAction(loopSequence)
-        
+//
+//
+//        carNode.position = SCNVector3(x,y,z)
+//        let moveForward = SCNAction.move(by: SCNVector3(1.0, 0, 0), duration: 1)
+//        let moveBack = SCNAction.move(by: SCNVector3(-1.0,0,0), duration: 1)
+//        let waitAction = SCNAction.wait(duration: 0.25)
+//        let hoverSequence = SCNAction.sequence([moveForward,waitAction,moveBack])
+//        let loopSequence = SCNAction.repeatForever(hoverSequence)
+        carNode.runAction(ViewController.programSequence)
+//
         sceneView.scene.rootNode.addChildNode(carNode)
     }
     
