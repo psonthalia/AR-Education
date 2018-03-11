@@ -33,11 +33,11 @@ class LevelsViewController: UIViewController, UICollectionViewDelegate, UICollec
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as! LevelSelectCollectionViewCell
         
         cell.label.text = self.items[indexPath.item]
+        cell.label.textColor = UIColor(color: UIColor.Color.darkest)
         
         cell.backgroundColor = UIColor(color: UIColor.Color.bright)
-        //cell.layer.cornerRadius = 10
-        //cell.frame.size.width = 100
-        //cell.frame.size.height = 100
+        cell.layer.cornerRadius = 10
+        
         
         return cell
     }
