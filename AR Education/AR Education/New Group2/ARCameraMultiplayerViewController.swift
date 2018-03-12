@@ -71,6 +71,7 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
             tempString = "player1"
         }
         var refHandler = ref.child(ARCameraMultiplayerViewController.code).child(tempString).observe(DataEventType.value, with: { (snapshot) in
+            
             self.postDict = snapshot.value as! [String]
             if(self.postDict[self.postDict.count-1].contains("moveForward")) {
                 self.robotOpponentNode2.runAction(SCNAction.move(by: SCNVector3(0.2, 0, 0), duration: 0.5))
@@ -121,7 +122,7 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
         array.append(codeFieldText)
         if(codeFieldText.contains("moveBackward")) {
             //IF there's nothing in front of it, then:
-            if (0 <= playerZ-1 && (ARCameraMultiplayerViewController.positionArray[playerZ-1][playerX] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ-1][playerX] == "*")) {
+            if (0 <= playerZ-1) {
                 robotNode2.runAction(SCNAction.move(by: SCNVector3(0.2, 0, 0), duration: 0.5))
                 pointerNode2.runAction(SCNAction.move(by: SCNVector3(0.2, 0, 0), duration: 0.5))
                 playerZ -= 1
@@ -137,7 +138,7 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
         else if(codeFieldText.contains("moveForward")) {
             //IF nothing behind it, then:
             print(ARCameraMultiplayerViewController.positionArray[playerZ+1][playerX])
-            if((ARCameraMultiplayerViewController.positionArray.count-1) >= (playerZ+1) && (ARCameraMultiplayerViewController.positionArray[playerZ+1][playerX] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ+1][playerX] == "*")) {
+            if((ARCameraMultiplayerViewController.positionArray.count-1) >= (playerZ+1)) {
                 print("asdf2")
                 robotNode2.runAction(SCNAction.move(by: SCNVector3(-0.2, 0, 0), duration: 0.5))
                 pointerNode2.runAction(SCNAction.move(by: SCNVector3(-0.2, 0, 0), duration: 0.5))
@@ -154,7 +155,7 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
             print(ARCameraMultiplayerViewController.positionArray)
             print(ARCameraMultiplayerViewController.positionArray.count)
             
-            if(0 <= playerX-1 && (ARCameraMultiplayerViewController.positionArray[playerZ][playerX-1] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ][playerX-1] == "*")) {
+            if(0 <= playerX-1) {
                 robotNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, 0.2), duration: 0.5))
                 pointerNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, 0.2), duration: 0.5))
                 playerX -= 1
@@ -167,7 +168,7 @@ class ARCameraMultiplayerViewController: UIViewController, UITextFieldDelegate {
         }
             
         else if(codeFieldText.contains("moveLeft")) {
-            if(ARCameraMultiplayerViewController.positionArray[playerZ].count-1 >= playerX+1 && (ARCameraMultiplayerViewController.positionArray[playerZ][playerX+1] == "0" || ARCameraMultiplayerViewController.positionArray[playerZ][playerX+1] == "*")) {
+            if(ARCameraMultiplayerViewController.positionArray[playerZ].count-1 >= playerX+1) {
                 robotNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, -0.2), duration: 0.5))
                 pointerNode2.runAction(SCNAction.move(by: SCNVector3(0, 0, -0.2), duration: 0.5))
                 playerX += 1
