@@ -32,4 +32,4 @@ We plan to continue development for Droid Control over the coming weeks to reall
 `swift`, `html`, `css`, `foundationdb`, `arkit`, `firebase`, `xcode`
 
 # Try it out
-[droidcontrol.github.io](droidcontrol.github.io)
+[droidcontrol.github.io](https://droidcontrol.github.io)
